@@ -76,33 +76,39 @@ html, body {
 	  height: 30vh;
 	  width: auto;
 	  position: absolute;
-	  right: 2rem;
-	  top: 2rem;
-	  margin-bottom: 2rem;	  
+	  right: 8rem;
+	  bottom: 25rem;
+	  
+	  box-shadow: -20px 2px 180px rgb(250, 246, 246);
+	  border-radius: 360px; 
+	  border: -12px 12px solid rgb(97, 97, 97);
   }
 
 #content {
 	text-align: center;
-	
+	top: 18rem;
+	text-shadow: 2px 1px 1px rgb(46, 54, 37);
 }
 
 h1 {
 	color: rgb(187, 187, 187);
-	font-size: 4.5rem;
+	font-size: 4rem;
 	letter-spacing: .7rem;
-	margin-bottom: 1.8rem;
+	margin-bottom: 2rem;
 	
   }
 
 h2 {
 	color: rgb(187, 187, 187);
 	letter-spacing: .7rem;
-	font-size: 3rem;
+	font-size: 2.8rem;
 }
 
 
 .navbar {
 	z-index: 1;
+	height: 8rem;
+	position: fixed;
 }
 
 #linkedin {
@@ -119,10 +125,26 @@ h2 {
 
 a {
 	margin-left: 1.5rem;
+}
+
+.second-section {
+	background-color: whitesmoke;
+	padding: 2rem;
+}
+
+.btn-outline-light {
+	margin-top: 3rem;
+	width: 15rem;
+	letter-spacing: .2rem;
+	text-shadow: .5px .5px .5px rgb(231, 251, 207);
+	font-weight: .8rem;
+	font-size: 1.3rem;
+}
+
+.btn-outline-light:hover {
+	background-color: rgb(200, 200, 200);
+	color: #0a0111;
+	letter-spacing: .2rem;
 	
 }
 
-#center-top {
-	height: 20vh;
-	
-}
