@@ -76,25 +76,23 @@ html, body {
 	  height: 30vh;
 	  width: auto;
 	  position: absolute;
-	  right: 8rem;
-	  bottom: 25rem;
-	  
-	  box-shadow: -20px 2px 180px rgb(250, 246, 246);
+	  right: 4rem;
+	  top: 10rem;
+	  box-shadow: 8px 20px 120px rgb(250, 246, 246);
 	  border-radius: 360px; 
-	  border: -12px 12px solid rgb(97, 97, 97);
   }
 
 #content {
 	text-align: center;
-	top: 18rem;
-	text-shadow: 2px 1px 1px rgb(46, 54, 37);
+	top: 19rem;
+	text-shadow: 2px 1px 1px rgb(160, 167, 154);
 }
 
 h1 {
 	color: rgb(187, 187, 187);
 	font-size: 4rem;
 	letter-spacing: .7rem;
-	margin-bottom: 2rem;
+	margin-bottom: 2.5rem;
 	
   }
 
