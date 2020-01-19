@@ -76,20 +76,20 @@ html, body {
 	  height: 30vh;
 	  width: auto;
 	  position: absolute;
-	  right: 4rem;
-	  top: 10rem;
-	  box-shadow: 8px 20px 120px rgb(250, 246, 246);
+	  right: 12rem;
+	  bottom: 30rem;
+	  box-shadow: 8px 25px 100px rgb(250, 246, 246);
 	  border-radius: 360px; 
   }
 
 #content {
 	text-align: center;
-	top: 19rem;
-	text-shadow: 2px 1px 1px rgb(160, 167, 154);
+	top: 16rem;
+	text-shadow: .5px 1px 1px rgb(160, 167, 154);
 }
 
 h1 {
-	color: rgb(187, 187, 187);
+	color: rgb(100, 100, 100);
 	font-size: 4rem;
 	letter-spacing: .7rem;
 	margin-bottom: 2.5rem;
@@ -97,7 +97,7 @@ h1 {
   }
 
 h2 {
-	color: rgb(187, 187, 187);
+	color: rgb(100, 100, 100);
 	letter-spacing: .7rem;
 	font-size: 2.8rem;
 }
@@ -110,13 +110,13 @@ h2 {
 }
 
 #linkedin {
-	height: 55px;
+	height: 45px;
 	width: auto;
-	
+	border: 1px solid rgb(160, 167, 154);
 }
 
 #github {
-	height: 55px;
+	height: 45px;
 	width: auto;
 	
 }
@@ -134,15 +134,23 @@ a {
 	margin-top: 3rem;
 	width: 15rem;
 	letter-spacing: .2rem;
-	text-shadow: .5px .5px .5px rgb(231, 251, 207);
+	text-shadow: 1px 1px 1px rgb(149, 156, 143);
 	font-weight: .8rem;
 	font-size: 1.3rem;
+	border-width: 2.5px;
+	border-color: rgb(100, 100, 100);
+	box-shadow: 1px 1px 2px 2px #928a97;
 }
 
 .btn-outline-light:hover {
-	background-color: rgb(200, 200, 200);
+	background-color: rgb(100, 100, 100);
 	color: #0a0111;
 	letter-spacing: .2rem;
-	
+	/* border-color: rgb(100, 100, 100); */
 }
 
+#mybutton:hover {
+	background-color: rgb(100, 100, 100);
+	color: #0a0111;
+	border: red;
+}

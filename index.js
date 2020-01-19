@@ -1,18 +1,11 @@
 /* jshint esversion: 6 */
 
-gsap.to("#me", 25, {  textShadow: "3px 4px 5px 6px #f7f8d2", color: "#0a0111", runBackwards: "true"});
-gsap.to("#mybutton", 25, {    borderColor: "#22162a",  boxShadow: "2px 2px 2px 2px #22162a", runBackwards: "true"});
-const hello = document.querySelector("h2");
-gsap.to("#you", 25, { textShadow: "2px 2px 2px 4px #f7f8d2", color: "#0a0111", runBackwards: "true"});
+gsap.to("#me", 4, {  textShadow: "4px 4px 4px 6px #928a97", color: "#0a0111", runBackwards: "true"});
+gsap.to("#we", 4, { textShadow: "3px 3px 3px 5px #928a97", color: "#0a0111", runBackwards: "true"});
+gsap.to("#mybutton", 4, {color: "#0a0111", borderColor: "#0a0111",  boxShadow: ".5px .5px 1px 1px #928a97", runBackwards: "true"});
 
 
-// const helloStranger = document.querySelector("h1");
-// gsap.to(helloStranger, 8, {  fontSize: 4.5, runBackwards: "true" });
-
-// const helloGoodbye = document.querySelector("h2");
-// gsap.to(helloGoodbye, 8, {  fontSize: 3.3, runBackwards: "true"});
-
-let tween = gsap.to(".moon", { duration: "40", x: "-900", y: "-100", ease: "SlowMo.out", runBackwards: "true",});
+let tween = gsap.to(".moon", { duration: "100", x: "-1050", y: "400", ease: "SlowMo.out", runBackwards: "true", });
 
 
 // var tween = gsap.to("#content", {
