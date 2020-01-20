@@ -1,11 +1,11 @@
 /* jshint esversion: 6 */
 
-gsap.to("#me", 4, {  textShadow: "4px 4px 4px 6px #928a97", color: "#0a0111", runBackwards: "true"});
-gsap.to("#we", 4, { textShadow: "3px 3px 3px 5px #928a97", color: "#0a0111", runBackwards: "true"});
-gsap.to("#mybutton", 4, {color: "#0a0111", borderColor: "#0a0111",  boxShadow: ".5px .5px 1px 1px #928a97", runBackwards: "true"});
+// gsap.to("#me", 8, {  textShadow: "0px 0px 10px  rgb(255, 230, 255)", color: "rgb(10, 1, 17, 10)", runBackwards: "true" });
+// gsap.to("#we", 8, { textShadow: "0px 0px 10px  rgb(255, 230, 255)", color: "rgb(10, 1, 17, 10)", runBackwards: "true"});
+// gsap.to("#mybutton", 20, {  boxShadow: "0px 0px 10px  rgb(255, 230, 255)", color: "rgb(10, 1, 17, 10)", });
 
 
-let tween = gsap.to(".moon", { duration: "100", x: "-1050", y: "400", ease: "SlowMo.out", runBackwards: "true", });
+let tween = gsap.to(".moon", { duration: "55", x: "1200", y: "-200", ease: "power1.out",  });
 
 
 // var tween = gsap.to("#content", {
