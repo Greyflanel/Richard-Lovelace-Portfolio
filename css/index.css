@@ -22,21 +22,21 @@ html, body {
 	  height: 30vh;
 	  width: auto;
 	  position: absolute;
-	  left: 3rem;
-	  bottom: 16rem;
 	  box-shadow: -18px 25px 100px rgb(255, 200, 255);
 	  border-radius: 360px; 
   }
 
 #content {
+	
 	text-align: center;
 	top: 16rem;
-	color: rgb(17, 1, 9);
-	text-shadow: 0 0 5px rgb(240, 240, 240), 
-	0 0 10px #fff, 0 0 20px #fff, 
-	0 0 20px #fff, 0 0 30px #42043a, 
-	0 0 40px #42043a, 0 0 50px #42043a, 
-	0 0 60px #42043a;
+	color: rgb(10, 1, 17);
+	text-shadow: 0 0 10px rgb(255, 255, 255), 
+	0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 
+	0 0 30px rgb(255, 255, 255), 0 0 40px rgb(255, 255, 255), 
+	0 0 50px rgb(255, 255, 255), 0 0 60px rgb(66, 4, 58), 
+	0 0 70px rgb(66, 4, 58), 0 0 80px rgb(66, 4, 58),
+	0 0 90px rgb(66, 4, 58);
 	
 }
 
@@ -49,7 +49,8 @@ h1 {
 
 h2 {
 	letter-spacing: .7rem;
-	font-size: 2.8rem;
+	font-size: 3rem;
+	
 }
 
 
@@ -57,12 +58,14 @@ h2 {
 	z-index: 1;
 	height: 8rem;
 	position: fixed;
+
 }
 
 #linkedin {
 	height: 45px;
 	width: auto;
 	border: 1px solid rgb(160, 167, 154);
+	
 }
 
 #github {
@@ -85,23 +88,20 @@ a {
 	margin-top: 3rem;
 	width: 15rem;
 	letter-spacing: .2rem;
-	text-shadow: 1px 1px 1px rgb(149, 156, 143);
 	font-weight: .8rem;
 	font-size: 1.3rem;
-	border-width: 2.5px;
-	border-color: rgb(100, 100, 100);
-	box-shadow: 1px 1px 2px 2px #928a97;
+	border-radius: 10px;
+	border-width: 1px;
+	color: rgb(255, 255, 255);
+	box-shadow:
+	0 0 10px rgb(255, 255, 255), 
+	0 0 15px rgb(255, 255, 255), 0 0 20px rgb(66, 4, 58), 
+	0 0 25px rgb(66, 4, 58);
+	background-color: rgba(34, 3, 30, 0.507);
 }
 
 .btn-outline-light:hover {
-	background-color: rgb(100, 100, 100);
-	color: #998aa5;
-	letter-spacing: .2rem;
-	/* border-color: rgb(100, 100, 100); */
-}
-
-#mybutton:hover {
-	background-color: rgb(100, 100, 100);
-	color: #0a0111;
-	border: red;
+	background-color: rgba(245, 245, 245, 0.808);
+	letter-spacing: .2rem !important ;
+	
 }
