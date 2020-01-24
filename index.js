@@ -13,8 +13,8 @@ tl.to(".moon",  {x: 830, y: -40, duration: 15, ease: "linear"});
 tl.to(".moon",  {x: 500, y: -10, duration: 16, ease: "linear"});
 tl.to(".moon",  {x: 0, y: 0, duration: 18, ease: "linear"});
 
-let scroll = gsap.to(window, 6, {scrollTo:{y:".second-section"}}, "<");
-scroll();
+// let scroll = gsap.to(window, 6, {scrollTo:{y:".second-section"}}, "<");
+// scroll();
 
 
 // tl.from("#me", {opacity: 0,  duration: 0.212, repeat: 6, ease: "rough.in"}, "-=");
