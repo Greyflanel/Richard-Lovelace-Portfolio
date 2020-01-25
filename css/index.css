@@ -1,6 +1,7 @@
 #stars {
-	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png);
+	background: url(/assets/stars811.png);
 	height: 100vh;
+	width: auto;
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -11,16 +12,17 @@
 
 html, body {
 	background-color: rgb(10, 1, 17) ;
-	
+	overflow: hidden;
   }
   
   section {
 	height: 100vh;
-	overflow-x: hidden;
+	
 	
   }
 
 .moon {
+	
 	  height: 30vh;
 	  width: auto;
 	  position: absolute;
