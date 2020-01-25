@@ -29,7 +29,8 @@ html, body {
   }
 
 #content {
-	height: 95vh;
+	height: 55%;
+	overflow-y: ;
 	text-align: center;
 	top: 16rem;
 	color: rgb(10, 1, 17);
