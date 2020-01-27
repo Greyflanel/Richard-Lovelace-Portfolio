@@ -1,3 +1,6 @@
+/* * { 
+	border: 1px solid red !important;
+} */
 #stars {
 	background: url(/assets/stars811.png);
 	height: 100vh;
@@ -12,83 +15,91 @@
 
 html, body {
 	background-color: rgb(10, 1, 17) ;
-	overflow: hidden;
+	
   }
   
   section {
-	height: 100vh;
-	
-	
+	height: 100vh;										
   }
 
 .moon {
-	
-	  height: 30vh;
-	  width: auto;
-	  position: absolute;
-	  box-shadow: -18px 25px 100px rgb(255, 200, 255);
-	  border-radius: 360px; 
+	width: 15vw;
+	height: auto;  
+	position: absolute;
+	box-shadow: -18px 18px 100px rgb(255, 200, 255);
+	border-radius: 360px; 
   }
 
 #content {
+	height: 60vh;
 	text-align: center;
-	top: 16rem;
-	color: rgb(10, 1, 17);
-	text-shadow: 0 0 10px rgb(255, 255, 255), 
-	0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 
-	0 0 30px rgb(255, 255, 255), 0 0 40px rgb(255, 255, 255), 
-	0 0 50px rgb(255, 255, 255), 0 0 60px rgb(66, 4, 58), 
-	0 0 70px rgb(66, 4, 58), 0 0 80px rgb(66, 4, 58),
-	0 0 90px rgb(66, 4, 58);
-	
+	align-items: center;
+	line-height: 16vh;
+	top: 31vh;
+	color: rgba(20, 5, 18);
+	text-shadow: 
+	0 0 9px rgb(255, 255, 255), 0 0 11px rgb(255, 255, 255), 
+	0 0 13px rgb(255, 255, 255), 0 0 15px rgb(255, 255, 255), 
+	0 0 20px rgb(235, 235, 235), 0 0 30px rgb(34, 3, 34), 
+	0 0 35px rgb(58, 4, 58), 0 0 40px rgb(58, 4, 58),
+	0 0 45px rgb(58, 4, 58), 0 0 50px rgb(58, 4, 58),
+	0 0 70px rgb(255, 255, 255)
 }
 
 h1 {
-	font-size: 4rem;
-	letter-spacing: .7rem;
-	margin-bottom: 2.5rem;
+	font-size: 4.5vw;
+	letter-spacing: .6vw;
+	line-height: 14vh;
 	
   }
 
 h2 {
-	letter-spacing: .7rem;
-	font-size: 3rem;
-	
+	letter-spacing: .6vw;
+	font-size: 3.5vw;
+	line-height: 14vh;
 }
 
 
 .navbar {
 	z-index: 1;
-	height: 8rem;
-	position: fixed;
+	height: 14vh;
+	position: absolute;
 
 }
 
 #linkedin {
-	height: 50px;
-	width: auto;
-	border: 1px solid rgb(160, 167, 154);
+	width: 3vw;
+	height: auto;
+	border: 2px solid rgba(20, 5, 18, 0.507);
 	box-shadow:
 	0 0 5px rgb(255, 255, 255), 
 	0 0 10px rgb(255, 255, 255), 0 0 15px rgb(66, 4, 58), 
-	0 0 20px rgb(66, 4, 58);
+	0 0 20px rgb(58, 4, 58);
 	background-color: rgba(20, 5, 18, 0.507);
 }
 
 #github {
-	height: 50px;
-	width: auto;
+	width: 3vw;
+	height: auto;
 	border-radius: 20px;
+	border-width: 2px;
 	box-shadow:
 	0 0 5px rgb(255, 255, 255), 
 	0 0 10px rgb(255, 255, 255), 0 0 15px rgb(66, 4, 58), 
-	0 0 20px rgb(66, 4, 58);
+	0 0 20px rgb(58, 4, 58);
 	background-color: rgba(20, 5, 18, 0.507);
 }
 
 a {
 	margin-left: 1.5rem;
-	font-size: 1.1rem;
+	font-size: 1.3vw;
+	color: rgb(255, 255, 255) !important;
+	text-shadow: 
+	0 0 10px rgb(34, 3, 34), 0 0 15px rgb(255, 255, 255), 
+	0 0 20px rgb(235, 235, 235), 0 0 30px rgb(34, 3, 34), 
+	0 0 35px rgb(58, 4, 58), 0 0 40px rgb(58, 4, 58),
+	0 0 45px rgb(58, 4, 58), 0 0 48px rgb(58, 4, 58),
+	0 0 55px rgb(255, 255, 255)
 }
 
 .second-section {
@@ -97,23 +108,22 @@ a {
 }
 
 .btn-outline-light {
-	margin-top: 3rem;
-	width: 15rem;
-	letter-spacing: .2rem;
+	width: 20vw;
+	letter-spacing: .2vw;
 	font-weight: .8rem;
-	font-size: 1.3rem;
+	font-size: 1.3vw;
 	border-radius: 10px;
 	border-width: 1px;
 	color: rgb(255, 255, 255);
 	box-shadow:
 	0 0 10px rgb(255, 255, 255), 
 	0 0 15px rgb(255, 255, 255), 0 0 20px rgb(66, 4, 58), 
-	0 0 25px rgb(66, 4, 58);
+	0 0 25px rgb(58, 4, 58);
 	background-color: rgba(20, 5, 18, 0.507);
 }
 
 .btn-outline-light:hover {
-	background-color: rgba(245, 245, 245, 0.808);
+	background-color: rgba(246, 246, 246, 0.808);
 	letter-spacing: .2rem !important ;
 	
 }
