@@ -30,7 +30,17 @@ section {
 }
 @media (max-width: 1200px) {
   .moon {
-    width: 17vw;
+    width: 19vw;
+  }
+}
+@media (max-width: 800px) {
+  .moon {
+    width: 23vw;
+  }
+}
+@media (max-width: 400px) {
+  .moon {
+    width: 27vw;
   }
 }
 
@@ -54,6 +64,18 @@ h1 {
     font-size: 7vw;
   }
 }
+@media (max-width: 800px) {
+  h1 {
+    font-size: 8.5vw;
+    line-height: 10vh;
+  }
+}
+@media (max-width: 400px) {
+  h1 {
+    font-size: 9.5vw;
+    line-height: 9vh;
+  }
+}
 
 h2 {
   letter-spacing: 0.6vw;
@@ -63,6 +85,18 @@ h2 {
 @media (max-width: 1200px) {
   h2 {
     font-size: 6vw;
+  }
+}
+@media (max-width: 800px) {
+  h2 {
+    font-size: 7.5vw;
+    line-height: 10vh;
+  }
+}
+@media (max-width: 400px) {
+  h2 {
+    font-size: 8.5vw;
+    line-height: 9vh;
   }
 }
 
@@ -81,7 +115,17 @@ h2 {
 }
 @media (max-width: 1200px) {
   #linkedin {
-    width: 4vw;
+    width: 6vw;
+  }
+}
+@media (max-width: 800px) {
+  #linkedin {
+    width: 8vw;
+  }
+}
+@media (max-width: 400px) {
+  #linkedin {
+    width: 11vw;
   }
 }
 
@@ -95,7 +139,17 @@ h2 {
 }
 @media (max-width: 1200px) {
   #github {
-    width: 4vw;
+    width: 6vw;
+  }
+}
+@media (max-width: 800px) {
+  #github {
+    width: 8vw;
+  }
+}
+@media (max-width: 400px) {
+  #github {
+    width: 11vw;
   }
 }
 
@@ -108,6 +162,11 @@ a {
 @media (max-width: 1200px) {
   a {
     font-size: 2vw;
+  }
+}
+@media (max-width: 800px) {
+  a {
+    font-size: 3vw;
   }
 }
 
@@ -131,6 +190,18 @@ a {
   .btn-outline-light {
     width: 25vw;
     font-size: 1.8vw;
+  }
+}
+@media (max-width: 800px) {
+  .btn-outline-light {
+    width: 30vw;
+    font-size: 2.8vw;
+  }
+}
+@media (max-width: 400px) {
+  .btn-outline-light {
+    width: 35vw;
+    font-size: 3.8vw;
   }
 }
 
