@@ -6,7 +6,7 @@ var mqls = [
     window.matchMedia("(min-width: 800px)"),
     window.matchMedia("(min-width: 600px)"),
     window.matchMedia("(min-width: 400px)"),
-    window.matchMedia("(max-width: 300px)"),
+    window.matchMedia("(max-width: 350px)"),
 ];
  
 function mediaqueryresponse(mql){
