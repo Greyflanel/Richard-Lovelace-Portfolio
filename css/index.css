@@ -22,7 +22,7 @@ section {
 }
 
 .moon {
-  width: 15vw;
+  width: 14.5vw;
   height: auto;
   position: absolute;
   box-shadow: -18px 18px 100px #ffc8ff;
@@ -30,17 +30,17 @@ section {
 }
 @media (max-width: 1200px) {
   .moon {
-    width: 19vw;
+    width: 20vw;
   }
 }
 @media (max-width: 800px) {
   .moon {
-    width: 23vw;
+    width: 28vw;
   }
 }
 @media (max-width: 400px) {
   .moon {
-    width: 27vw;
+    width: 33vw;
   }
 }
 
@@ -73,7 +73,7 @@ h1 {
 @media (max-width: 400px) {
   h1 {
     font-size: 9.5vw;
-    line-height: 9vh;
+    line-height: 7vh;
   }
 }
 
@@ -96,7 +96,7 @@ h2 {
 @media (max-width: 400px) {
   h2 {
     font-size: 8.5vw;
-    line-height: 9vh;
+    line-height: 7vh;
   }
 }
 
@@ -115,12 +115,12 @@ h2 {
 }
 @media (max-width: 1200px) {
   #linkedin {
-    width: 6vw;
+    width: 5vw;
   }
 }
 @media (max-width: 800px) {
   #linkedin {
-    width: 8vw;
+    width: 6vw;
   }
 }
 @media (max-width: 400px) {
@@ -139,12 +139,12 @@ h2 {
 }
 @media (max-width: 1200px) {
   #github {
-    width: 6vw;
+    width: 5vw;
   }
 }
 @media (max-width: 800px) {
   #github {
-    width: 8vw;
+    width: 6vw;
   }
 }
 @media (max-width: 400px) {
@@ -188,19 +188,19 @@ a {
 }
 @media (max-width: 1200px) {
   .btn-outline-light {
-    width: 25vw;
+    width: 27vw;
     font-size: 1.8vw;
   }
 }
 @media (max-width: 800px) {
   .btn-outline-light {
-    width: 30vw;
+    width: 32vw;
     font-size: 2.8vw;
   }
 }
 @media (max-width: 400px) {
   .btn-outline-light {
-    width: 35vw;
+    width: 38vw;
     font-size: 3.8vw;
   }
 }
