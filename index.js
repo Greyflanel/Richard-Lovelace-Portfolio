@@ -59,11 +59,11 @@ tl.to(".moon",  {x: 10, y: 80, duration: 0.2, ease: "linear"});
 
 if(mqls[5].matches){
 tl.set(".moon", { x: 22, y: 80, });        
-tl.to(".moon",  { x: 150, y: 250, duration: 17, ease: "linear"});
-tl.to(".moon",  { x: 22, y: 350, duration: 17, ease: "linear"});
-tl.to(".moon",  {x: 150, y: 500, duration: 19, ease: "linear"});
-tl.to(".moon",  { x: 22, y: 350, duration: 17, ease: "linear"});
-tl.to(".moon",  {x: 150, y: 250, duration: 18, ease: "linear"});
+tl.to(".moon",  { x: 150, y: 150, duration: 17, ease: "linear"});
+tl.to(".moon",  { x: 22, y: 250, duration: 17, ease: "linear"});
+tl.to(".moon",  {x: 150, y: 300, duration: 19, ease: "linear"});
+tl.to(".moon",  { x: 22, y: 250, duration: 17, ease: "linear"});
+tl.to(".moon",  {x: 150, y: 150, duration: 18, ease: "linear"});
 tl.to(".moon",  {x: 22, y: 80, duration: 13, ease: "linear"});
 }
 }
