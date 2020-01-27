@@ -23,6 +23,8 @@ tl.to(".moon",  {x: 500, y: 400, duration: 18, ease: "linear"});
 tl.to(".moon",  {x: 1000, y: 480, duration: 32, ease: "linear"});
 tl.to(".moon",  {x: 1200, y: 50, duration: 30, ease: "linear"});
 tl.to(".moon",  {x: 140, y: 100, duration: 44, ease: "linear"});
+// let scroll = gsap.to(window, 0.5, {scrollTo:{y:".second-section"}});
+// scroll();
     }
   if(mqls[1].matches){ 
 tl.set(".moon", { x: 140, y: 100, });        
@@ -79,8 +81,7 @@ for (let i=0; i<mqls.length; i++){
 
 // document.querySelector(".mq-value").innerText = mql.matches;
 
-// let scroll = gsap.to(window, 6, {scrollTo:{y:".second-section"}}, "<");
-// scroll();
+
 
 // tl.pause();
 // tl.resume();
