@@ -23,7 +23,7 @@ tl.to(".moon",  {x: 140, y: 100, duration: 44, ease: "linear"});
 // scroll();
     }
   if(mqls[1].matches){ 
-tl.set(".moon", { x: 140, y: 100, });        
+tl.set(".moon", { x: 140, y: 100, });       
 tl.to(".moon",  { x: 160, y: 250, duration: 20, ease: "linear"});
 tl.to(".moon",  {x: 280, y: 350, duration: 18, ease: "linear"});
 tl.to(".moon",  {x: 650, y: 480, duration: 24, ease: "linear"});
@@ -32,7 +32,7 @@ tl.to(".moon",  {x: 140, y: 100, duration: 32, ease: "linear"});
     }
 
 if(mqls[2].matches){
-tl.set(".moon", { x: 140, y: 100, });        
+tl.set(".moon", { x: 140, y: 100, });
 tl.to(".moon",  { x: 160, y: 200, duration: 20, ease: "linear"});
 tl.to(".moon",  {x: 180, y: 300, duration: 18, ease: "linear"});
 tl.to(".moon",  {x: 450, y: 400, duration: 24, ease: "linear"});
@@ -58,13 +58,12 @@ tl.to(".moon",  {x: 20, y: 80, duration: 12, ease: "linear"});
 
 
 if(mqls[5].matches){
-tl.set(".moon", { x: 22, y: 80, });        
-tl.to(".moon",  { x: 150, y: 150, duration: 17, ease: "linear"});
-tl.to(".moon",  { x: 22, y: 240, duration: 17, ease: "linear"});
-tl.to(".moon",  {x: 150, y: 260, duration: 19, ease: "linear"});
+tl.set(".moon", { x: 20, y: 65, });    
+tl.to(".moon",  { x: 200, y: 70, duration: 17, ease: "linear"});
+tl.to(".moon",  {x: 150, y: 282, duration: 19, ease: "linear"});
 tl.to(".moon",  { x: 22, y: 240, duration: 17, ease: "linear"});
 tl.to(".moon",  {x: 150, y: 150, duration: 18, ease: "linear"});
-tl.to(".moon",  {x: 22, y: 80, duration: 13, ease: "linear"});
+tl.to(".moon",  {x: 22, y: 65, duration: 13, ease: "linear"});
 }
 }
 for (let i=0; i<mqls.length; i++){
