@@ -149,7 +149,7 @@ h2 {
 }
 @media (max-width: 400px) {
   #github {
-    width: 10vw;
+    width: 11vw;
   }
 }
 
@@ -206,7 +206,7 @@ a {
   .btn-outline-light {
     width: 40vw;
     font-size: 3.8vw;
-    margin-top: 10vh;
+    margin-top: 4vh;
   }
 }
 
