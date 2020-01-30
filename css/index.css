@@ -54,6 +54,11 @@ html .third-section, body .third-section {
   color: #140512;
   text-shadow: 0 0 9px white, 0 0 11px white, 0 0 13px white, 0 0 15px white, 0 0 20px #ebebeb, 0 0 30px #220322, 0 0 35px #3a043a, 0 0 40px #3a043a, 0 0 45px #3a043a, 0 0 50px #3a043a, 0 0 70px white;
 }
+@media (max-width: 400px) {
+  #content {
+    top: 38vh;
+  }
+}
 
 h1 {
   font-size: 4.2vw;
