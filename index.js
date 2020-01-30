@@ -4,7 +4,7 @@ var mqls = [
     window.matchMedia("(min-width: 1200px)"),
     window.matchMedia("(min-width: 1000px)"),
     window.matchMedia("(min-width: 800px)"),
-    window.matchMedia("(max-width: 600px)"),
+    window.matchMedia("(min-width: 600px)"),
     window.matchMedia("(min-width: 400px)"),
     window.matchMedia("(max-width: 350px)"),
 ];
@@ -30,6 +30,7 @@ tl.to(".moon",  {x: 650, y: 480, duration: 24, ease: "linear"});
 tl.to(".moon",  {x: 720, y: 150, duration: 20, ease: "linear"});
 tl.to(".moon",  {x: 140, y: 100, duration: 32, ease: "linear"});
     }
+
 if(mqls[2].matches){
 tl.set(".moon", { x: 140, y: 100, });
 tl.to(".moon",  { x: 160, y: 200, duration: 20, ease: "linear"});
@@ -39,26 +40,30 @@ tl.to(".moon",  {x: 520, y: 150, duration: 20, ease: "linear"});
 tl.to(".moon",  {x: 140, y: 100, duration: 32, ease: "linear"});
     }
     if(mqls[3].matches){
-tl.set(".moon", { x: 140, y: 100});        
-tl.to(".moon",  { x: 140, y: 400, duration: 1, ease: "linear"});
-tl.to(".moon",  {x: 200, y: 180, duration: 1, ease: "linear"});
-tl.to(".moon",  {x: 250, y: 420, duration: 1, ease: "linear"});
-tl.to(".moon",  {x: 520, y: 100, duration: 1, ease: "linear"});
-tl.to(".moon",  {x: 100, y: 125, duration: 1, ease: "linear"});
+tl.set(".moon", { x: 140, y: 100, });        
+tl.to(".moon",  { x: 150, y: 150, duration: 2, ease: "linear"});
+tl.to(".moon",  {x: 180, y: 250, duration: 1, ease: "linear"});
+tl.to(".moon",  {x: 350, y: 380, duration: 2, ease: "linear"});
+tl.to(".moon",  {x: 520, y: 120, duration: 2, ease: "linear"});
+tl.to(".moon",  {x: 140, y: 100, duration: 3, ease: "linear"});
     }
     if(mqls[4].matches){
-tl.set(".moon", { x: 30, y: 80, });        
-tl.to(".moon",  {x: 120, y: 460, duration: 15, ease: "linear"});
-tl.to(".moon",  {x: 460, y: 60, duration: 15, ease: "linear"});
-tl.to(".moon",  {x: 30, y: 80, duration: 15, ease: "linear"});
+tl.set(".moon", { x: 20, y: 80, });        
+tl.to(".moon",  { x: 50, y: 150, duration: 7, ease: "linear"});
+tl.to(".moon",  {x: 90, y: 200, duration: 6, ease: "linear"});
+tl.to(".moon",  {x: 180, y: 280, duration: 9, ease: "linear"});
+tl.to(".moon",  {x: 240, y: 90, duration: 12, ease: "linear"});
+tl.to(".moon",  {x: 20, y: 80, duration: 12, ease: "linear"});
  }
+
+
 if(mqls[5].matches){
 tl.set(".moon", { x: 20, y: 65, });    
-tl.to(".moon",  { x: 200, y: 70, duration: 17, ease: "linear"});
-tl.to(".moon",  {x: 150, y: 282, duration: 19, ease: "linear"});
-tl.to(".moon",  { x: 22, y: 240, duration: 17, ease: "linear"});
-tl.to(".moon",  {x: 150, y: 150, duration: 18, ease: "linear"});
-tl.to(".moon",  {x: 22, y: 65, duration: 13, ease: "linear"});
+tl.to(".moon",  { x: 180, y: 70, duration: 10, ease: "linear"});
+tl.to(".moon",  {x: 180, y: 300, duration: 10, ease: "linear"});
+tl.to(".moon",  { x: 22, y: 230, duration: 10, ease: "linear"});
+tl.to(".moon",  {x: 150, y: 150, duration: 10, ease: "linear"});
+tl.to(".moon",  {x: 22, y: 65, duration: 10, ease: "linear"});
 }
 }
 for (let i=0; i<mqls.length; i++){

@@ -32,19 +32,19 @@ html, body {
         width: 17vw;
     }
     @media(max-width: 800px) {
-        width: 27vw;
+        width: 24vw;
     }
     @media(max-width: 400px) {
         width: 33vw;
     } 
   }
+  
 
 #content {
 	height: 60vh;
 	text-align: center;
 	align-items: center;
-	line-height: 16vh;
-	top: 31vh;
+	top: 26vh;
 	color: rgba(20, 5, 18);
 	text-shadow: 
 	0 0 9px rgb(255, 255, 255), 0 0 11px rgb(255, 255, 255), 
@@ -62,8 +62,11 @@ h1 {
 	@media(max-width: 1200px) {
         font-size: 5vw;
     }
+    @media(max-width: 1000px) {
+        font-size: 6vw;
+    }
     @media(max-width: 800px) {
-        font-size: 8vw;
+        font-size: 7vw;
         line-height: 12vh;
     }
     @media(max-width: 400px) {
@@ -80,7 +83,7 @@ h2 {
         font-size: 4vw;
     }
     @media(max-width: 800px) {
-        font-size: 7vw;
+        font-size: 5.5vw;
         line-height: 10vh;
     }
     @media(max-width: 400px) {
