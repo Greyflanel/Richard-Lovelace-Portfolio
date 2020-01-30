@@ -57,7 +57,7 @@ tl.to(".moon",  {x: 40, y: 80, duration: 12, ease: "linear"});
 else if(mqls[5].matches){
 tl.set(".moon", { x: 20, y: 80, });    
 tl.to(".moon",  { x: 180, y: 70, duration: 20, ease: "linear"});
-tl.to(".moon",  {x: 180, y: 300, duration: 45, ease: "linear"});
+tl.to(".moon",  {x: 200, y: 300, duration: 45, ease: "linear"});
 tl.to(".moon",  { x: 22, y: 230, duration: 25, ease: "linear"});
 tl.to(".moon",  {x: 150, y: 150, duration: 15, ease: "linear"});
 tl.to(".moon",  {x: 20, y: 80, duration: 15, ease: "linear"});

@@ -56,7 +56,7 @@ html .third-section, body .third-section {
 }
 @media (max-width: 400px) {
   #content {
-    top: 38vh;
+    top: 40vh;
   }
 }
 
