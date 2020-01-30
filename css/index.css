@@ -35,7 +35,7 @@ section {
 }
 @media (max-width: 800px) {
   .moon {
-    width: 28vw;
+    width: 27vw;
   }
 }
 @media (max-width: 400px) {
@@ -66,8 +66,8 @@ h1 {
 }
 @media (max-width: 800px) {
   h1 {
-    font-size: 8.5vw;
-    line-height: 10vh;
+    font-size: 8vw;
+    line-height: 12vh;
   }
 }
 @media (max-width: 400px) {
@@ -89,8 +89,8 @@ h2 {
 }
 @media (max-width: 800px) {
   h2 {
-    font-size: 7.5vw;
-    line-height: 8vh;
+    font-size: 7vw;
+    line-height: 10vh;
   }
 }
 @media (max-width: 400px) {
@@ -120,7 +120,7 @@ h2 {
 }
 @media (max-width: 800px) {
   #linkedin {
-    width: 6vw;
+    width: 5.6vw;
   }
 }
 @media (max-width: 400px) {
@@ -144,7 +144,7 @@ h2 {
 }
 @media (max-width: 800px) {
   #github {
-    width: 6vw;
+    width: 5.8vw;
   }
 }
 @media (max-width: 400px) {
@@ -166,7 +166,7 @@ a {
 }
 @media (max-width: 800px) {
   a {
-    font-size: 3vw;
+    font-size: 2.2vw;
   }
 }
 
@@ -200,6 +200,7 @@ a {
   .btn-outline-light {
     width: 32vw;
     font-size: 2.8vw;
+    margin-top: 4vh;
   }
 }
 @media (max-width: 400px) {

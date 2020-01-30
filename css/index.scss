@@ -32,7 +32,7 @@ html, body {
         width: 17vw;
     }
     @media(max-width: 800px) {
-        width: 28vw;
+        width: 27vw;
     }
     @media(max-width: 400px) {
         width: 33vw;
@@ -63,8 +63,8 @@ h1 {
         font-size: 5vw;
     }
     @media(max-width: 800px) {
-        font-size: 8.5vw;
-        line-height: 10vh;
+        font-size: 8vw;
+        line-height: 12vh;
     }
     @media(max-width: 400px) {
         font-size: 8.3vw;
@@ -80,8 +80,8 @@ h2 {
         font-size: 4vw;
     }
     @media(max-width: 800px) {
-        font-size: 7.5vw;
-        line-height: 8vh;
+        font-size: 7vw;
+        line-height: 10vh;
     }
     @media(max-width: 400px) {
         font-size: 7vw;
@@ -110,7 +110,7 @@ h2 {
         width: 4vw;
     }
     @media(max-width: 800px) {
-        width: 6vw;
+        width: 5.6vw;
     }
     @media(max-width: 400px) {
         width: 11vw;
@@ -131,7 +131,7 @@ h2 {
         width: 4vw;
     }
     @media(max-width: 800px) {
-        width: 6vw;
+        width: 5.8vw;
     }
     @media(max-width: 400px) {
         width: 11vw;
@@ -152,7 +152,7 @@ a {
         font-size: 1.8vw;
     }
     @media(max-width: 800px) {
-        font-size: 3vw;
+        font-size: 2.2vw;
     }
 }
 
@@ -184,6 +184,7 @@ a {
     @media(max-width: 800px) {
         width: 32vw;
         font-size: 2.8vw;
+        margin-top: 4vh;
     }
     @media(max-width: 400px) {
         width: 40vw;
