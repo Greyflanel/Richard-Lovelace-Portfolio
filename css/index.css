@@ -16,13 +16,15 @@
 html, body {
   background-color: #0a0111;
 }
-
-section {
+html section, body section {
   height: 100vh;
+}
+html .third-section, body .third-section {
+  background-color: whitesmoke;
 }
 
 .moon {
-  width: 14.5vw;
+  width: 14vw;
   height: auto;
   position: absolute;
   box-shadow: -18px 18px 100px #ffc8ff;
@@ -48,19 +50,19 @@ section {
   height: 60vh;
   text-align: center;
   align-items: center;
-  top: 26vh;
+  top: 27vh;
   color: #140512;
   text-shadow: 0 0 9px white, 0 0 11px white, 0 0 13px white, 0 0 15px white, 0 0 20px #ebebeb, 0 0 30px #220322, 0 0 35px #3a043a, 0 0 40px #3a043a, 0 0 45px #3a043a, 0 0 50px #3a043a, 0 0 70px white;
 }
 
 h1 {
-  font-size: 4.5vw;
+  font-size: 4.2vw;
   letter-spacing: 0.6vw;
   line-height: 14vh;
 }
 @media (max-width: 1200px) {
   h1 {
-    font-size: 5vw;
+    font-size: 5.8vw;
   }
 }
 @media (max-width: 1000px) {
@@ -83,12 +85,12 @@ h1 {
 
 h2 {
   letter-spacing: 0.6vw;
-  font-size: 3.5vw;
+  font-size: 3.2vw;
   line-height: 14vh;
 }
 @media (max-width: 1200px) {
   h2 {
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
 }
 @media (max-width: 800px) {
@@ -111,7 +113,7 @@ h2 {
 }
 
 #linkedin {
-  width: 3vw;
+  width: 2.5vw;
   height: auto;
   border: 2px solid rgba(20, 5, 18, 0.507);
   box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px #42043a, 0 0 20px #3a043a;
@@ -124,17 +126,17 @@ h2 {
 }
 @media (max-width: 800px) {
   #linkedin {
-    width: 5.6vw;
+    width: 5.2vw;
   }
 }
 @media (max-width: 400px) {
   #linkedin {
-    width: 11vw;
+    width: 9.5vw;
   }
 }
 
 #github {
-  width: 3vw;
+  width: 2.5vw;
   height: auto;
   border-radius: 20px;
   border-width: 2px;
@@ -148,18 +150,18 @@ h2 {
 }
 @media (max-width: 800px) {
   #github {
-    width: 5.8vw;
+    width: 5.4vw;
   }
 }
 @media (max-width: 400px) {
   #github {
-    width: 11vw;
+    width: 9.8vw;
   }
 }
 
 a {
   margin-left: 1.5rem;
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   color: white;
   text-shadow: 0 0 10px #220322, 0 0 15px white, 0 0 20px #ebebeb, 0 0 30px #220322, 0 0 35px #3a043a, 0 0 40px #3a043a, 0 0 45px #3a043a, 0 0 48px #3a043a, 0 0 55px white;
 }
@@ -184,6 +186,7 @@ a {
 }
 
 .btn-outline-light {
+  margin-top: 10vh;
   width: 20vw;
   letter-spacing: 0.2vw;
   font-weight: 0.8rem;
@@ -204,7 +207,7 @@ a {
   .btn-outline-light {
     width: 32vw;
     font-size: 2.8vw;
-    margin-top: 4vh;
+    margin-top: 5vh;
   }
 }
 @media (max-width: 400px) {

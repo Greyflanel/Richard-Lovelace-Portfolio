@@ -16,14 +16,15 @@
 html, body {
 	background-color: rgb(10, 1, 17) ;
 	
-  }
-  
   section {
-	height: 100vh;										
+    height: 100vh;
   }
-
+.third-section {
+    background-color: rgb(245, 245, 245);
+}
+}
 .moon {
-	width: 14.5vw;
+	width: 14vw;
 	height: auto;  
 	position: absolute;
 	box-shadow: -18px 18px 100px rgb(255, 200, 255);
@@ -44,7 +45,7 @@ html, body {
 	height: 60vh;
 	text-align: center;
 	align-items: center;
-	top: 26vh;
+	top: 27vh;
 	color: rgba(20, 5, 18);
 	text-shadow: 
 	0 0 9px rgb(255, 255, 255), 0 0 11px rgb(255, 255, 255), 
@@ -56,11 +57,11 @@ html, body {
 }
 
 h1 {
-	font-size: 4.5vw;
+	font-size: 4.2vw;
 	letter-spacing: .6vw;
 	line-height: 14vh;
 	@media(max-width: 1200px) {
-        font-size: 5vw;
+        font-size: 5.8vw;
     }
     @media(max-width: 1000px) {
         font-size: 6vw;
@@ -77,10 +78,10 @@ h1 {
 
 h2 {
 	letter-spacing: .6vw;
-	font-size: 3.5vw;
+	font-size: 3.2vw;
     line-height: 14vh;
     @media(max-width: 1200px){
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
     @media(max-width: 800px) {
         font-size: 5.5vw;
@@ -101,7 +102,7 @@ h2 {
 }
 
 #linkedin {
-	width: 3vw;
+	width: 2.5vw;
 	height: auto;
 	border: 2px solid rgba(20, 5, 18, 0.507);
 	box-shadow:
@@ -113,15 +114,15 @@ h2 {
         width: 4vw;
     }
     @media(max-width: 800px) {
-        width: 5.6vw;
+        width: 5.2vw;
     }
     @media(max-width: 400px) {
-        width: 11vw;
+        width: 9.5vw;
     }
 }
 
 #github {
-	width: 3vw;
+	width: 2.5vw;
 	height: auto;
 	border-radius: 20px;
 	border-width: 2px;
@@ -134,16 +135,16 @@ h2 {
         width: 4vw;
     }
     @media(max-width: 800px) {
-        width: 5.8vw;
+        width: 5.4vw;
     }
     @media(max-width: 400px) {
-        width: 11vw;
+        width: 9.8vw;
     }
 }
 
 a {
 	margin-left: 1.5rem;
-	font-size: 1.3vw;
+	font-size: 1.2vw;
 	color: rgb(255, 255, 255);
 	text-shadow: 
 	0 0 10px rgb(34, 3, 34), 0 0 15px rgb(255, 255, 255), 
@@ -168,6 +169,7 @@ a {
     font-size: 8vw;
     }
 .btn-outline-light {
+    margin-top: 10vh;
 	width: 20vw;
 	letter-spacing: .2vw;
 	font-weight: .8rem;
@@ -187,7 +189,7 @@ a {
     @media(max-width: 800px) {
         width: 32vw;
         font-size: 2.8vw;
-        margin-top: 4vh;
+        margin-top: 5vh;
     }
     @media(max-width: 400px) {
         width: 40vw;
