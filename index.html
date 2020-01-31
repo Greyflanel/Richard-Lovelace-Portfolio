@@ -13,10 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+    
   </head>
   <body>
     <!--Main Navigation-->
@@ -29,7 +26,7 @@
           <a class="navbar-brand" href="https://github.com/Greyflanel"
             ><strong><img id="github" src="assets/github.svg" alt="github icon"/></strong
           ></a>
-          <!-- <button
+          <button
             class="navbar-toggler"
             type="button"
             data-toggle="collapse"
@@ -39,31 +36,31 @@
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
-          </button> -->
+          </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <main class="text-center my-5"></main>
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#first-section">Home </a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+              <li class="nav-item"><a class="nav-link"  href="#second-section">Link</a></li>
+              <li class="nav-item"><a class="nav-link" href="#third-section">Profile </a></li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
     <!--Main Navigation-->
-    <section class="first-section">
+    <section id="first-section">
       <div class="container-fluid" id="stars"></div>
       <div><img class="moon" src="assets/moon.5.svg" alt="bright full moon" /></div>
       <div id="content" class="container col-sm-12 ">
         <h1 id="me">RICHARD LOVELACE</h1>
         <h2 id="we">Full Stack Developer</h2>
-        <button type="button" id="button1" class="btn btn-outline-light btn-rounded">PROJECTS</button>
+        <button type="button" id="button3" class="btn btn-outline-light btn-rounded">PROJECTS</button>
       </div>
     </section>
-    <section class="second-section">
+    <section id="second-section">
       <div class="col-sm-3" id="center-top"></div>
       <div class="jumbotron">
         <h1 id="secondH1" class="display-1">Hello, world!</h1>
@@ -76,17 +73,17 @@
         <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> <button id="button2">Contact</button>
       </div>
     </section>
-    <section class="third-section">
+    <section id="third-section">
       <div class="col-sm-3" id="center-top"></div>
       <div class="jumbotron">
-        <h1 class="display-2">Hello, world!</h1>
+        <h1 class="display-2">Jello, world!</h1>
         <p class="lead">
           This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or
           information.
         </p>
         <hr class="my-4" />
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> <button id="button3">Home</button>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> <button >Home</button>
       </div>
     </section>
 
@@ -94,5 +91,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/MotionPathPlugin.min.js"></script>
     <script src="index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/ScrollToPlugin.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -19,8 +19,15 @@ html, body {
 html section, body section {
   height: 100vh;
 }
-html .third-section, body .third-section {
+html #second-section, body #second-section {
   background-color: whitesmoke;
+}
+html #third-section, body #third-section {
+  display: none;
+  background-color: whitesmoke;
+}
+html #third-section:target, body #third-section:target {
+  display: block;
 }
 
 .moon {
@@ -114,7 +121,7 @@ h2 {
 .navbar {
   z-index: 1;
   height: 14vh;
-  position: absolute;
+  position: fixed;
 }
 
 #linkedin {
@@ -168,7 +175,7 @@ a {
   margin-left: 1.5rem;
   font-size: 1.2vw;
   color: white;
-  text-shadow: 0 0 10px #220322, 0 0 15px white, 0 0 20px #ebebeb, 0 0 30px #220322, 0 0 35px #3a043a, 0 0 40px #3a043a, 0 0 45px #3a043a, 0 0 48px #3a043a, 0 0 55px white;
+  text-shadow: 0 0 10px white, 0 0 15px white, 0 0 20px #ebebeb, 0 0 30px #220322, 0 0 35px #3a043a, 0 0 40px #3a043a, 0 0 45px #3a043a, 0 0 48px #3a043a, 0 0 55px white;
 }
 @media (max-width: 1200px) {
   a {
@@ -228,4 +235,3 @@ a {
   letter-spacing: 0.2rem;
 }
 
-/*# sourceMappingURL=index.css.map */

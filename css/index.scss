@@ -19,9 +19,16 @@ html, body {
   section {
     height: 100vh;
   }
-.third-section {
-    background-color: rgb(245, 245, 245);
-}
+   #second-section {
+        background-color: rgb(245, 245, 245)
+    }
+    #third-section {
+        display: none;
+        background-color: rgb(245, 245, 245)
+    }
+    #third-section:target {
+        display: block;
+    }
 }
 .moon {
 	width: 14vw;
@@ -100,7 +107,7 @@ h2 {
 .navbar {
 	z-index: 1;
 	height: 14vh;
-	position: absolute;
+	position: fixed;
 
 }
 
@@ -150,7 +157,7 @@ a {
 	font-size: 1.2vw;
 	color: rgb(255, 255, 255);
 	text-shadow: 
-	0 0 10px rgb(34, 3, 34), 0 0 15px rgb(255, 255, 255), 
+    0 0 10px rgb(255, 255, 255), 0 0 15px rgb(255, 255, 255), 
 	0 0 20px rgb(235, 235, 235), 0 0 30px rgb(34, 3, 34), 
 	0 0 35px rgb(58, 4, 58), 0 0 40px rgb(58, 4, 58),
 	0 0 45px rgb(58, 4, 58), 0 0 48px rgb(58, 4, 58),
@@ -161,6 +168,7 @@ a {
     @media(max-width: 800px) {
         font-size: 2.2vw;
     }
+   
 }
 
 .second-section {
@@ -206,3 +214,4 @@ a {
 	letter-spacing: .2rem;
 	
 }
+

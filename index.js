@@ -68,20 +68,9 @@ for (let i=0; i<mqls.length; i++){
     mqls[i].addListener(mediaqueryresponse); 
 }
 
-let button1 = document.getElementById("button1");
-button1.addEventListener("click",
-function(event) {
-gsap.to(window, 1.5, {scrollTo:{y:".third-section"}});
-});
-
-let button2 = document.getElementById("button2");
-button2.addEventListener("click",
-function(event) {
-gsap.to(window, 1.5, {scrollTo:{y:".first-section"}});
-});
-
 let button3 = document.getElementById("button3");
 button3.addEventListener("click",
 function(event) {
-gsap.to(window, 1.5, {scrollTo:{y:".second-section"}});
+gsap.to(window, 1.5, {scrollTo:{y:"#second-section"}});
 });
+
