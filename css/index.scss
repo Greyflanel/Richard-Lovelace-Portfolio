@@ -20,11 +20,11 @@ html, body {
     height: 100vh;
   }
    #second-section {
-        background-color: rgb(245, 245, 245)
+        background-color: rgb(245, 245, 245);
     }
     #third-section {
         display: none;
-        background-color: rgb(245, 245, 245)
+        background-color: rgb(245, 245, 245);
     }
     #third-section:target {
         display: block;
@@ -108,7 +108,18 @@ h2 {
 	z-index: 1;
 	height: 14vh;
 	position: fixed;
+}
 
+#link {
+    
+    color: rgb(10, 1, 17);
+    font-weight: 500;
+    background-color: transparent;
+    text-shadow: 0 0 5px rgb(255, 255, 255),
+	0 0 10px rgb(255, 255, 255), 
+	0 0 15px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 
+    0 0 25px rgb(255, 255, 255), 0 0 35px rgb(255, 255, 255), 
+    0 0 45px rgb(255, 255, 255)
 }
 
 #linkedin {
@@ -116,7 +127,7 @@ h2 {
 	height: auto;
 	border: 2px solid rgba(20, 5, 18, 0.507);
 	box-shadow:
-	0 0 5px rgb(255, 255, 255), 
+	0 0 15px rgb(255, 255, 255), 
 	0 0 10px rgb(255, 255, 255), 0 0 15px rgb(66, 4, 58), 
 	0 0 20px rgb(58, 4, 58);
     background-color: rgba(20, 5, 18, 0.507);
@@ -137,7 +148,7 @@ h2 {
 	border-radius: 20px;
 	border-width: 2px;
 	box-shadow:
-	0 0 5px rgb(255, 255, 255), 
+	0 0 15px rgb(255, 255, 255), 
 	0 0 10px rgb(255, 255, 255), 0 0 15px rgb(66, 4, 58), 
 	0 0 20px rgb(58, 4, 58);
     background-color: rgba(20, 5, 18, 0.507);
@@ -157,7 +168,7 @@ a {
 	font-size: 1.2vw;
 	color: rgb(255, 255, 255);
 	text-shadow: 
-    0 0 10px rgb(255, 255, 255), 0 0 15px rgb(255, 255, 255), 
+    0 0 20px rgb(255, 255, 255), 0 0 15px rgb(255, 255, 255), 
 	0 0 20px rgb(235, 235, 235), 0 0 30px rgb(34, 3, 34), 
 	0 0 35px rgb(58, 4, 58), 0 0 40px rgb(58, 4, 58),
 	0 0 45px rgb(58, 4, 58), 0 0 48px rgb(58, 4, 58),

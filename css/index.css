@@ -124,11 +124,18 @@ h2 {
   position: fixed;
 }
 
+#link {
+  color: #0a0111;
+  font-weight: 500;
+  background-color: transparent;
+  text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 25px white, 0 0 35px white, 0 0 45px white;
+}
+
 #linkedin {
   width: 2.5vw;
   height: auto;
   border: 2px solid rgba(20, 5, 18, 0.507);
-  box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px #42043a, 0 0 20px #3a043a;
+  box-shadow: 0 0 15px white, 0 0 10px white, 0 0 15px #42043a, 0 0 20px #3a043a;
   background-color: rgba(20, 5, 18, 0.507);
 }
 @media (max-width: 1200px) {
@@ -152,7 +159,7 @@ h2 {
   height: auto;
   border-radius: 20px;
   border-width: 2px;
-  box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px #42043a, 0 0 20px #3a043a;
+  box-shadow: 0 0 15px white, 0 0 10px white, 0 0 15px #42043a, 0 0 20px #3a043a;
   background-color: rgba(20, 5, 18, 0.507);
 }
 @media (max-width: 1200px) {
@@ -175,7 +182,7 @@ a {
   margin-left: 1.5rem;
   font-size: 1.2vw;
   color: white;
-  text-shadow: 0 0 10px white, 0 0 15px white, 0 0 20px #ebebeb, 0 0 30px #220322, 0 0 35px #3a043a, 0 0 40px #3a043a, 0 0 45px #3a043a, 0 0 48px #3a043a, 0 0 55px white;
+  text-shadow: 0 0 20px white, 0 0 15px white, 0 0 20px #ebebeb, 0 0 30px #220322, 0 0 35px #3a043a, 0 0 40px #3a043a, 0 0 45px #3a043a, 0 0 48px #3a043a, 0 0 55px white;
 }
 @media (max-width: 1200px) {
   a {
@@ -235,3 +242,4 @@ a {
   letter-spacing: 0.2rem;
 }
 
+/*# sourceMappingURL=index.css.map */
