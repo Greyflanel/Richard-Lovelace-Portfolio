@@ -127,18 +127,14 @@ h2 {
 #link {
   color: #0a0111;
   font-weight: 600;
-  background-color: transparent;
-  text-shadow: 0 0 5px white, 0 0 10px white, 0 0 25px white, 0 0 20px white, 0 0 35px white, 0 0 45px white, 0 0 50px white, 0 0 55px #3a043a;
+  text-shadow: 0 0 1px #3a043a, 0 0 2px white, 0 0 10px white, 0 0 40px white, 0 0 50px #3a043a, 0 0 65px white, 0 0 65px #3a043a;
 }
 
 #linkedin {
   width: 2.5vw;
   height: auto;
-  
-  box-shadow: -2px -2px 0 rgb(66, 4, 58),
-  2px -2px 0 rgb(66, 4, 58),
-  -2px 2px 0 rgb(66, 4, 58),
-  2px 2px 0 rgb(66, 4, 58), 0 0 5px white, 0 0 15px white, 0 0 10px white, 0 0 15px #42043a, 0 0 20px #3a043a;
+  border: 2px solid rgba(20, 5, 18, 0.507);
+  box-shadow: 0 0 5px white, 0 0 15px white, 0 0 10px white, 0 0 15px #42043a, 0 0 20px #3a043a;
   background-color: rgba(20, 5, 18, 0.507);
 }
 @media (max-width: 1200px) {
@@ -162,10 +158,7 @@ h2 {
   height: auto;
   border-radius: 20px;
   border-width: 2px;
-  box-shadow: -1.5px -1.5px 0 rgb(66, 4, 58),
-  1.5px -1.5px 0 rgb(66, 4, 58),
-  -1.5px 1.5px 0 rgb(66, 4, 58),
-  0.8px 0.8px 0 rgb(66, 4, 58), 0 0 15px white, 0 0 10px white, 0 0 15px #42043a, 0 0 20px #3a043a;
+  box-shadow: 0 0 15px white, 0 0 10px white, 0 0 15px #42043a, 0 0 20px #3a043a;
   background-color: rgba(20, 5, 18, 0.507);
 }
 @media (max-width: 1200px) {
@@ -188,16 +181,7 @@ a {
   margin-left: 1.5rem;
   font-size: 1.2vw;
   color: white;
-  text-shadow:
-		-0.5px -0.5px 0 rgb(66, 4, 58),
-		0.5px -0.5px 0 rgb(66, 4, 58),
-		-0.5px 0.5px 0 rgb(66, 4, 58),
-    0.5px 0.5px 0 rgb(66, 4, 58),
-    0 0 5px rgb(66, 4, 58), 
-	  0 0 10px rgb(66, 4, 58), 
-	  0 0 15px rgb(66, 4, 58), 0 0 30px rgb(66, 4, 58), 
-    0 0 45px rgb(66, 4, 58), 0 0 40px rgb(66, 4, 58), 
-    0 0 35px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255);
+  text-shadow: 0 0 20px white, 0 0 15px white, 0 0 20px #ebebeb, 0 0 30px #220322, 0 0 35px #3a043a, 0 0 40px #3a043a, 0 0 45px #3a043a, 0 0 48px #3a043a, 0 0 55px white;
 }
 @media (max-width: 1200px) {
   a {
@@ -216,7 +200,7 @@ a {
 }
 
 #secondH1 {
-  font-size: 7vw;
+  font-size: 8vw;
 }
 
 .btn-outline-light {
@@ -257,4 +241,4 @@ a {
   letter-spacing: 0.2rem;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index.cs.map */

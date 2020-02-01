@@ -15,7 +15,7 @@
 
 html, body {
 	background-color: rgb(10, 1, 17) ;
-	
+
   section {
     height: 100vh;
   }
@@ -30,6 +30,9 @@ html, body {
         display: block;
     }
 }
+
+
+
 .moon {
 	width: 14vw;
 	height: auto;  
@@ -107,26 +110,25 @@ h2 {
 .navbar {
 	z-index: 1;
 	height: 14vh;
-	position: fixed;
+    position: fixed;
 }
 
 #link {
-    
     color: rgb(10, 1, 17);
-    font-weight: 500;
-    background-color: transparent;
-    text-shadow: 0 0 5px rgb(255, 255, 255),
+    font-weight: 600;
+    text-shadow: 0 0 1px rgb(58, 4, 58), 0 0 2px rgb(255, 255, 255),
 	0 0 10px rgb(255, 255, 255), 
-	0 0 15px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 
-    0 0 25px rgb(255, 255, 255), 0 0 35px rgb(255, 255, 255), 
-    0 0 45px rgb(255, 255, 255)
+	0 0 40px rgb(255, 255, 255), 0 0 50px rgb(58, 4, 58), 
+    0 0 65px rgb(255, 255, 255), 0 0 65px rgb(58, 4, 58)
 }
+
+
 
 #linkedin {
 	width: 2.5vw;
 	height: auto;
 	border: 2px solid rgba(20, 5, 18, 0.507);
-	box-shadow:
+    box-shadow: 0 0 5px rgb(255, 255, 255), 
 	0 0 15px rgb(255, 255, 255), 
 	0 0 10px rgb(255, 255, 255), 0 0 15px rgb(66, 4, 58), 
 	0 0 20px rgb(58, 4, 58);
@@ -141,6 +143,7 @@ h2 {
         width: 9.5vw;
     }
 }
+
 
 #github {
 	width: 2.5vw;
@@ -225,4 +228,5 @@ a {
 	letter-spacing: .2rem;
 	
 }
+
 
