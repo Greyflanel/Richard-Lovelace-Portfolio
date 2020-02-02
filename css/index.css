@@ -163,7 +163,7 @@ h2 {
 }
 @media (max-width: 550px) {
   #linkedin {
-    width: 7.5vw;
+    width: 8.5vw;
   }
 }
 
@@ -197,7 +197,7 @@ h2 {
 
 @media (max-width: 550px) {
   #github {
-    width: 8.5vw;
+    width: 9vw;
   }
 }
 
@@ -209,7 +209,7 @@ h2 {
 
 @media (max-width: 380px) {
   #github {
-    width: 11.2vw;
+    width: 12.2vw;
   }
 }
 
