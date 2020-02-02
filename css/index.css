@@ -129,7 +129,9 @@ h2 {
   z-index: 1;
   height: 14vh;
   position: fixed;
+  margin-bottom: 20vh;
 }
+
 
 #link {
   color: #0a0111;
@@ -159,9 +161,9 @@ h2 {
     width: 5.2vw;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   #linkedin {
-    width: 9.5vw;
+    width: 7.5vw;
   }
 }
 
@@ -186,9 +188,16 @@ h2 {
     width: 5.4vw;
   }
 }
+
+@media (max-width: 550px) {
+  #github {
+    width: 8.5vw;
+  }
+}
+
 @media (max-width: 400px) {
   #github {
-    width: 9.8vw;
+    width: 8.2vw;
   }
 }
 
@@ -238,7 +247,7 @@ a {
 
 @media (max-width: 400px) {
   a {
-    font-size: 2.8vw;
+    font-size: 5vw;
   }
 }
 
@@ -247,6 +256,8 @@ a {
   padding: 3rem;
   
 }
+
+
 
 #secondH1 {
   font-size: 7vw;

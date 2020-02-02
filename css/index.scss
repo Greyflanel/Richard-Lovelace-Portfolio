@@ -115,9 +115,10 @@ h2 {
 }
 
 
+
 #link {
     color: rgb(10, 1, 17);
-    font-weight: 500;
+    font-weight: 600;
     text-shadow: 0 0 1px rgb(58, 4, 58), 0 0 2px rgb(255, 255, 255),
 	0 0 10px rgb(255, 255, 255), 
 	0 0 30px rgb(255, 255, 255), 0 0 35px rgb(58, 4, 58), 
@@ -183,8 +184,8 @@ a {
     @media(max-width: 800px) {
         font-size: 2.2vw;
     }
-    @media(max-width: 400px) {
-        font-size: 4.2vw;
+    @media(max-width: 405px) {
+        font-size: 116.2vw;
     }
 }
 

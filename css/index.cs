@@ -125,7 +125,7 @@ h2 {
 
 #link {
   color: #0a0111;
-  font-weight: 500;
+  font-weight: 600;
   text-shadow: 0 0 1px #3a043a, 0 0 2px white, 0 0 10px white, 0 0 30px white, 0 0 35px #3a043a, 0 0 40px white, 0 0 45px #3a043a;
 }
 
@@ -192,9 +192,9 @@ a {
     font-size: 2.2vw;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 405px) {
   a {
-    font-size: 4.2vw;
+    font-size: 116.2vw;
   }
 }
 
