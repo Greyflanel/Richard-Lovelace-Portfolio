@@ -62,7 +62,7 @@ html #third-section:target, body #third-section:target {
   text-shadow: 0 0 9px white, 0 0 11px white, 0 0 13px white,
    0 0 15px white, 0 0 20px #ebebeb, 0 0 30px #220322,
     0 0 35px #3a043a, 0 0 40px #3a043a, 0 0 45px #3a043a,
-     0 0 50px #3a043a, 0 0 70px white;
+     0 0 40px #3a043a, 0 0 70px white;
 }
 
 
@@ -167,7 +167,7 @@ h2 {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 380px) {
   #linkedin {
     width: 11.5vw;
   }
@@ -207,7 +207,7 @@ h2 {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 380px) {
   #github {
     width: 11.2vw;
   }
