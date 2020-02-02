@@ -167,6 +167,12 @@ h2 {
   }
 }
 
+@media (max-width: 350px) {
+  #linkedin {
+    width: 11.5vw;
+  }
+}
+
 #github {
   width: 2.7vw;
   height: auto;
@@ -198,6 +204,12 @@ h2 {
 @media (max-width: 400px) {
   #github {
     width: 8.2vw;
+  }
+}
+
+@media (max-width: 350px) {
+  #github {
+    width: 11.2vw;
   }
 }
 
@@ -302,7 +314,11 @@ a {
 }
 
 #toggler {
-  border: 1px solid rgb(255, 255, 255);
+  margin-left: 4vw;
+  box-shadow: -1.3px -1.3px 0 rgb(66, 4, 58, 0.4),
+  1.3px -1.3px 0 rgb(66, 4, 58, 0.4),
+  -1.3px 1.3px 0 rgb(66, 4, 58, 0.4),
+  1.3px 1.3px 0 rgb(66, 4, 58, 0.4), 0 0 15px white, 0 0 10px white, 0 0 15px #42043a, 0 0 20px #3a043a;
 }
 
 /*# sourceMappingURL=index.css.map */
