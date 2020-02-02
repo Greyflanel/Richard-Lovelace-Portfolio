@@ -315,10 +315,12 @@ a {
 
 #toggler {
   margin-left: 4vw;
-  box-shadow: -1.3px -1.3px 0 rgb(66, 4, 58, 0.4),
+  /* box-shadow: -1.3px -1.3px 0 rgb(66, 4, 58, 0.4),
   1.3px -1.3px 0 rgb(66, 4, 58, 0.4),
   -1.3px 1.3px 0 rgb(66, 4, 58, 0.4),
-  1.3px 1.3px 0 rgb(66, 4, 58, 0.4), 0 0 15px white, 0 0 10px white, 0 0 15px #42043a, 0 0 20px #3a043a;
+  1.3px 1.3px 0 rgb(66, 4, 58, 0.4), 0 0 15px white, 0 0 10px white, 0 0 15px #42043a, 0 0 20px #3a043a; */
+  box-shadow: 0 0 10px white, 0 0 15px white, 0 0 20px #42043a, 0 0 25px #3a043a;
+  background-color: rgba(20, 5, 18, 0.507);
 }
 
 #toggler .navbar-toggler-icon {
@@ -326,7 +328,7 @@ a {
   1.3px -1.3px 0 rgb(66, 4, 58, 0.4),
   -1.3px 1.3px 0 rgb(66, 4, 58, 0.4),
   1.3px 1.3px 0 rgb(66, 4, 58, 0.4), 0 0 15px white, 0 0 10px white, 0 0 15px #42043a, 0 0 20px #3a043a; */
-  background-color: rgba(20, 5, 18, 0.507);
+  
   border-radius: 5px;
   width: 6vw;
 
