@@ -54,12 +54,11 @@ html #third-section:target, body #third-section:target {
 }
 
 #content {
-  height: 60vh;
   text-align: center;
   align-items: center;
   top: 27vh;
   color: #140512;
-  text-shadow: 0 0 9px white, 0 0 11px white, 0 0 13px white, 0 0 15px white, 0 0 20px #ebebeb, 0 0 30px #220322, 0 0 35px #3a043a, 0 0 40px #3a043a, 0 0 45px #3a043a, 0 0 50px #3a043a, 0 0 70px white;
+  text-shadow: 0 0 9px white, 0 0 11px white, 0 0 13px white, 0 0 15px white, 0 0 20px #ebebeb, 0 0 30px #220322, 0 0 35px #3a043a, 0 0 40px #3a043a, 0 0 45px #3a043a, 0 0 55px #3a043a, 0 0 40px white;
 }
 @media (max-width: 400px) {
   #content {
@@ -96,7 +95,7 @@ h1 {
 }
 
 h2 {
-  letter-spacing: 0.6vw;
+  letter-spacing: 0.65vw;
   font-size: 3.2vw;
   line-height: 14vh;
 }
@@ -126,8 +125,8 @@ h2 {
 
 #link {
   color: #0a0111;
-  font-weight: 600;
-  text-shadow: 0 0 1px #3a043a, 0 0 2px white, 0 0 10px white, 0 0 40px white, 0 0 50px #3a043a, 0 0 65px white, 0 0 65px #3a043a;
+  font-weight: 500;
+  text-shadow: 0 0 1px #3a043a, 0 0 2px white, 0 0 10px white, 0 0 30px white, 0 0 35px #3a043a, 0 0 40px white, 0 0 45px #3a043a;
 }
 
 #linkedin {
@@ -193,6 +192,11 @@ a {
     font-size: 2.2vw;
   }
 }
+@media (max-width: 400px) {
+  a {
+    font-size: 4.2vw;
+  }
+}
 
 .second-section {
   background-color: whitesmoke;
@@ -200,7 +204,7 @@ a {
 }
 
 #secondH1 {
-  font-size: 8vw;
+  font-size: 6vw;
 }
 
 .btn-outline-light {
@@ -213,7 +217,6 @@ a {
   border-width: 1px;
   color: white;
   box-shadow: 0 0 10px white, 0 0 15px white, 0 0 20px #42043a, 0 0 25px #3a043a;
-  background-color: rgba(20, 5, 18, 0.507);
 }
 @media (max-width: 1200px) {
   .btn-outline-light {

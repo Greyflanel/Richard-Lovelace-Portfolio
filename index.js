@@ -1,5 +1,17 @@
 /* jshint esversion: 6 */
 
+let button1 = document.getElementById("button1");
+let button2 = document.getElementById("button2");
+button1.addEventListener("click",
+function(event) {
+gsap.to(window, 1.5, {scrollTo:{y:"#second-section"}, ease: "power1.inOut"});
+});
+button2.addEventListener("click",
+function(event) {
+gsap.to(window, 1.8, {scrollTo:{y:"#first-section"}, ease: "power1.inOut"});
+});
+
+
 var mqls = [
     window.matchMedia("(min-width: 1200px)"),
     window.matchMedia("(min-width: 1000px)"),
@@ -68,9 +80,5 @@ for (let i=0; i<mqls.length; i++){
     mqls[i].addListener(mediaqueryresponse); 
 }
 
-let button3 = document.getElementById("button3");
-button3.addEventListener("click",
-function(event) {
-gsap.to(window, 1.5, {scrollTo:{y:"#second-section"}});
-});
+
 

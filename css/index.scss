@@ -21,6 +21,7 @@ html, body {
   }
    #second-section {
         background-color: rgb(245, 245, 245);
+        
     }
     #third-section {
         display: none;
@@ -52,7 +53,7 @@ html, body {
   
 
 #content {
-	height: 60vh;
+	
 	text-align: center;
 	align-items: center;
 	top: 27vh;
@@ -62,8 +63,8 @@ html, body {
 	0 0 13px rgb(255, 255, 255), 0 0 15px rgb(255, 255, 255), 
 	0 0 20px rgb(235, 235, 235), 0 0 30px rgb(34, 3, 34), 
 	0 0 35px rgb(58, 4, 58), 0 0 40px rgb(58, 4, 58),
-	0 0 45px rgb(58, 4, 58), 0 0 50px rgb(58, 4, 58),
-    0 0 70px rgb(255, 255, 255);
+	0 0 45px rgb(58, 4, 58), 0 0 55px rgb(58, 4, 58),
+    0 0 40px rgb(255, 255, 255);
     @media(max-width: 400px) {
         top: 40vh;
     }
@@ -90,7 +91,7 @@ h1 {
   }
 
 h2 {
-	letter-spacing: .6vw;
+	letter-spacing: .65vw;
 	font-size: 3.2vw;
     line-height: 14vh;
     @media(max-width: 1200px){
@@ -113,15 +114,15 @@ h2 {
     position: fixed;
 }
 
+
 #link {
     color: rgb(10, 1, 17);
-    font-weight: 600;
+    font-weight: 500;
     text-shadow: 0 0 1px rgb(58, 4, 58), 0 0 2px rgb(255, 255, 255),
 	0 0 10px rgb(255, 255, 255), 
-	0 0 40px rgb(255, 255, 255), 0 0 50px rgb(58, 4, 58), 
-    0 0 65px rgb(255, 255, 255), 0 0 65px rgb(58, 4, 58)
-}
-
+	0 0 30px rgb(255, 255, 255), 0 0 35px rgb(58, 4, 58), 
+    0 0 40px rgb(255, 255, 255), 0 0 45px rgb(58, 4, 58);
+      }
 
 
 #linkedin {
@@ -182,16 +183,17 @@ a {
     @media(max-width: 800px) {
         font-size: 2.2vw;
     }
-   
+    @media(max-width: 400px) {
+        font-size: 4.2vw;
+    }
 }
 
 .second-section {
 	background-color: whitesmoke;
     padding: 2rem;
-    
 }
 #secondH1 {
-    font-size: 8vw;
+    font-size: 6vw;
     }
 .btn-outline-light {
     margin-top: 10vh;
@@ -206,7 +208,7 @@ a {
 	0 0 10px rgb(255, 255, 255), 
 	0 0 15px rgb(255, 255, 255), 0 0 20px rgb(66, 4, 58), 
 	0 0 25px rgb(58, 4, 58);
-    background-color: rgba(20, 5, 18, 0.507);
+    
     @media(max-width: 1200px) {
         width: 27vw;
         font-size: 1.8vw;
