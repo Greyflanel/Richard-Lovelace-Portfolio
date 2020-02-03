@@ -2,13 +2,18 @@
 
 let button1 = document.getElementById("button1");
 let button2 = document.getElementById("button2");
+let toggler = document.getElementById("toggler");
+
 button1.addEventListener("click",
 function(event) {
 gsap.to(window, 1.5, {scrollTo:{y:"#second-section"}, ease: "power1.inOut"});
+// gsap.to(toggler, 1.5, {backgroundColor: "rgba(255, 255, 255)", display: "none"});
+// gsap.to(toggler, 0, {display: "none"});
 });
 button2.addEventListener("click",
 function(event) {
 gsap.to(window, 1.8, {scrollTo:{y:"#first-section"}, ease: "power1.inOut"});
+// gsap.to(toggler, 1.8, {display: "block"});
 });
 
 
@@ -19,6 +24,7 @@ var mqls = [
     window.matchMedia("(min-width: 600px)"),
     window.matchMedia("(min-width: 400px)"),
     window.matchMedia("(min-width: 280px)"),
+    window.matchMedia("(min-width: 200px)"),
 ];
  
 function mediaqueryresponse(mql){
@@ -74,6 +80,16 @@ tl.to(".moon",  { x: 22, y: 230, duration: 25, ease: "linear"});
 tl.to(".moon",  {x: 150, y: 150, duration: 15, ease: "linear"});
 tl.to(".moon",  {x: 20, y: 80, duration: 15, ease: "linear"});
 }
+
+else if(mqls[6].matches){
+tl.set(".moon", { x: 20, y: 80, });    
+tl.to(".moon",  { x: 120, y: 100, duration: 20, ease: "linear"});
+tl.to(".moon",  {x: 130, y: 300, duration: 45, ease: "linear"});
+tl.to(".moon",  { x: 22, y: 230, duration: 25, ease: "linear"});
+tl.to(".moon",  {x: 120, y: 150, duration: 15, ease: "linear"});
+tl.to(".moon",  {x: 20, y: 80, duration: 15, ease: "linear"});
+}
+
 }
 for (let i=0; i<mqls.length; i++){
     mediaqueryresponse(mqls[i]);

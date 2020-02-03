@@ -24,7 +24,7 @@ html #second-section, body #second-section {
 }
 html #third-section, body #third-section {
   display: none;
-  background-color: whitesmoke;
+  
 }
 html #third-section:target, body #third-section:target {
   display: block;
@@ -269,8 +269,6 @@ a {
   
 }
 
-
-
 #secondH1 {
   font-size: 7vw;
 }
@@ -314,24 +312,22 @@ a {
 }
 
 #toggler {
-  margin-left: 4vw;
-  /* box-shadow: -1.3px -1.3px 0 rgb(66, 4, 58, 0.4),
+  padding: 0.3vw;
+  margin-left: 5vw;
+  box-shadow: -1.3px -1.3px 0 rgb(66, 4, 58, 0.4),
   1.3px -1.3px 0 rgb(66, 4, 58, 0.4),
   -1.3px 1.3px 0 rgb(66, 4, 58, 0.4),
-  1.3px 1.3px 0 rgb(66, 4, 58, 0.4), 0 0 15px white, 0 0 10px white, 0 0 15px #42043a, 0 0 20px #3a043a; */
-  box-shadow: 0 0 10px white, 0 0 15px white, 0 0 20px #42043a, 0 0 25px #3a043a;
+  1.3px 1.3px 0 rgb(66, 4, 58, 0.4), 0 0 15px white, 0 0 10px white, 0 0 15px #42043a, 0 0 20px white;
   background-color: rgba(20, 5, 18, 0.507);
 }
 
-#toggler .navbar-toggler-icon {
-  /* box-shadow: -1.3px -1.3px 0 rgb(66, 4, 58, 0.4),
-  1.3px -1.3px 0 rgb(66, 4, 58, 0.4),
-  -1.3px 1.3px 0 rgb(66, 4, 58, 0.4),
-  1.3px 1.3px 0 rgb(66, 4, 58, 0.4), 0 0 15px white, 0 0 10px white, 0 0 15px #42043a, 0 0 20px #3a043a; */
-  
-  border-radius: 5px;
-  width: 6vw;
+#toggler:focus {
+  outline: none;
+}
 
+#toggler .navbar-toggler-icon {
+  outline: none;
+  
 }
 
 /*# sourceMappingURL=index.css.map */
