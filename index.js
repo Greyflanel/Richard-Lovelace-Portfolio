@@ -32,10 +32,10 @@ function mediaqueryresponse(mql){
     
     if(mqls[0].matches){
 tl.set(".moon", { x: 50, y: 65, });        
-// tl.to(".moon",  { x: 400, y: 320, duration: .5, ease: "linear"});
-tl.to(".moon",  {x: 500, y: 400, duration: 50, ease: "linear"});
-tl.to(".moon",  {x: 950, y: 50, duration: 50, ease: "linear"});
-tl.to(".moon",  {x: 50, y: 65, duration: 50, ease: "linear"});
+tl.to(".moon",  { x: 350, y: 380, duration: 30, ease: "linear"});
+tl.to(".moon",  {x: 700, y: 400, duration: 30, ease: "linear"});
+tl.to(".moon",  {x: 950, y: 50, duration: 35, ease: "linear"});
+tl.to(".moon",  {x: 50, y: 65, duration: 45, ease: "linear"});
 
     }
   else if(mqls[1].matches){ 
