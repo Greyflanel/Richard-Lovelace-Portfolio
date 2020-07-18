@@ -31,12 +31,11 @@ function mediaqueryresponse(mql){
     let tl = gsap.timeline({repeat: 1000});
     
     if(mqls[0].matches){
-tl.set(".moon", { x: 140, y: 100, });        
-tl.to(".moon",  { x: 300, y: 320, duration: 20, ease: "linear"});
-tl.to(".moon",  {x: 500, y: 400, duration: 18, ease: "linear"});
-tl.to(".moon",  {x: 1000, y: 480, duration: 32, ease: "linear"});
-tl.to(".moon",  {x: 1200, y: 50, duration: 30, ease: "linear"});
-tl.to(".moon",  {x: 140, y: 100, duration: 44, ease: "linear"});
+tl.set(".moon", { x: 50, y: 65, });        
+// tl.to(".moon",  { x: 400, y: 320, duration: .5, ease: "linear"});
+tl.to(".moon",  {x: 500, y: 400, duration: 50, ease: "linear"});
+tl.to(".moon",  {x: 950, y: 50, duration: 50, ease: "linear"});
+tl.to(".moon",  {x: 50, y: 65, duration: 50, ease: "linear"});
 
     }
   else if(mqls[1].matches){ 
