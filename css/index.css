@@ -2,6 +2,7 @@
 	border: 1px solid red !important;
 } */
 #stars {
+  /* background: url(/assets/8391a8bf2cbaf7014834d27350a5fa13.jpg); */
   background: url(/assets/stars811.png);
   height: 100vh;
   width: auto;
@@ -74,9 +75,10 @@ html #third-section:target, body #third-section:target {
 }
 
 h1 {
-  font-size: 4.2vw;
+  font-size: 4vw;
   letter-spacing: 0.7vw;
-  line-height: 14vh;
+  line-height: 12vh;
+  
 }
 @media (min-width: 1200px) {
   h1 {
@@ -363,7 +365,7 @@ a {
 .spotlight {
     width: 38%;
     height: 95%;
-    filter: blur(2.2em);
+    filter: blur(2.25em);
     position: absolute;
     /* top: 35%;
     left: 25%;
@@ -381,16 +383,16 @@ a {
             #86659b 100%
         ) center / 20% 40%;
     animation-name: light;
-    animation-duration: 130s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 105s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    
-   
-    
-    
+
+
+
+
     mix-blend-mode: color-dodge;
-    
+
 }
 
 @keyframes light {

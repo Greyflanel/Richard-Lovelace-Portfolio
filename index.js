@@ -12,7 +12,7 @@ gsap.to(window, 1.5, {scrollTo:{y:"#second-section"}, ease: "power1.inOut"});
 });
 button2.addEventListener("click",
 function(event) {
-gsap.to(window, 1.8, {scrollTo:{y:"#first-section"}, ease: "power1.inOut"});
+gsap.to(window, 1.8, {scrollTo:{y:"#first-section"}, ease: "linear"});
 // gsap.to(toggler, 1.8, {display: "block"});
 });
 
@@ -31,11 +31,11 @@ function mediaqueryresponse(mql){
     let tl = gsap.timeline({repeat: 1000});
     
     if(mqls[0].matches){
-tl.set(".moon", { x: 150, y: 220});
-tl.to(".moon", { x: 500, y: 60, duration: 70, ease: "linear" });
-tl.to(".moon", { x: 820, y: 220, duration: 70, ease: "linear" });
-tl.to(".moon", { x: 500, y: 60, duration: 70, ease: "linear" });
-tl.to(".moon",  {x: 150, y: 220, duration: 70, ease: "in"});
+tl.set(".moon", { x: 250, y: 300});
+tl.to(".moon", { x: 500, y: 60, duration: 60, ease: "linear" });
+tl.to(".moon", { x: 750, y: 320, duration: 60, ease: "linear" });
+tl.to(".moon", { x: 250, y: 300, duration: 90, ease: "linear" });
+
 
     }
   else if(mqls[1].matches){ 
