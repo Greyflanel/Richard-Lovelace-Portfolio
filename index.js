@@ -4,12 +4,14 @@ let button1 = document.getElementById("button1");
 let button2 = document.getElementById("button2");
 let toggler = document.getElementById("toggler");
 
+
 button1.addEventListener("click",
 function(event) {
-gsap.to(window, 1.5, {scrollTo:{y:"#second-section"}, ease: "power1.inOut"});
+gsap.to(window, 1.5, {scrollTo:{y:"#second-section"}, ease: "linear"});
 // gsap.to(toggler, 1.5, {backgroundColor: "rgba(255, 255, 255)", display: "none"});
 // gsap.to(toggler, 0, {display: "none"});
 });
+
 button2.addEventListener("click",
 function(event) {
 gsap.to(window, 1.8, {scrollTo:{y:"#first-section"}, ease: "linear"});
@@ -28,13 +30,21 @@ var mqls = [
 ];
  
 function mediaqueryresponse(mql){
-    let tl = gsap.timeline({repeat: 1000});
+    let tl = gsap.timeline({ repeat: 1000 });
+    let tl2 = gsap.timeline({repeat: 1000})
+    tl2.set(".spotlight", { x: 160, y: -70 });
     
+    tl2.to(".spotlight", { x: 600, y: -70, duration: 120, ease: "linear" });
+   tl2.to(".spotlight", { x: 130, y: -70,  duration: 110, ease: "linear" });
+    // tl.to(".me", { opacity: "0" });
+    // tl.to(".me", { opacity: "0.2", duration: 1, ease: "linear" });
+    // tl.to(".we", { opacity: "0.5" });
+    // tl.to(".we", { opacity: "1", duration: 1, ease: "linear" });
     if(mqls[0].matches){
-tl.set(".moon", { x: 250, y: 300});
-tl.to(".moon", { x: 500, y: 60, duration: 60, ease: "linear" });
-tl.to(".moon", { x: 750, y: 320, duration: 60, ease: "linear" });
-tl.to(".moon", { x: 250, y: 300, duration: 90, ease: "linear" });
+tl.set(".moon",  { x: 250, y: 230});
+tl.to(".moon", { x: 500, y: 60, duration: 55, ease: "linear" });
+tl.to(".moon", { x: 750, y: 220, duration: 60, ease: "linear" });
+tl.to(".moon", { x: 250, y: 230, duration: 90, ease: "linear" });
 
 
     }
@@ -92,11 +102,6 @@ tl.to(".moon",  {x: 20, y: 80, duration: 15, ease: "linear"});
 }
 for (let i=0; i<mqls.length; i++){
     mediaqueryresponse(mqls[i]);
-    mqls[i].addListener(mediaqueryresponse); 
+    mqls[i].addEventListener(mediaqueryresponse); 
 }
 
-// const ti = gsap.timeline();
-
-// ti.to(".spotlight", { x: 200, y: 300, duration: 90, ease: "in"});
-// ti.to(".spotlight", { x: 750, y: 30, duration: 90, ease: "in" });
-// ti.to(".spotlight", { x: 200, y: 300, duration: 90, ease: "in" });
