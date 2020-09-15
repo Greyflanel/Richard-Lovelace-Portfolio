@@ -7,7 +7,7 @@ let toggler = document.getElementById("toggler");
 
 button1.addEventListener("click",
 function(event) {
-gsap.to(window, 1.5, {scrollTo:{y:"#second-section"}, ease: "linear"});
+gsap.to(window, 1.5, {scrollTo:{y:"#second-section"}, ease: "in-out"});
 // gsap.to(toggler, 1.5, {backgroundColor: "rgba(255, 255, 255)", display: "none"});
 // gsap.to(toggler, 0, {display: "none"});
 });
@@ -31,15 +31,22 @@ var mqls = [
  
 function mediaqueryresponse(mql){
     let tl = gsap.timeline({ repeat: 1000 });
-    let tl2 = gsap.timeline({repeat: 1000})
-    tl2.set(".spotlight", { x: 160, y: -70 });
+    let tl2 = gsap.timeline({ repeat: 1000 });
+    let tl3 = gsap.timeline({ repeat: 0 });
+    let tl4 = gsap.timeline({ repeat: 0 });
+
+    tl2.set(".spotlight", { x: 160, y: -80 });
+    tl2.to(".spotlight", { x: 650, y: -80, duration: 100, ease: "linear" });
+    tl2.to(".spotlight", { x: 160, y: -80,  duration: 115, ease: "linear" });
     
-    tl2.to(".spotlight", { x: 600, y: -70, duration: 120, ease: "linear" });
-   tl2.to(".spotlight", { x: 130, y: -70,  duration: 110, ease: "linear" });
-    // tl.to(".me", { opacity: "0" });
-    // tl.to(".me", { opacity: "0.2", duration: 1, ease: "linear" });
-    // tl.to(".we", { opacity: "0.5" });
-    // tl.to(".we", { opacity: "1", duration: 1, ease: "linear" });
+    tl3.set(".me", { opacity: "0" });
+    tl3.to(".me", { opacity: "0.5", duration: 5, ease: "linear" });
+    tl3.to(".me", { opacity: "1", duration: 5, ease: "linear" });
+
+    tl4.set(".we", { opacity: "0" });
+    tl4.to(".we", { opacity: "0.5", duration: 5, ease: "linear" });
+    tl4.to(".we", { opacity: "1", duration: 5, ease: "linear" });
+
     if(mqls[0].matches){
 tl.set(".moon",  { x: 250, y: 230});
 tl.to(".moon", { x: 500, y: 60, duration: 55, ease: "linear" });

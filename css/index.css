@@ -2,7 +2,6 @@
 	border: 1px solid red !important;
 } */
 #stars {
-  /* background: url(/assets/8391a8bf2cbaf7014834d27350a5fa13.jpg); */
   background: url(/assets/stars8112.png);
   position: absolute;
   top: 0;
@@ -10,11 +9,9 @@
   left: 0;
   right: 0;
   display: block;
-}
-
-html, body {
   background-color: #0a0111;
 }
+
 html section, body section {
   height: 100vh;
 }
@@ -34,7 +31,7 @@ html #third-section:target, body #third-section:target {
   height: auto;
   position: absolute;
   box-shadow: -8px 18px 100px #ffc8ff;
-  border-radius: 360px;
+  border-radius: 120px;
 }
 @media (max-width: 1200px) {
   .moon {
@@ -58,8 +55,8 @@ html #third-section:target, body #third-section:target {
   align-items: center;
   top: 27vh;
   color: #140512;
-  text-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white,
-    0 0 5px #3a043a;
+  text-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px white,
+    0 0 7px #3a043a, 0 0 9px #3a043a;
 }
 
 
@@ -72,7 +69,7 @@ html #third-section:target, body #third-section:target {
 
 h1 {
   font-size: 4vw;
-  letter-spacing: 0.7vw;
+  letter-spacing: 0.4vw;
   line-height: 12vh;
   
 }
@@ -135,17 +132,17 @@ h2 {
   color: #0a0111;
   font-weight: 600;
   background-color: transparent;
-  text-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white,
-    0 0 5px #3a043a;
+  text-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px white,
+    0 0 7px #3a043a, 0 0 9px #3a043a;
 }
 
 #linkedin {
   width: 2.5vw;
   height: auto;
-  box-shadow: -1.5px -1.5px 0 rgb(66, 4, 58),
-  1.5px -1.5px 0 rgb(66, 4, 58, 0.5),
-  -1.5px 1.5px 0 rgb(66, 4, 58, 0.5),
-  1.5px 1.5px 0 rgb(66, 4, 58, 0.5), 0 0 5px white, 0 0 15px white, 0 0 10px white, 0 0 15px #42043a, 0 0 20px #3a043a;
+  box-shadow: -1.3px -1.3px 0 rgb(66, 4, 58, 0.4),
+  1.3px -1.3px 0 rgb(66, 4, 58, 0.4),
+  -1.3px 1.3px 0 rgb(66, 4, 58, 0.4),
+  1.3px 1.3px 0 rgb(66, 4, 58, 0.4), 0 0 4px white, 0 0 9px white, 0 0 7px #42043a, 0 0 5px #3a043a;
   background-color: rgba(20, 5, 18, 0.507);
 }
 @media (max-width: 1200px) {
@@ -178,7 +175,7 @@ h2 {
   box-shadow: -1.3px -1.3px 0 rgb(66, 4, 58, 0.4),
   1.3px -1.3px 0 rgb(66, 4, 58, 0.4),
   -1.3px 1.3px 0 rgb(66, 4, 58, 0.4),
-  1.3px 1.3px 0 rgb(66, 4, 58, 0.4), 0 0 15px white, 0 0 10px white, 0 0 15px #42043a, 0 0 20px #3a043a;
+  1.3px 1.3px 0 rgb(66, 4, 58, 0.4), 0 0 4px white, 0 0 9px white, 0 0 7px #42043a, 0 0 5px #3a043a;
   background-color: rgba(20, 5, 18, 0.507);
 }
 @media (max-width: 1200px) {
@@ -219,7 +216,7 @@ h2 {
 
 a {
   margin-left: 1.5rem;
-  font-size: 1.3vw;
+  font-size: 1.5vw;
   color: rgb(255, 255, 255);
   text-shadow:
     -1px -1px 0 rgb(66, 4, 58),
@@ -227,10 +224,7 @@ a {
     -1px 1px 0 rgb(66, 4, 58),
     1px 1px 0 rgb(66, 4, 58),
     0 0 5px rgb(66, 4, 58), 
-    0 0 10px rgb(66, 4, 58), 
-    0 0 15px rgb(66, 4, 58), 0 0 30px rgb(66, 4, 58), 
-    0 0 45px rgb(66, 4, 58), 0 0 40px rgb(66, 4, 58), 
-    0 0 35px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255);
+    0 0 7px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255);
 }
 @media (max-width: 1200px) {
   a {
@@ -279,7 +273,7 @@ a {
   border-radius: 10px;
   border-width: 1px;
   color: white;
-  box-shadow: 0 0 3px white, 0 0 4px white, 0 0 5px #42043a, 0 0 7px #3a043a;
+  box-shadow: 0 0 3px white, 0 0 4px white, 0 0 7px #42043a, 0 0 9px #3a043a;
   background-color: rgba(20, 5, 18, 0.507);
 }
 @media (max-width: 1200px) {
@@ -327,7 +321,7 @@ a {
   
 }
 
-.text {
+/* .text {
     background-color: #0a0111;
     color: white;
     font-size: 150px;
@@ -345,22 +339,23 @@ a {
     color: silver;
     filter: blur(0.036em);
     mix-blend-mode: difference;
-}
+} */
 
 .gradient {
     position: absolute;
+    filter: blur(0.036em);
     background: linear-gradient(5deg, #0a0111, #0a0111, #0a0111, #0a0111, #0a0111, #0a0111);
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    mix-blend-mode: multiply;
+    mix-blend-mode: color-dodge;
 }
 
 .spotlight {
     width: 30%;
     height: 85%;
-    filter: blur(2.3em);
+    filter: blur(2em);
     border-radius: 40px;
     position: absolute;
     top: 0; 
@@ -378,32 +373,10 @@ a {
             silver,
             #86659b 100%
         ) center / 20% 40%;
-    /* animation-name: light;
-    animation-duration: 105s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate; */
-
-
-
-
+  
     mix-blend-mode: color-dodge;
 
 }
-
-/* @keyframes light {
-    from {
-        transform: translate(-83%, -81%);
-        
-        
-    }
-    to {
-      transform: translate(18%, -85%);
-      
-    }
-    
-} */
-
 
 
 /*# sourceMappingURL=index.css.map */
