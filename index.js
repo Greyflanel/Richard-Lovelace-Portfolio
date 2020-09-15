@@ -35,16 +35,20 @@ function mediaqueryresponse(mql){
     let tl3 = gsap.timeline({ repeat: 0 });
     let tl4 = gsap.timeline({ repeat: 0 });
 
-    tl2.set(".spotlight", { x: 160, y: -80 });
-    tl2.to(".spotlight", { x: 650, y: -80, duration: 100, ease: "linear" });
-    tl2.to(".spotlight", { x: 160, y: -80,  duration: 115, ease: "linear" });
-    
+    tl2.set(".spotlight", { x: 150, y: -80 });
+    tl2.to(".spotlight", { x: 450, y: -120, duration: 55, ease: "linear" });
+    tl2.to(".spotlight", { x: 620, y: -80, duration: 65, ease: "linear" });
+    tl2.to(".spotlight", { x: 450, y: -80,  duration: 45, ease: "linear" });
+    tl2.to(".spotlight", { x: 150, y: -80, duration: 45, ease: "linear" });
+
     tl3.set(".me", { opacity: "0" });
-    tl3.to(".me", { opacity: "0.5", duration: 5, ease: "linear" });
+    tl3.to(".me", { opacity: "0.3", duration: 3, ease: "linear" });
+    tl3.to(".me", { opacity: "0.6", duration: 4, ease: "linear" });
     tl3.to(".me", { opacity: "1", duration: 5, ease: "linear" });
 
     tl4.set(".we", { opacity: "0" });
-    tl4.to(".we", { opacity: "0.5", duration: 5, ease: "linear" });
+    tl4.to(".we", { opacity: "0.3", duration: 3, ease: "linear" });
+    tl4.to(".we", { opacity: "0.6", duration: 4, ease: "linear" });
     tl4.to(".we", { opacity: "1", duration: 5, ease: "linear" });
 
     if(mqls[0].matches){
