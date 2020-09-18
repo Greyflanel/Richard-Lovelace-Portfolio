@@ -35,12 +35,6 @@ function mediaqueryresponse(mql){
     let tl3 = gsap.timeline({ repeat: 0 });
     let tl4 = gsap.timeline({ repeat: 0 });
 
-    tl2.set(".spotlight", { x: 150, y: -80 });
-    tl2.to(".spotlight", { x: 450, y: -120, duration: 55, ease: "linear" });
-    tl2.to(".spotlight", { x: 620, y: -80, duration: 65, ease: "linear" });
-    tl2.to(".spotlight", { x: 450, y: -80,  duration: 45, ease: "linear" });
-    tl2.to(".spotlight", { x: 150, y: -80, duration: 45, ease: "linear" });
-
     tl3.set(".me", { opacity: "0" });
     tl3.to(".me", { opacity: "0.3", duration: 3, ease: "linear" });
     tl3.to(".me", { opacity: "0.6", duration: 4, ease: "linear" });
@@ -52,10 +46,10 @@ function mediaqueryresponse(mql){
     tl4.to(".we", { opacity: "1", duration: 5, ease: "linear" });
 
     if(mqls[0].matches){
-tl.set(".moon",  { x: 250, y: 230});
-tl.to(".moon", { x: 500, y: 60, duration: 55, ease: "linear" });
-tl.to(".moon", { x: 750, y: 220, duration: 60, ease: "linear" });
-tl.to(".moon", { x: 250, y: 230, duration: 90, ease: "linear" });
+tl.set(".moon, .spotlight",  { x: 250, y: 230});
+tl.to(".moon, .spotlight", { x: 500, y: 80, duration: 55, ease: "linear" });
+tl.to(".moon, .spotlight", { x: 650, y: 220, duration: 60, ease: "linear" });
+tl.to(".moon, .spotlight", { x: 250, y: 230, duration: 90, ease: "linear" });
 
 
     }

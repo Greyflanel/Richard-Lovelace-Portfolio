@@ -31,7 +31,7 @@ html #third-section:target, body #third-section:target {
   height: auto;
   position: absolute;
   box-shadow: -8px 18px 100px #ffc8ff;
-  border-radius: 120px;
+  border-radius: 360px;
 }
 @media (max-width: 1200px) {
   .moon {
@@ -354,25 +354,25 @@ a {
 
 .spotlight {
     width: 30%;
-    height: 85%;
-    filter: blur(2em);
-    border-radius: 80px;
+    height: 50%;
+    filter: blur(2em) brightness(110%);
+    border-radius: 130px;
     position: absolute;
-    top: 0; 
-    left: 0;
+    top: -110px; 
+    left: -165px;
     right: 0;
     bottom: 0; 
     background: 
         radial-gradient(
             circle,
             #0a0111,
-            transparent 10%
-        ) center / 100%,
+            transparent -20%
+        ) center / 180%,
         radial-gradient(
             circle,
             silver,
-            #86659b 100%
-        ) center / 20% 40%;
+            #5f327a 0%
+        ) center / 100% 80%;
   
     mix-blend-mode: color-dodge;
 
