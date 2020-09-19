@@ -378,13 +378,13 @@ a {
 }
 
 .spotlight {
-  width: 32%;
+  width: 28%;
   height: 52%;
   filter: blur(2.7em) brightness(165%);
   border-radius: 110px;
   position: absolute;
   top: -100px;
-  left: -165px;
+  left: -120px;
   right: 0;
   bottom: 0;
   background:
