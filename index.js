@@ -46,16 +46,17 @@ function mediaqueryresponse(mql) {
   });
 
   tl3.to(".me", {
-    fontSize: "5.3rem",
+    fontSize: "5rem",
     opacity: 1,
-    duration: 3, ease: "linear"
+    duration: 3,
+    ease: "linear",
   });
   tl3.to(".me", {
     x: 0,
     y: 120,
     opacity: "-1",
-    duration: 3,
-    delay: 1,
+    duration: 4,
+    delay: 3,
     ease: "power1.inOut",
   });
 
@@ -70,9 +71,11 @@ function mediaqueryresponse(mql) {
     fontSize: "1rem",
     opacity: "-1",
     rotate: -360,
-    duration: 3,
+    duration: 4,
     ease: "power1.inOut",
+    delay: 2,
   });
+
   
 
   if (mqls[0].matches) {
