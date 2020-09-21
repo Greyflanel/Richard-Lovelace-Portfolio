@@ -37,9 +37,10 @@ body #third-section:target {
   width: 14vw;
   height: auto;
   position: absolute;
-  filter: brightness(125%);
-  box-shadow: -8px 18px 100px #ffc8ff;
+  filter: brightness(120%);
+  box-shadow: -8px 18px 120px #ffc8ff;
   border-radius: 360px;
+  border: 5px solid white;
 }
 
 @media (max-width: 1200px) {
