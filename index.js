@@ -79,8 +79,7 @@ function mediaqueryresponse(mql) {
   
 
   if (mqls[0].matches) {
-    tl.set(".moon, .spotlight", { x: 250, y: 230, opacity: 0, scale: 1.3 });
-    tl.to(".moon, .spotlight", { opacity: 1, duration: 0.8 })
+    tl.set(".moon, .spotlight", { x: 250, y: 230, scale: 1.3 });
     tl.to(".moon, .spotlight", { x: 500, y: 80, duration: 55, ease: "linear" });
     tl.to(".moon, .spotlight", {
       x: 650,
