@@ -40,7 +40,6 @@ body #third-section:target {
   filter: brightness(120%);
   box-shadow: -8px 18px 120px #ffc8ff;
   border-radius: 360px;
-  border: 5px solid white;
 }
 
 @media (max-width: 1200px) {
@@ -81,7 +80,7 @@ body #third-section:target {
 h1 {
   font-size: 4vw;
   letter-spacing: 0.4vw;
-  line-height: 12vh;
+  
 
 }
 

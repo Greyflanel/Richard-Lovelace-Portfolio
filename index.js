@@ -46,7 +46,7 @@ function mediaqueryresponse(mql) {
   });
 
   tl3.to(".me", {
-    fontSize: "5rem",
+    fontSize: "4rem",
     opacity: 1,
     duration: 3,
     ease: "linear",
