@@ -2,7 +2,7 @@
   border: 1px solid red !important;
 } */
 #stars {
-  background: url(/assets/stars8112.png);
+  background: url(/assets/blackstars.png);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -10,6 +10,7 @@
   right: 0;
   display: block;
   background-color: #0a0111;
+  padding: 0.5rem;
 }
 
 html section,
@@ -37,10 +38,9 @@ body #third-section:target {
   width: 14vw;
   height: auto;
   position: absolute;
-  filter: brightness(120%);
-  box-shadow: -8px 18px 120px #ffc8ff;
+  filter: brightness(110%);
+  box-shadow: -8px 18px 100px #ffd3ff;
   border-radius: 360px;
-  border: 5px solid white;
 }
 
 @media (max-width: 1200px) {
@@ -381,8 +381,8 @@ a {
 .spotlight {
   width: 28%;
   height: 52%;
-  filter: blur(2.7em) brightness(165%);
-  border-radius: 110px;
+  filter: blur(2.4em) brightness(165%);
+  border-radius: 80px;
   position: absolute;
   top: -100px;
   left: -120px;
@@ -394,7 +394,7 @@ a {
       transparent -30%) center / 10%,
     radial-gradient(circle,
       silver,
-      #461b47 -20%) center / 150% 180%;
+      #2f0d2f -20%) center / 150% 160%;
 
   mix-blend-mode: color-dodge;
 
