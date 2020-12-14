@@ -31,52 +31,54 @@ function mediaqueryresponse(mql) {
   let tl5 = gsap.timeline({ repeat: 5 });
   
 
+  // tl2.set(".spotlight", { filter: "blur(2em), brightness(150%)" });
+  // tl2.to(".spotlight", { filter: "blur(2em),brightness(250%)", duration: 5, ease: "linear" });
+  // tl2.to(".spotlight", { filter: "blur(2em), brightness(200%)", duration: 25, ease: "linear" });
 
-  // tl3.set(".me", {
-  //   x: 0,
-  //   y: 0,
-  //   fontSize: "2rem",
-  //   opacity: 0,
-  //   rotate: 0,
-  //   delay: 0,
-  // });
+  tl3.set(".me", {
+    x: 0,
+    y: 0,
+    fontSize: "2rem",
+    opacity: 0,
+    rotate: 0,
+    delay: 0,
+  });
 
-  // tl3.to(".me", {
-  //   fontSize: "5rem",
-  //   opacity: 1,
-  //   duration: 3,
-  //   ease: "linear",
-  // });
-  // tl3.to(".me", {
-  //   x: 0,
-  //   y: 120,
-  //   opacity: "-1",
-  //   duration: 4,
-  //   delay: 3,
-  //   ease: "power1.inOut",
-  // });
+  tl3.to(".me", {
+    fontSize: "4rem",
+    opacity: 1,
+    duration: 3,
+    ease: "linear",
+  });
+  tl3.to(".me", {
+    x: 0,
+    y: 120,
+    opacity: "-1",
+    duration: 4,
+    delay: 3,
+    ease: "power1.inOut",
+  });
 
-  // tl4.set(".we", { opacity: "0", rotate: 0 });
+  tl4.set(".we", { opacity: "0", rotate: 0 });
 
-  // tl4.to(".we", {
-  //   opacity: "1",
-  //   duration: 4,
-  //   ease: "linear",
-  // });
-  // tl4.to(".we", {
-  //   fontSize: "1rem",
-  //   opacity: "-1",
-  //   rotate: -360,
-  //   duration: 4,
-  //   ease: "power1.inOut",
-  //   delay: 2,
-  // });
+  tl4.to(".we", {
+    opacity: "1",
+    duration: 4,
+    ease: "linear",
+  });
+  tl4.to(".we", {
+    fontSize: "1rem",
+    opacity: "-1",
+    rotate: -360,
+    duration: 4,
+    ease: "power1.inOut",
+    delay: 2,
+  });
 
   
 
   if (mqls[0].matches) {
-    tl.set(".moon, .spotlight", { x: 250, y: 230, opacity: 0, scale: 1.3 });
-    tl.to(".moon, .spotlight", { opacity: 1, duration: 0.8 })
+    tl.set(".moon, .spotlight", { x: 250, y: 230, scale: 1.3 });
     tl.to(".moon, .spotlight", { x: 500, y: 80, duration: 55, ease: "linear" });
     tl.to(".moon, .spotlight", {
       x: 650,
