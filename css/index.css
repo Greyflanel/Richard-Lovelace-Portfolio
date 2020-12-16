@@ -34,13 +34,15 @@ body #third-section:target {
   display: block;
 }
 
+
 .moon {
-  width: 14vw;
+  width: 17vw;
   height: auto;
   position: absolute;
-  filter: brightness(110%);
-  box-shadow: -8px 18px 100px #ffd3ff;
-  border-radius: 360px;
+  filter: drop-shadow(10px 2px 80px rgb(228, 223, 223));
+  z-index: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 155px transparent;
 }
 
 @media (max-width: 1200px) {
@@ -62,6 +64,8 @@ body #third-section:target {
 }
 
 #content {
+  position: absolute;
+  z-index: 0;
   height: 60vh;
   text-align: center;
   align-items: center;
@@ -367,34 +371,50 @@ a {
     mix-blend-mode: difference;
 } */
 
-.gradient {
-  position: absolute;
-  filter: blur(0.036em);
-  background: linear-gradient(5deg, #0a0111, #0a0111, #0a0111, #0a0111, #0a0111, #0a0111);
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  mix-blend-mode: color-dodge;
-}
-
 .spotlight {
-  width: 28%;
-  height: 52%;
-  filter: blur(2.4em) brightness(165%);
-  border-radius: 80px;
+  z-index: 1;
+  width: 35%;
+  height: 50%;
+  filter: blur(3em) brightness(300%) contrast(1);
+  
+  border-radius: 50%;
   position: absolute;
-  top: -100px;
-  left: -120px;
+  top: -55px;
+  left: -150px;
   right: 0;
   bottom: 0;
   background:
     radial-gradient(circle,
-      #0a0111,
-      transparent -30%) center / 10%,
+      #270c3dc0,
+      transparent 200%) center / 10%,
     radial-gradient(circle,
-      silver,
-      #2f0d2f -20%) center / 150% 160%;
+      rgb(34, 3, 34),
+        rgb(44, 8, 44) 100%) center /10% 10%;
+
+  mix-blend-mode: color-dodge;
+
+}
+
+.spotlight2 {
+  z-index: 1;
+  margin: 0 auto;
+  width: 80%;
+  height: 85%;
+  filter: blur(4em) brightness(360%) contrast(1.9);
+
+  
+  position: absolute;
+  top: 3%;
+  left: 5%;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle,
+      #120114c0,
+      transparent 70%) center / 150%,
+    radial-gradient(circle,
+      rgb(37, 5, 39),
+       rgb(16, 1, 17) 10%) center / 50% 50%;
 
   mix-blend-mode: color-dodge;
 
