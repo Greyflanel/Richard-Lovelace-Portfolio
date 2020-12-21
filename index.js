@@ -10,74 +10,75 @@ var mqls = [
 
 function mediaqueryresponse(mql) {
   let tl = gsap.timeline({ repeat: -1 });
-  let tl2 = gsap.timeline({ repeat: 1000 });
+  let tl2 = gsap.timeline({ repeat: -1 });
   let tl3 = gsap.timeline({ repeat: 5 });
   let tl4 = gsap.timeline({ repeat: 5 });
   let tl5 = gsap.timeline({ repeat: 5 });
 
-  tl2.to(".content", {
-    delay: 4,
-    filter: "brightness(2%)",
-    duration: 2,
-  });
+  // tl2.to(".content", {
+  //   delay: 1,
+  //   filter: "brightness(1%)",
+  //   duration: 2,
+  // });
 
-  tl2.to(".content", {
-    delay: 2,
-    filter: "brightness(75%)",
-    duration: 4,
-  });
+  // tl2.to(".content", {
+  //   delay: 2,
+  //   filter: "brightness(75%)",
+  //   duration: 4,
+  // });
 
-  tl2.to(".content", {
-    delay: 4,
-    filter: "brightness(120%)",
-    duration: 2,
-  });
+  // tl2.to(".content", {
+  //   delay: 4,
+  //   filter: "brightness(120%)",
+  //   duration: 2,
+  // });
 
-  tl2.to(".content", {
-    delay: 1,
-    filter: "brightness(75%)",
-    duration: 4,
-  });
+  
 
-  tl2.to(".content", {
-    delay: 0.4,
-    filter: "brightness(2%)",
-    duration: 6,
-  });
+  // tl2.to(".content", {
+  //   delay: 0.4,
+  //   filter: "brightness(2%)",
+  //   duration: 6,
+  // });
 
   tl.set(".moon, .spotlight", {
     xPercent: -50,
     yPercent: -50,
-    x: 0,
-    y: 0,
-  });
-
+    x: "-670",
+    y: "-35"
+  })
+    .to(".moon, .spotlight", {
+      x: "+=650",
+      y: "-=200",
+      duration: 20,
+      ease: "linear",
+    }).to(".content", {
+    delay: 1,
+    filter: "brightness(75%)",
+    duration: 4,
+  })
+    .to(".moon, .spotlight", {
+      x: "+=650",
+      y: "+=200",
+      duration: 20,
+      ease: "linear",
+    })
+    .to(".moon, .spotlight", {
+      x: "-=650",
+      y: "+=200",
+      duration: 20,
+      ease: "linear",
+    })
+    .to(".moon, .spotlight", {
+      x: "-=645",
+      y: "-=200",
+      duration: 20,
+      ease: "linear",
+    });
+  
   if (mqls[0].matches) {
 
-    tl.to(".moon, .spotlight", {
-      x: "+=650",
-      y: "-=400",
-      duration: 30,
-      ease: "linear",
-    });
-
-    tl.to(
-      ".moon, .spotlight",
-      {
-        x: "+=649",
-        y: "+=400",
-        duration: 30,
-        ease: "linear",
-      }
-    );
-
-    tl.to(".moon, .spotlight", {
-      x: "-=50%",
-      y: "+=0",
-      duration: 56,
-      ease: "linear",
-    });
-
+    
   } else if (mqls[1].matches) {
     tl.set(".moon, .spotlight", {
       width: "22rem",
