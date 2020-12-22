@@ -15,31 +15,38 @@ function mediaqueryresponse(mql) {
   let tl4 = gsap.timeline({ repeat: 5 });
   let tl5 = gsap.timeline({ repeat: 5 });
 
-  // tl2.to(".content", {
-  //   delay: 1,
-  //   filter: "brightness(1%)",
-  //   duration: 2,
-  // });
+  tl2.to(".content", {
+    
+    filter: "brightness(0%)",
+    duration: 3,
+    opacity: 1
+  });
 
-  // tl2.to(".content", {
-  //   delay: 2,
-  //   filter: "brightness(75%)",
-  //   duration: 4,
-  // });
+  tl2.to(".content", {
+    delay: 1,
+    filter: "brightness(75%)",
+    duration: 3,
+  });
 
-  // tl2.to(".content", {
-  //   delay: 4,
-  //   filter: "brightness(120%)",
-  //   duration: 2,
-  // });
+  tl2.to(".content", {
+    delay: 2,
+    filter: "brightness(120%)",
+    duration: 3,
+  });
 
-  
+  tl2.to(".content", {
+    delay: 0.2,
+    filter: "brightness(2%)",
+    duration: 3,
+    opacity: 0
+  });
 
-  // tl2.to(".content", {
-  //   delay: 0.4,
-  //   filter: "brightness(2%)",
-  //   duration: 6,
-  // });
+tl2.to(".content", {
+  delay: 0.4,
+  filter: "brightness(100%)",
+  duration: 3,
+  opacity: 1,
+});
 
   tl.set(".moon, .spotlight", {
     xPercent: -50,
@@ -50,14 +57,9 @@ function mediaqueryresponse(mql) {
     .to(".moon, .spotlight", {
       x: "+=650",
       y: "-=200",
-      duration: 20,
+      duration: 60,
       ease: "linear",
-    }).to(".content", {
-    delay: 1,
-    filter: "brightness(75%)",
-    duration: 4,
-  })
-    .to(".moon, .spotlight", {
+    }).to(".moon, .spotlight", {
       x: "+=650",
       y: "+=200",
       duration: 20,
@@ -66,13 +68,13 @@ function mediaqueryresponse(mql) {
     .to(".moon, .spotlight", {
       x: "-=650",
       y: "+=200",
-      duration: 20,
+      duration: 28,
       ease: "linear",
     })
     .to(".moon, .spotlight", {
       x: "-=645",
       y: "-=200",
-      duration: 20,
+      duration: 28,
       ease: "linear",
     });
   

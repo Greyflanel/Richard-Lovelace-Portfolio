@@ -132,7 +132,6 @@ a {
   justify-content: center;
   z-index: 12;
   color: #0a0111;
-  opacity: 0;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px white,
     0 0 7px #3a043a, 0 0 9px #3a043a;
@@ -176,7 +175,7 @@ a {
   margin: 0 auto;
   width: 50%;
   height: 50%;
-  filter: blur(21em) brightness(1200%) contrast(0.2);
+  filter: blur(20em) brightness(850%) contrast(0.1);
 
   
   position: absolute;
@@ -188,7 +187,7 @@ a {
     
     radial-gradient(circle,
       rgb(6, 5, 19),
-       rgb(17, 10, 10) -5%) center / 5% 1%;
+       rgb(24, 14, 14) -5%) center / 5% 1%;
 
   mix-blend-mode: color-dodge;
 
