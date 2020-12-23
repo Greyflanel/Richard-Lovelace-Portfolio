@@ -11,7 +11,7 @@ var mqls = [
 function mediaqueryresponse(mql) {
   let tl = gsap.timeline({ repeat: -1 });
   let tl2 = gsap.timeline({ repeat: -1 });
-  let tl3 = gsap.timeline({ repeat: 5 });
+  let tl3 = gsap.timeline({ repeat: -1 });
   let tl4 = gsap.timeline({ repeat: 5 });
   let tl5 = gsap.timeline({ repeat: 5 });
 
@@ -21,12 +21,12 @@ function mediaqueryresponse(mql) {
 
   tl2.to(".content", {
     opacity: 1,
-    filter: "brightness(120%)",
+    filter: "brightness(150%)",
     duration: 4,
   });
 
   tl2.to(".content", {
-    delay: 1.5,
+    delay: 5,
     filter: "brightness(0%)",
     duration: 2.5,
     opacity: 0,
@@ -34,13 +34,13 @@ function mediaqueryresponse(mql) {
 
   tl2.to(".content", {
     delay: 1,
-    filter: "brightness(120%)",
+    filter: "brightness(150%)",
     duration: 4,
     opacity: 1,
   });
 
   tl2.to(".content", {
-    delay: 1,
+    delay: 5,
     filter: "brightness(150%)",
     duration: 2.5,
     opacity: 0,
@@ -91,27 +91,31 @@ function mediaqueryresponse(mql) {
       .to(".moon, .spotlight", {
         x: "+=440",
         y: "-=100",
-        duration: 60,
+        duration: 45,
         ease: "linear",
       })
       .to(".moon, .spotlight", {
         x: "+=440",
         y: "+=100",
-        duration: 20,
+        duration: 45,
         ease: "linear",
       })
       .to(".moon, .spotlight", {
         x: "-=440",
         y: "+=100",
-        duration: 28,
+        duration: 45,
         ease: "linear",
       })
       .to(".moon, .spotlight", {
         x: "-=435",
         y: "-=100",
-        duration: 28,
+        duration: 45,
         ease: "linear",
       });
+    tl3.set(".spotlight2", {
+      x: "200",
+      y: "220"
+    }).to(".spotlight2", {x: "-=400", duration: 8}).to(".spotlight2", {x: "+=400", duration: 8})
   } else if (mqls[2].matches) {
   } else if (mqls[3].matches) {
   } else if (mqls[4].matches) {
