@@ -9,7 +9,7 @@ var mqls = [
 ];
 
 function mediaqueryresponse(mql) {
-  let tl = gsap.timeline({ repeat: -1 });
+  let tl = gsap.timeline({ repeat: 1 });
   let tl2 = gsap.timeline({ repeat: -1 });
   let tl3 = gsap.timeline({ repeat: -1 });
   let tl4 = gsap.timeline({ repeat: 5 });
@@ -20,6 +20,7 @@ function mediaqueryresponse(mql) {
   
 
   tl2.to(".content", {
+    delay: 1,
     opacity: 1,
     filter: "brightness(130%)",
     duration: 4,
@@ -85,36 +86,36 @@ function mediaqueryresponse(mql) {
       scale: 0.55,
       xPercent: -50,
       yPercent: -50,
-      x: "-460",
+      x: "-440",
       y: "-35",
     })
       .to(".moon, .spotlight", {
         x: "+=440",
         y: "-=100",
-        duration: 45,
+        duration: 35,
         ease: "linear",
       })
       .to(".moon, .spotlight", {
         x: "+=440",
         y: "+=100",
-        duration: 45,
+        duration: 35,
         ease: "linear",
       })
       .to(".moon, .spotlight", {
         x: "-=440",
         y: "+=100",
-        duration: 45,
+        duration: 35,
         ease: "linear",
       })
       .to(".moon, .spotlight", {
-        x: "-=435",
+        x: "-=440",
         y: "-=100",
-        duration: 45,
+        duration: 35,
         ease: "linear",
       });
     tl3.set(".spotlight2", {
       x: "200",
-      y: "220"
+      y: "100"
     }).to(".spotlight2", {x: "-=400", duration: 8}).to(".spotlight2", {x: "+=400", duration: 8})
   } else if (mqls[2].matches) {
   } else if (mqls[3].matches) {
