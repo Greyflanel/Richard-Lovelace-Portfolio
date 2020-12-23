@@ -176,7 +176,7 @@ a {
   margin: 0 auto;
   width: 30%;
   height: 40%;
-  filter: blur(3em) brightness(1200%) contrast(0.2);
+  filter: blur(3em) brightness(800%) contrast(0.2);
   
   position: absolute;
   top: 2%;

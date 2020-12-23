@@ -21,7 +21,7 @@ function mediaqueryresponse(mql) {
 
   tl2.to(".content", {
     opacity: 1,
-    filter: "brightness(150%)",
+    filter: "brightness(130%)",
     duration: 4,
   });
 
@@ -34,14 +34,14 @@ function mediaqueryresponse(mql) {
 
   tl2.to(".content", {
     delay: 1,
-    filter: "brightness(150%)",
+    filter: "brightness(130%)",
     duration: 4,
     opacity: 1,
   });
 
   tl2.to(".content", {
     delay: 5,
-    filter: "brightness(150%)",
+    filter: "brightness(130%)",
     duration: 2.5,
     opacity: 0,
   });
