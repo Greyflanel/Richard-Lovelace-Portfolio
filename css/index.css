@@ -11,7 +11,10 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  
 }
+
+
 
 #stars {
   background: url(/assets/blackstars.png);
@@ -109,15 +112,14 @@ a {
 }
 
 .moon {
-  
-  height: auto;
+  width: 35rem;
   position: absolute;
   top: 50%;
   left: 50%;
   right: 0;
   bottom: 0;
   border-radius: 50%;
-  filter: drop-shadow(5px 2px 80px #fffeff);
+  filter: drop-shadow(5px 5px 100px #fffeff);
   z-index: 0;
   box-shadow: 0 0 200px transparent;
 }
@@ -127,9 +129,12 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 80vw;
+  height: 20vh;
+  line-height: 0.01rem;
   justify-content: center;
   z-index: 12;
+  margin: 0 auto;
   color: #0a0111;
   opacity: 0;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -137,21 +142,21 @@ a {
     0 0 7px #3a043a, 0 0 9px #3a043a;
 }
 
+
 .content__name {
   font-size: 5.5rem;
- 
+  margin-bottom: 3rem;
 }
 
 .content__title {
   font-size: 3.5rem;
-  margin-top: -5%;
 }
 
 .spotlight {
   z-index: 1;
   width: 60%;
   height:100%;
-  filter: blur(2.5em) brightness(310%) contrast(1.6);
+  filter: blur(2.5em) brightness(310%) contrast(1);
   border-radius: 80%;
   position: absolute;
   top: 50%;
@@ -160,11 +165,11 @@ a {
   bottom: 0;
   background:
     radial-gradient(circle,
-      #230f33c0,
+      #210f2fc0,
       transparent 100%) center / 500%,
     radial-gradient(circle,
       rgb(34, 3, 34),
-        rgb(31, 5, 31) 100%) center /10% 10%;
+        rgb(15, 3, 15) 400%) center /500% 50%;
 
   mix-blend-mode: color-dodge;
 
@@ -174,8 +179,8 @@ a {
   z-index: 100;
   margin: 0 auto;
   width: 30%;
-  height: 40%;
-  filter: blur(3em) brightness(700%) contrast(0.2);
+  height: 45%;
+  filter: blur(3em) brightness(100%) contrast(0.5);
   
   position: absolute;
   top: 2%;
@@ -185,8 +190,8 @@ a {
   background:
     
     radial-gradient(circle,
-      rgb(6, 5, 19),
-       rgb(5, 3, 3) -15%) center / 1% 1%;
+      rgb(0, 0, 0),
+       rgb(0, 0, 0)) center / 110% 110%;
 
   mix-blend-mode: color-dodge;
 

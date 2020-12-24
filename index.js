@@ -9,7 +9,7 @@ var mqls = [
 ];
 
 function mediaqueryresponse(mql) {
-  let tl = gsap.timeline({ repeat: 1 });
+  let tl = gsap.timeline({ repeat: -1 });
   let tl2 = gsap.timeline({ repeat: -1 });
   let tl3 = gsap.timeline({ repeat: -1 });
   let tl4 = gsap.timeline({ repeat: 5 });
@@ -47,76 +47,77 @@ function mediaqueryresponse(mql) {
     opacity: 0,
   });
   
+  tl.set(".moon, .spotlight", {
+    scale: 0.9,
+    xPercent: -50,
+    yPercent: -50,
+    x: "-38rem",
+    y: "0rem",
+  })
+    .to(".moon, .spotlight", {
+      x: "+=38rem",
+      y: "-=13rem",
+      duration: 20,
+      ease: "linear",
+    })
+    .to(".moon, .spotlight", {
+      x: "+=38rem",
+      y: "+=13rem",
+      duration: 20,
+      ease: "linear",
+    })
+    .to(".moon, .spotlight", {
+      x: "-=38rem",
+      y: "+=13rem",
+      duration: 20,
+      ease: "linear",
+    })
+    .to(".moon, .spotlight", {
+      x: "-=38rem",
+      y: "-=13rem",
+      duration: 20,
+      ease: "linear",
+    });
 
   if (mqls[0].matches) {
-    tl.set(".moon, .spotlight", {
-      scale: 1,
-      xPercent: -50,
-      yPercent: -50,
-      x: "-670",
-      y: "-35",
-    })
-      .to(".moon, .spotlight", {
-        x: "+=650",
-        y: "-=200",
-        duration: 60,
-        ease: "linear",
-      })
-      .to(".moon, .spotlight", {
-        x: "+=650",
-        y: "+=200",
-        duration: 20,
-        ease: "linear",
-      })
-      .to(".moon, .spotlight", {
-        x: "-=650",
-        y: "+=200",
-        duration: 28,
-        ease: "linear",
-      })
-      .to(".moon, .spotlight", {
-        x: "-=645",
-        y: "-=200",
-        duration: 28,
-        ease: "linear",
-      });
+    
     
   } else if (mqls[1].matches) {
-    tl.set(".moon, .spotlight", {
-      scale: 0.55,
-      xPercent: -50,
-      yPercent: -50,
-      x: "-440",
-      y: "-35",
-    })
-      .to(".moon, .spotlight", {
-        x: "+=440",
-        y: "-=100",
-        duration: 35,
-        ease: "linear",
-      })
-      .to(".moon, .spotlight", {
-        x: "+=440",
-        y: "+=100",
-        duration: 35,
-        ease: "linear",
-      })
-      .to(".moon, .spotlight", {
-        x: "-=440",
-        y: "+=100",
-        duration: 35,
-        ease: "linear",
-      })
-      .to(".moon, .spotlight", {
-        x: "-=440",
-        y: "-=100",
-        duration: 35,
-        ease: "linear",
-      });
-    tl3.set(".spotlight2", {
-      x: "200",
-      y: "100"
-    }).to(".spotlight2", {x: "-=400", duration: 8}).to(".spotlight2", {x: "+=400", duration: 8})
+    // tl.set(".moon, .spotlight", {
+    //   scale: 0.55,
+    //   xPercent: -50,
+    //   yPercent: -50,
+    //   x: "-440",
+    //   y: "-35",
+    // })
+    //   .to(".moon, .spotlight", {
+    //     x: "+=440",
+    //     y: "-=100",
+    //     duration: 35,
+    //     ease: "linear",
+    //   })
+    //   .to(".moon, .spotlight", {
+    //     x: "+=440",
+    //     y: "+=100",
+    //     duration: 35,
+    //     ease: "linear",
+    //   })
+    //   .to(".moon, .spotlight", {
+    //     x: "-=440",
+    //     y: "+=100",
+    //     duration: 35,
+    //     ease: "linear",
+    //   })
+    //   .to(".moon, .spotlight", {
+    //     x: "-=440",
+    //     y: "-=100",
+    //     duration: 35,
+    //     ease: "linear",
+    //   });
+    // tl3.set(".spotlight2", {
+    //   x: "200",
+    //   y: "100"
+    // }).to(".spotlight2", {x: "-=400", duration: 8}).to(".spotlight2", {x: "+=400", duration: 8})
   } else if (mqls[2].matches) {
   } else if (mqls[3].matches) {
   } else if (mqls[4].matches) {
