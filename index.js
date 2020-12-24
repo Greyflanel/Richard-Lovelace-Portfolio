@@ -47,7 +47,10 @@ function mediaqueryresponse(mql) {
     opacity: 0,
   });
   
-  tl.set(".moon, .spotlight", {
+  
+
+  if (mqls[0].matches) {
+    tl.set(".moon, .spotlight", {
     scale: 0.9,
     xPercent: -50,
     yPercent: -50,
@@ -78,46 +81,43 @@ function mediaqueryresponse(mql) {
       duration: 20,
       ease: "linear",
     });
-
-  if (mqls[0].matches) {
-    
     
   } else if (mqls[1].matches) {
-    // tl.set(".moon, .spotlight", {
-    //   scale: 0.55,
-    //   xPercent: -50,
-    //   yPercent: -50,
-    //   x: "-440",
-    //   y: "-35",
-    // })
-    //   .to(".moon, .spotlight", {
-    //     x: "+=440",
-    //     y: "-=100",
-    //     duration: 35,
-    //     ease: "linear",
-    //   })
-    //   .to(".moon, .spotlight", {
-    //     x: "+=440",
-    //     y: "+=100",
-    //     duration: 35,
-    //     ease: "linear",
-    //   })
-    //   .to(".moon, .spotlight", {
-    //     x: "-=440",
-    //     y: "+=100",
-    //     duration: 35,
-    //     ease: "linear",
-    //   })
-    //   .to(".moon, .spotlight", {
-    //     x: "-=440",
-    //     y: "-=100",
-    //     duration: 35,
-    //     ease: "linear",
-    //   });
-    // tl3.set(".spotlight2", {
-    //   x: "200",
-    //   y: "100"
-    // }).to(".spotlight2", {x: "-=400", duration: 8}).to(".spotlight2", {x: "+=400", duration: 8})
+    tl.set(".moon, .spotlight", {
+      scale: 0.57,
+      xPercent: -50,
+      yPercent: -50,
+      x: "-440",
+      y: "-35",
+    })
+      .to(".moon, .spotlight", {
+        x: "+=440",
+        y: "-=100",
+        duration: 35,
+        ease: "linear",
+      })
+      .to(".moon, .spotlight", {
+        x: "+=440",
+        y: "+=100",
+        duration: 35,
+        ease: "linear",
+      })
+      .to(".moon, .spotlight", {
+        x: "-=440",
+        y: "+=100",
+        duration: 35,
+        ease: "linear",
+      })
+      .to(".moon, .spotlight", {
+        x: "-=440",
+        y: "-=100",
+        duration: 35,
+        ease: "linear",
+      });
+    tl3.set(".spotlight2", {
+      x: "200",
+      y: "100"
+    }).to(".spotlight2", {x: "-=400", duration: 8}).to(".spotlight2", {x: "+=400", duration: 8})
   } else if (mqls[2].matches) {
   } else if (mqls[3].matches) {
   } else if (mqls[4].matches) {
