@@ -27,7 +27,7 @@ window.onload = function () {
         ".content",
         {
           filter: "brightness(130%)",
-          duration: 7,
+          duration: 6,
           opacity: 1,
           delay: 1,
         },
@@ -36,10 +36,10 @@ window.onload = function () {
 
     tl2.to(".content", {
       filter: "brightness(0%)",
-      duration: 6,
+      duration: 5,
       opacity: 0,
       delay: 1,
-    });
+    }, "+=0.2");
 
     tl.set(".container", {
       visibility: "visible",

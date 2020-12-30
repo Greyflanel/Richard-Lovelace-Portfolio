@@ -123,7 +123,7 @@ a {
 
 .moon {
   position: absolute;
-  width: 65%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -178,7 +178,7 @@ a {
   background:
     radial-gradient(circle,
       #260e36c0,
-      transparent 650%) center / 650%,
+      transparent 950%) center / 650%,
     radial-gradient(circle,
        #422d52c0,
       #251233c0 250%) center /10% 10%;
