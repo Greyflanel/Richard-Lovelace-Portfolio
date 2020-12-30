@@ -137,7 +137,7 @@ a {
 .content {
 
   position: absolute;
-  top: 10%;
+  top: 20%;
   text-align: center;
   z-index: 12;
   visibility: hidden;
