@@ -27,7 +27,7 @@ window.onload = function () {
         ".content",
         {
           filter: "brightness(130%)",
-          duration: 5,
+          duration: 7,
           opacity: 1,
           delay: 1,
         },
@@ -36,20 +36,23 @@ window.onload = function () {
 
     tl2.to(".content", {
       filter: "brightness(0%)",
-      duration: 4,
+      duration: 6,
       opacity: 0,
       delay: 1,
     });
 
     tl.set(".container", {
+      visibility: "visible",
+      autoAlpha: 1,
       xPercent: -50,
       yPercent: -50,
       x: "-38%",
       y: "0%",
     });
     if (mqls[0].matches) {
+      
       tl.to(".container", {
-        delay: 0,
+        
         x: "+=38%",
         y: "-=13%",
         duration: 20,
@@ -75,7 +78,7 @@ window.onload = function () {
         });
     } else if (mqls[1].matches) {
       tl.set(".container", {
-        delay: 3,
+        x: "+=10%"
       });
       tl.to(".container", {
         x: "+=38%",
@@ -102,18 +105,146 @@ window.onload = function () {
           ease: "linear",
         });
 
-      tl3
-        .set(".spotlight2", {
-          x: "200",
-          y: "100",
-        })
-        .to(".spotlight2", { x: "-=400", duration: 8 })
-        .to(".spotlight2", { x: "+=400", duration: 8 });
     } else if (mqls[2].matches) {
+      tl.set(".container", {
+        x: "+=10%",
+      });
+      tl.to(".container", {
+        x: "+=34%",
+        y: "-=13%",
+        duration: 20,
+        ease: "linear",
+      })
+        .to(".container", {
+          x: "+=34%",
+          y: "+=13%",
+          duration: 20,
+          ease: "linear",
+        })
+        .to(".container", {
+          x: "-=34%",
+          y: "+=13%",
+          duration: 20,
+          ease: "linear",
+        })
+        .to(".container", {
+          x: "-=34%",
+          y: "-=13%",
+          duration: 20,
+          ease: "linear",
+        });
     } else if (mqls[3].matches) {
+      tl.set(".container", {
+        x: "+=10%",
+      });
+      tl.to(".container", {
+        x: "+=34%",
+        y: "-=13%",
+        duration: 20,
+        ease: "linear",
+      })
+        .to(".container", {
+          x: "+=34%",
+          y: "+=13%",
+          duration: 20,
+          ease: "linear",
+        })
+        .to(".container", {
+          x: "-=34%",
+          y: "+=13%",
+          duration: 20,
+          ease: "linear",
+        })
+        .to(".container", {
+          x: "-=34%",
+          y: "-=13%",
+          duration: 20,
+          ease: "linear",
+        });
     } else if (mqls[4].matches) {
+      tl.set(".container", {
+        x: "+=10%",
+      });
+      tl.to(".container", {
+        x: "+=34%",
+        y: "-=13%",
+        duration: 20,
+        ease: "linear",
+      })
+        .to(".container", {
+          x: "+=34%",
+          y: "+=13%",
+          duration: 20,
+          ease: "linear",
+        })
+        .to(".container", {
+          x: "-=34%",
+          y: "+=13%",
+          duration: 20,
+          ease: "linear",
+        })
+        .to(".container", {
+          x: "-=34%",
+          y: "-=13%",
+          duration: 20,
+          ease: "linear",
+        });
     } else if (mqls[5].matches) {
+      tl.set(".container", {
+        x: "+=10%"
+      });
+      tl.to(".container", {
+        x: "+=34%",
+        y: "-=13%",
+        duration: 20,
+        ease: "linear",
+      })
+        .to(".container", {
+          x: "+=34%",
+          y: "+=13%",
+          duration: 20,
+          ease: "linear",
+        })
+        .to(".container", {
+          x: "-=34%",
+          y: "+=13%",
+          duration: 20,
+          ease: "linear",
+        })
+        .to(".container", {
+          x: "-=34%",
+          y: "-=13%",
+          duration: 20,
+          ease: "linear",
+        });
     } else if (mqls[6].matches) {
+      tl.set(".container", {
+        x: "+=10%",
+      });
+      tl.to(".container", {
+        x: "+=34%",
+        y: "-=13%",
+        duration: 20,
+        ease: "linear",
+      })
+        .to(".container", {
+          x: "+=34%",
+          y: "+=13%",
+          duration: 20,
+          ease: "linear",
+        })
+        .to(".container", {
+          x: "-=34%",
+          y: "+=13%",
+          duration: 20,
+          ease: "linear",
+        })
+        .to(".container", {
+          x: "-=34%",
+          y: "-=13%",
+          duration: 20,
+          ease: "linear",
+        });
     }
   }
 
