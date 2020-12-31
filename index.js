@@ -46,34 +46,34 @@ window.onload = function () {
       autoAlpha: 1,
       xPercent: -50,
       yPercent: -50,
-      x: "-38%",
+      x: "-40%",
       y: "0%",
     });
     if (mqls[0].matches) {
       
       tl.to(".container", {
-        delay: 99999999999999990,
-        x: "+=38%",
-        y: "-=13%",
-        duration: 20,
+        delay: 0,
+        x: "+=50%",
+        y: "-=26%",
+        duration: 28,
         ease: "linear",
       })
         .to(".container", {
-          x: "+=38%",
-          y: "+=13%",
-          duration: 20,
+          x: "+=50%",
+          y: "+=26%",
+          duration: 28,
           ease: "linear",
         })
         .to(".container", {
-          x: "-=38%",
-          y: "+=13%",
-          duration: 20,
+          x: "-=50%",
+          y: "+=26%",
+          duration: 28,
           ease: "linear",
         })
         .to(".container", {
-          x: "-=38%",
-          y: "-=13%",
-          duration: 20,
+          x: "-=50%",
+          y: "-=26%",
+          duration: 28,
           ease: "linear",
         });
     } else if (mqls[1].matches) {
