@@ -6,12 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Portfolio-Richard-Lovelace</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
+    
     <link rel="stylesheet" href="css/index.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -20,29 +15,16 @@
   </head>
   <body>
     <!--Main Navigation-->
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark black ">
-        <div class="container-fluid" >
-          <a class="navbar-brand " href="https://www.linkedin.com/in/richard-lovelace-/"
+    <!-- <header>
+      <nav ></nav>
+        <div class="nav-container" >
+          <a class="navbar" href="https://www.linkedin.com/in/richard-lovelace-/"
             ><strong ><img id="linkedin" src="assets/linkedin.svg" alt="linked-in icon"/></strong
           ></a>
-          <a class="navbar-brand"  href="https://github.com/Greyflanel"
+          <a class="navbar"  href="https://github.com/Greyflanel"
             ><strong><img id="github" src="assets/github.svg" alt="github icon"/></strong
           ></a>
-          <button
-            id="toggler"
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <div class="navbar-toggler-icon" id="burger"></div>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <main class="text-center my-5"></main>
-            <ul class="navbar-nav mr-auto">
+          
               <li class="nav-item active" id="link">
                 <a class="nav-link" href="#first-section">Home </a>
               </li>
@@ -52,47 +34,103 @@
           </div>
         </div>
       </nav>
-    </header>
+    </header> -->
     <!--Main Navigation-->
     <section  id="first-section">
-      <div class="container-fluid" id="stars"></div>
-      <span class="spotlight"></span>
-      <div class="moon-div"></div><img class="moon" src="assets/newestmoon.png" alt="bright full moon" /></div>
-      <span class="spotlight2"></span>
-      <div id="content" class="container col-sm-12 ">
-        <h1 class="me">RICHARD LOVELACE</h1>
-        <h2 class="we">Full Stack Developer</h2>
-        <button type="button" id="button1" class="btn btn-outline-light btn-rounded">PROJECTS</button>
-      </div>
+      <div id="stars"></div>
+        <span class="spotlight2"></span>
+        <div class="container">
+          <img width="600px" class="moon" src="/assets/newmoon.webp" alt="">
+          <span class="spotlight"></span>
+        </div>
+        <div class="content">
+          <h1 class="content-name">Richard Lovelace</h1>
+          <h2 class="content-title">Full Stack Developer</h2>
+        </div>
     </section>
     <section id="second-section">
-      <div class="col-sm-12">
-    </div>
-      <div class="jumbotron">
-        <h1 id="secondH1" class="display-2">Hello, world!</h1>
-        
-        <p class="lead">
-          This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or
-          information.
-        </p>
-        <hr class="my-4" />
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <button type="button" id="button2" class="btn btn-outline-light btn-rounded">Home</button>
-        <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>  -->
+      <div class="second-section-title">
+      <h1>Projects</h1>
       </div>
+      <div class="card">
+    <div class="box">
+      <div class="imgBx">
+        <video loading="lazy" width="320" height="320" muted autoplay loop >
+          <source src="/assets/black-clover-pub-video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="contentBx">
+        <div>
+          <h2>Black Clover Pub</h2>
+          <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laudantium velit architecto reprehenderit esse quisquam quidem doloremque hic fuga necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo harum dolor sint dolore voluptates. Dolores?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="box">
+      <div class="imgBx">
+        <img src="https://images.unsplash.com/photo-1484820986637-7ec3e85b394f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="colors">
+      </div>
+      <div class="contentBx">
+        <div>
+          <h2>Post Title</h2>
+          <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laudantium velit architecto reprehenderit esse quisquam quidem doloremque hic fuga necessitatibus!</p>
+        </div>
+      </div>
+    </div>
+  <!-- </div><div class="card">
+    <div class="box">
+      <div class="imgBx">
+        <img src="https://images.unsplash.com/photo-1503259901638-6bf44a4cd670?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="mural of owl">
+      </div>
+      <div class="contentBx">
+        <div>
+          <h2>Post Title</h2>
+          <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laudantium velit architecto reprehenderit esse quisquam quidem doloremque hic fuga necessitatibus!</p>
+        </div>
+      </div>
+    </div> -->
+  <!-- </div><div class="card">
+    <div class="box">
+      <div class="imgBx">
+        <img src="https://images.unsplash.com/photo-1441804692981-1131edaf36c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="fireworks">
+      </div>
+      <div class="contentBx">
+        <div>
+          <h2>Post Title</h2>
+          <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laudantium velit architecto reprehenderit esse quisquam quidem doloremque hic fuga necessitatibus!</p>
+        </div>
+      </div>
+    </div> -->
+  <!-- </div><div class="card">
+    <div class="box">
+      <div class="imgBx">
+        <img src="https://images.unsplash.com/photo-1489513691500-41ef4acdb665?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="marbles">
+      </div>
+      <div class="contentBx">
+        <div>
+          <h2>Post Title</h2>
+          <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laudantium velit architecto reprehenderit esse quisquam quidem doloremque hic fuga necessitatibus!</p>
+        </div>
+      </div>
+    </div> -->
+  <!-- </div><div class="card">
+    <div class="box">
+      <div class="imgBx">
+        <img src="https://images.unsplash.com/photo-1484536831193-ff11d0792d3d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="street">
+      </div>
+      <div class="contentBx">
+        <div>
+          <h2>Post Title</h2>
+          <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laudantium velit architecto reprehenderit esse quisquam quidem doloremque hic fuga necessitatibus!</p>
+        </div>
+      </div>
+    </div> -->
+  </div>
     </section>
     <section id="third-section">
-      <div class="col-sm-3" ></div>
-      <div class="jumbotron">
-        <h1 class="display-2">Jello, world!</h1>
-        <p class="lead">
-          This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or
-          information.
-        </p>
-        <hr class="my-4" />
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>  -->
-        
+    
       </div>
     </section>
 
@@ -111,10 +149,7 @@
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
+    
   </body>
 </html>
+

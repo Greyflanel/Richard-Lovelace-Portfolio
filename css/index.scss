@@ -1,235 +1,196 @@
 /* * { 
-	border: 1px solid red !important;
+  border: 1px solid red !important;
 } */
+
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 #stars {
-	background: url(/assets/purplestars.png);
-	height: 100vh;
-	width: auto;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	display: block;
-  }
-
-html, body {
-	background-color: rgb(10, 1, 17) ;
-
-  section {
-    height: 100vh;
-  }
-   #second-section {
-        background-color: rgb(245, 245, 245);
-        
-    }
-    #third-section {
-        display: none;
-        background-color: rgb(245, 245, 245);
-    }
-    #third-section:target {
-        display: block;
-    }
-}
-
-
-
-.moon {
-	width: 14vw;
-	height: auto;  
-	position: absolute;
-	box-shadow: -18px 18px 100px rgb(255, 200, 255);
-    border-radius: 360px;
-    @media(max-width: 1200px) {
-        width: 17vw;
-    }
-    @media(max-width: 800px) {
-        width: 24vw;
-    }
-    @media(max-width: 400px) {
-        width: 33vw;
-    } 
-  }
+  background: url(/assets/blackstars.png);
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: #0a0111;
   
-
-#content {
-	
-	text-align: center;
-	align-items: center;
-	top: 27vh;
-	color: rgba(20, 5, 18);
-	text-shadow: 
-	0 0 9px rgb(255, 255, 255), 0 0 11px rgb(255, 255, 255), 
-	0 0 13px rgb(255, 255, 255), 0 0 15px rgb(255, 255, 255), 
-	0 0 20px rgb(235, 235, 235), 0 0 30px rgb(34, 3, 34), 
-	0 0 35px rgb(58, 4, 58), 0 0 40px rgb(58, 4, 58),
-	0 0 45px rgb(58, 4, 58), 0 0 55px rgb(58, 4, 58),
-    0 0 40px rgb(255, 255, 255);
-    @media(max-width: 400px) {
-        top: 40vh;
-    }
 }
 
-h1 {
-	font-size: 4.2vw;
-	letter-spacing: .6vw;
-	line-height: 14vh;
-	@media(max-width: 1200px) {
-        font-size: 5.8vw;
-    }
-    @media(max-width: 1000px) {
-        font-size: 6vw;
-    }
-    @media(max-width: 800px) {
-        font-size: 7vw;
-        line-height: 12vh;
-    }
-    @media(max-width: 400px) {
-        font-size: 8.3vw;
-        line-height: 7vh;
-    }
-  }
-
-h2 {
-	letter-spacing: .65vw;
-	font-size: 3.2vw;
-    line-height: 14vh;
-    @media(max-width: 1200px){
-        font-size: 4.5vw;
-    }
-    @media(max-width: 800px) {
-        font-size: 5.5vw;
-        line-height: 10vh;
-    }
-    @media(max-width: 400px) {
-        font-size: 7vw;
-        line-height: 8vh;
-    }
+body #first-section {
+  font-size: 16px;
+  width: 100%;
+  height: 100vh;
+  
 }
 
+body #second-section {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100vh;
+  
+}
+
+body #third-section {
+  display: none;
+
+}
+
+body #third-section:target {
+  display: block;
+}
+
+.navbar-container {
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+}
 
 .navbar {
-	z-index: 1;
-	height: 14vh;
-    position: fixed;
+  position: absolute;
+  z-index: 1;
 }
-
-
 
 #link {
-    color: rgb(10, 1, 17);
-    font-weight: 600;
-    text-shadow: 0 0 1px rgb(58, 4, 58), 0 0 2px rgb(255, 255, 255),
-	0 0 10px rgb(255, 255, 255), 
-	0 0 30px rgb(255, 255, 255), 0 0 35px rgb(58, 4, 58), 
-    0 0 40px rgb(255, 255, 255), 0 0 45px rgb(58, 4, 58);
-      }
-
+  color: #0a0111;
+  font-weight: 600;
+  background-color: transparent;
+  text-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px white,
+    0 0 7px #3a043a, 0 0 9px #3a043a;
+}
 
 #linkedin {
-	width: 2.5vw;
-	height: auto;
-	border: 2px solid rgba(20, 5, 18, 0.507);
-    box-shadow: 0 0 5px rgb(255, 255, 255), 
-	0 0 15px rgb(255, 255, 255), 
-	0 0 10px rgb(255, 255, 255), 0 0 15px rgb(66, 4, 58), 
-	0 0 20px rgb(58, 4, 58);
-    background-color: rgba(20, 5, 18, 0.507);
-    @media(max-width: 1200px) {
-        width: 4vw;
-    }
-    @media(max-width: 800px) {
-        width: 5.2vw;
-    }
-    @media(max-width: 400px) {
-        width: 9.5vw;
-    }
+  width: 2.5vw;
+  height: auto;
+  box-shadow: -2.3px -2.3px 0 rgb(66, 4, 58, 0.4),
+    2.3px -2.3px 0 rgb(66, 4, 58, 0.4),
+    -2.3px 2.3px 0 rgb(66, 4, 58, 0.4),
+    1.3px 1.3px 0 rgb(66, 4, 58, 0.4), 0 0 4px white, 0 0 9px white, 0 0 7px #42043a, 0 0 5px #3a043a;
+  background-color: rgba(20, 5, 18, 0.507);
 }
+
 
 
 #github {
-	width: 2.5vw;
-	height: auto;
-	border-radius: 20px;
-	border-width: 2px;
-	box-shadow:
-	0 0 15px rgb(255, 255, 255), 
-	0 0 10px rgb(255, 255, 255), 0 0 15px rgb(66, 4, 58), 
-	0 0 20px rgb(58, 4, 58);
-    background-color: rgba(20, 5, 18, 0.507);
-    @media(max-width: 1200px) {
-        width: 4vw;
-    }
-    @media(max-width: 800px) {
-        width: 5.4vw;
-    }
-    @media(max-width: 400px) {
-        width: 9.8vw;
-    }
+  width: 2.7vw;
+  height: auto;
+  border-radius: 20px;
+  border-width: 2px;
+  box-shadow: -2.3px -2.3px 0 rgb(66, 4, 58, 0.4),
+    2.3px -2.3px 0 rgb(66, 4, 58, 0.4),
+    -2.3px 2.3px 0 rgb(66, 4, 58, 0.4),
+    1.3px 1.3px 0 rgb(66, 4, 58, 0.4), 0 0 4px white, 0 0 9px white, 0 0 7px #42043a, 0 0 5px #3a043a;
+  background-color: rgba(20, 5, 18, 0.507);
 }
+
+
 
 a {
-	margin-left: 1.5rem;
-	font-size: 1.2vw;
-	color: rgb(255, 255, 255);
-	text-shadow: 
-    0 0 20px rgb(255, 255, 255), 0 0 15px rgb(255, 255, 255), 
-	0 0 20px rgb(235, 235, 235), 0 0 30px rgb(34, 3, 34), 
-	0 0 35px rgb(58, 4, 58), 0 0 40px rgb(58, 4, 58),
-	0 0 45px rgb(58, 4, 58), 0 0 48px rgb(58, 4, 58),
-    0 0 55px rgb(255, 255, 255);
-    @media(max-width: 1200px) {
-        font-size: 1.8vw;
-    }
-    @media(max-width: 800px) {
-        font-size: 2.2vw;
-    }
-    @media(max-width: 405px) {
-        font-size: 116.2vw;
-    }
+  margin-left: 1.5rem;
+  font-size: 1.5vw;
+  color: rgb(255, 255, 255);
+  text-shadow:
+    -1px -1px 0 rgb(66, 4, 58),
+    1px -1px 0 rgb(66, 4, 58),
+    -1px 1px 0 rgb(66, 4, 58),
+    1px 1px 0 rgb(66, 4, 58),
+    0 0 5px rgb(66, 4, 58),
+    0 0 7px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255);
 }
 
-.second-section {
-	background-color: whitesmoke;
-    padding: 2rem;
+.moon {
+  width: 32rem;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  filter: drop-shadow(5px 2px 80px #fffeff);
+  z-index: 0;
+  box-shadow: 0 0 200px transparent;
 }
-#secondH1 {
-    font-size: 6vw;
-    }
-.btn-outline-light {
-    margin-top: 10vh;
-	width: 20vw;
-	letter-spacing: .2vw;
-	font-weight: .8rem;
-	font-size: 1.3vw;
-	border-radius: 10px;
-    border-width: 1px;
 
-	color: rgb(255, 255, 255);
-	box-shadow:
-	0 0 10px rgb(255, 255, 255), 
-	0 0 15px rgb(255, 255, 255), 0 0 20px rgb(66, 4, 58), 
-	0 0 25px rgb(58, 4, 58);
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  z-index: 12;
+  color: #0a0111;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px white,
+    0 0 7px #3a043a, 0 0 9px #3a043a;
+}
+
+.content__name {
+  font-size: 5.5rem;
+  margin:  0;
+}
+
+.content__title {
+  font-size: 3.5rem;
+  margin-top: 1%;
+}
+
+.spotlight {
+  z-index: 1;
+  width: 60%;
+  height:90%;
+  filter: blur(2.5em) brightness(310%) contrast(1.6);
+  border-radius: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle,
+      #230f33c0,
+      transparent 100%) center / 500%,
+    radial-gradient(circle,
+      rgb(34, 3, 34),
+        rgb(31, 5, 31) 100%) center /10% 10%;
+
+  mix-blend-mode: color-dodge;
+
+}
+
+.spotlight2 {
+  z-index: 12;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  filter: blur(20em) brightness(850%) contrast(0.1);
+
+  
+  position: absolute;
+  top: 2%;
+  left: 0%;
+  right: 0;
+  bottom: 0;
+  background:
     
-    @media(max-width: 1200px) {
-        width: 27vw;
-        font-size: 1.8vw;
-    }
-    @media(max-width: 800px) {
-        width: 32vw;
-        font-size: 2.8vw;
-        margin-top: 5vh;
-    }
-    @media(max-width: 400px) {
-        width: 40vw;
-        font-size: 3.8vw;
-        margin-top: 4vh;
-    }
+    radial-gradient(circle,
+      rgb(6, 5, 19),
+       rgb(24, 14, 14) -5%) center / 5% 1%;
+
+  mix-blend-mode: color-dodge;
+
 }
 
-.btn-outline-light:hover {
-	background-color: rgba(252, 252, 252);
-	letter-spacing: .2rem;
-	
-}
-
+/*# sourceMappingURL=index.css.map */
