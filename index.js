@@ -78,7 +78,8 @@ window.onload = function () {
         });
     } else if (mqls[1].matches) {
       tl.set(".container", {
-        x: "+=10%"
+        x: "+=10%",
+        delay: 0
       });
       tl.to(".container", {
         x: "+=38%",

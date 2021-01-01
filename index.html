@@ -15,26 +15,41 @@
   </head>
   <body>
     <!--Main Navigation-->
-    <!-- <header>
-      <nav ></nav>
-        <div class="nav-container" >
-          <a class="navbar" href="https://www.linkedin.com/in/richard-lovelace-/"
-            ><strong ><img id="linkedin" src="assets/linkedin.svg" alt="linked-in icon"/></strong
-          ></a>
-          <a class="navbar"  href="https://github.com/Greyflanel"
-            ><strong><img id="github" src="assets/github.svg" alt="github icon"/></strong
-          ></a>
-          
-              <li class="nav-item active" id="link">
-                <a class="nav-link" href="#first-section">Home </a>
-              </li>
-              <li class="nav-item active" id="link"><a class="nav-link"  href="#second-section">Link</a></li>
-              <li class="nav-item active" id="link"><a class="nav-link"  href="#third-section">Profile </a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header> -->
+    <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="portrait"></div>
+      </div>
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="#first-section" class="nav-link">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#second-section" class="nav-link">
+            Projects
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#third-section" class="nav-link">
+            About
+          </a>
+        </li>
+        <li class="nav-item current">
+          <a href="#fourth-section" class="nav-link">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
     <!--Main Navigation-->
     <section  id="first-section">
       <div id="stars"></div>
@@ -137,13 +152,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/MotionPathPlugin.min.js"></script>
     <script src="index.js"></script>
+    <script src="nav.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/ScrollToPlugin.min.js"></script>
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
+    
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
