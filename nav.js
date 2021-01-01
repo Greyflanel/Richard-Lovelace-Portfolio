@@ -31,10 +31,10 @@ function toggleMenu() {
   }
 }
 
-for (var i = 0; i < menuBtn.length; i++) {
+for (let i = 0; i < menuBtn.length; i++) {
   menuBtn[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-
+    let current = document.getElementsByClassName("active");
+    
     // If there's no active class
     if (current.length > 0) {
       current[0].className = current[0].className.replace(" active", "");

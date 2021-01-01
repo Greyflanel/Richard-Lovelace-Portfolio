@@ -52,7 +52,7 @@ window.onload = function () {
     if (mqls[0].matches) {
       
       tl.to(".container", {
-        delay: 0,
+        
         x: "+=38%",
         y: "-=13%",
         duration: 20,
@@ -165,6 +165,7 @@ window.onload = function () {
     } else if (mqls[4].matches) {
       tl.set(".container", {
         x: "+=10%",
+        width: "60%"
       });
       tl.to(".container", {
         x: "+=34%",
@@ -220,7 +221,7 @@ window.onload = function () {
         });
     } else if (mqls[6].matches) {
       tl.set(".container", {
-        x: "+=10%",
+        x: "+=12%",
       });
       tl.to(".container", {
         x: "+=34%",
