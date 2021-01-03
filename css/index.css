@@ -10,10 +10,8 @@ html,
 body {
   width: 100%;
   min-height: 100%;
-  
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   font-size: 62.5%;
 }
 
@@ -22,7 +20,6 @@ body {
   position: absolute;
   width: 100%;
   height: 100vh;
-
   background-color: #0a0111;
 }
 
@@ -37,11 +34,9 @@ body {
 #second-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 100%;
-  
-  
+  height: 100vh;
   background-color: rgba(80, 6, 87, 0.432);
   backdrop-filter: brightness(140%);
 }
@@ -322,6 +317,7 @@ a:active {
   font-size: 5rem;
   display: flex;
   justify-content: center;
+  margin-bottom: 2%;
 }
 
 .second-section-title h1 {
@@ -332,22 +328,29 @@ a:active {
 
 .card-box {
   display: flex;
-  justify-content: center;
-  padding: 2%;
+  justify-content: space-around;
+  width: 95%;
+  height: 70%;
+  border-radius: 2rem;
   flex-wrap: wrap;
-  
-  
 }
 
  .card {
   position: relative;
   width: 60rem;
   height: 34rem;
-  margin: 10%;
+  margin: 1.3rem;
   transform-style: preserve-3d;
   perspective: 1000px;
-  box-shadow: 0 0 1px white, 0 0 3px white, 0 0 4px white, 0 4px 7px #3a043a,
-    0 4px 8px #3a043a;
+  box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 5px 7px #3a043a,
+    0 6px 8px #3a043a;
+}
+
+@media (max-width: 1281px) {
+  .card {
+    width: 45rem;
+    height: 26rem;
+  }
 }
 
 @media (max-width: 660px) {
@@ -371,7 +374,7 @@ a:active {
   }
 }
 
-@media (max-width: 395px) {
+@media (max-width: 285px) {
   .card {
     width: 25rem;
     height: 14rem;
@@ -379,9 +382,6 @@ a:active {
 }
 
  .box {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
@@ -400,19 +400,12 @@ a:active {
   height: 100%;
 }
 
-.card .box .imgBx {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+
 
 .card .box .imgBx video {
   position: absolute;
   top: 0;
   left: 0;
-
   height: 100%;
   object-fit: cover;
 
@@ -424,18 +417,17 @@ a:active {
   top: 0;
   bottom: 0;
   width: 100%;
-  height: 100%;
   backface-visibility: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
+  
   transform-style: preserve-3d;
   transform: rotateY(180deg);
 }
 
 .card .box .contentBx div {
   transform-style: preserve-3d;
-  padding: 35px;
+  padding: 15px;
   transform: translateZ(100px);
   backface-visibility: hidden;
   object-fit: cover;
@@ -443,22 +435,24 @@ a:active {
 
 .card .box .contentBx div h2 {
   color: #fff;
-  font-size: clamp(10px, 2rem, 24px);
+  font-size: clamp(1.2rem, 3vw, 2.1rem);
   letter-spacing: 1px;
   background-color: #0a0111;
-  padding: 6px;
+  padding: 3px;
   text-align: center;
   width: 60%;
-  min-width: 150px;
+  min-width: 100px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .card .box .contentBx div p {
   color: #fff;
-  font-size: 2rem;
+  font-size: clamp(1.1rem, 2.2vw, 1.8rem);
   background-color: #0a0111;
   padding: 8px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=index.css.map */
