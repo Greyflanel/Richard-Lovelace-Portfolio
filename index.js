@@ -44,6 +44,7 @@ window.onload = function () {
     tl.set(".container", {
       visibility: "visible",
       autoAlpha: 1,
+      width: "35%",
       xPercent: -50,
       yPercent: -50,
       x: "-38%",
@@ -193,7 +194,8 @@ window.onload = function () {
         });
     } else if (mqls[5].matches) {
       tl.set(".container", {
-        x: "+=10%"
+        x: "+=15%",
+        width: "65%"
       });
       tl.to(".container", {
         x: "+=34%",
@@ -221,7 +223,8 @@ window.onload = function () {
         });
     } else if (mqls[6].matches) {
       tl.set(".container", {
-        x: "+=12%",
+        width: "70%",
+        x: "+=13%",
       });
       tl.to(".container", {
         x: "+=34%",
