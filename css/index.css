@@ -6,12 +6,16 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  width: 100%;
-  min-height: 100%;
+html, body {
   margin: 0;
   padding: 0;
+}
+
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: -webkit-fill-available;
   font-size: 62.5%;
 }
 
@@ -26,9 +30,11 @@ body {
 #first-section {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
   display: flex;
   justify-content: center;
+  overflow: auto;
 }
 
 #second-section {
@@ -36,9 +42,10 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  background-color: rgba(80, 6, 87, 0.432);
-  backdrop-filter: brightness(140%);
+  height: 100%;
+  min-height: 150vh;
+  background-color: rgba(103, 6, 112, 0.432);
+  backdrop-filter: brightness(150%) contrast(4);
 }
 
 #third-section {
@@ -239,9 +246,16 @@ a:active {
   font-size: 7rem;
 }
 
+@media (max-width: 1280px) {
+  .content-name {
+    font-size: 4.5rem;
+    margin-top: -15%;
+  }
+}
+
 @media (max-width: 600px) {
   .content-name {
-    font-size: 6rem;
+    font-size: 3rem;
     margin-top: -15%;
   }
 }
@@ -249,6 +263,13 @@ a:active {
 .content-title {
   margin: 0;
   font-size: 4.5rem;
+}
+
+@media (max-width: 1280px) {
+  .content-title {
+    font-size: 3rem;
+    margin-top: 1%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -293,39 +314,45 @@ a:active {
 }
 
 .second-section-title {
-  font-size: 6rem;
+  font-size: 4rem;
   display: flex;
   justify-content: center;
   margin-top: 2%;
 }
 
+@media (max-width: 1280px) {
+  .second-section-title {
+    font-size: 3rem;
+  }
+}
+
 .second-section-title h1 {
   margin: 0;
-  text-shadow: 0 0 1px white, 0 0 3px white, 0 0 4px white, 0 4px 7px #3a043a,
+  text-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 4px 7px #3a043a,
     0 4px 8px #3a043a;
 }
 
 .card-box {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 95%;
   height: 70%;
   border-radius: 2rem;
   flex-wrap: wrap;
-  margin-top: 6%;
+  margin-top: 2%;
+  background-color: rgb(95, 255, 3);
 }
 
 .card-wrapper {
   position: relative;
-  width: 60.2rem;
-  height: 42rem;
-  border: 2px solid yellow;
+  
 }
 
  .card {
   position: relative;
   width: 60rem;
   height: 34rem;
+  margin-top: 5%;
   transform-style: preserve-3d;
   perspective: 1000px;
   box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 5px 7px #3a043a,
@@ -334,8 +361,8 @@ a:active {
 
 @media (max-width: 1281px) {
   .card {
-    width: 45rem;
-    height: 26rem;
+    width: 30rem;
+    height: 17rem;
   }
 }
 
@@ -348,8 +375,9 @@ a:active {
 
 @media (max-width: 445px) {
   .card {
-    width: 32rem;
-    height: 18rem;
+    
+    width: 20rem;
+    height: 10rem;
   }
 }
 
@@ -394,19 +422,17 @@ a:active {
   left: 0;
   height: 100%;
   object-fit: cover;
-
   backface-visibility: hidden;
 }
 
 .card .box .contentBx {
   position: absolute;
-  top: 3%;
+  top: 0;
   bottom: 0;
   width: 100%;
   backface-visibility: hidden;
   display: flex;
   justify-content: center;
-  
   transform-style: preserve-3d;
   transform: rotateY(180deg);
 }
@@ -421,7 +447,7 @@ a:active {
 
 .card .box .contentBx div h2 {
   color: #fff;
-  font-size: clamp(1.2rem, 3vw, 2.3rem);
+  font-size: clamp(1.2rem, 8%, 2.3rem);
   letter-spacing: 1px;
   background-color: #0a0111;
   padding: 3px;
@@ -434,7 +460,7 @@ a:active {
 
 .card .box .contentBx div p {
   color: #fff;
-  font-size: clamp(1.1rem, 2.2vw, 2.1rem);
+  font-size: clamp(1.1rem, 6%, 2.1rem);
   background-color: #0a0111;
   padding: 10px;
   width: 80%;
@@ -444,16 +470,14 @@ a:active {
 .project-links {
 display: flex;
 width: 100%;
-height: 20%;
-justify-content: flex-start;
+height: 16%;
+justify-content: space-evenly;
 align-items: center;
-border: 2px solid green;
+
 }
 
 .github-link {
-  
-  
-  border-radius: 20px;
+  border-radius: 2%;
   border-width: 2px;
   box-shadow: -2.3px -2.3px 0 rgb(66, 4, 58, 0.4),
     2.3px -2.3px 0 rgb(66, 4, 58, 0.4), -2.3px 2.3px 0 rgb(66, 4, 58, 0.4),
@@ -463,7 +487,7 @@ border: 2px solid green;
 }
 
 .project-links  {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: rgb(255, 255, 255);
   text-shadow: -1px -1px 0 rgb(66, 4, 58), 1px -1px 0 rgb(66, 4, 58),
     -1px 1px 0 rgb(66, 4, 58), 1px 1px 0 rgb(66, 4, 58), 0 0 5px rgb(66, 4, 58),
@@ -471,8 +495,8 @@ border: 2px solid green;
 }
 
 .website-link {
-  border-radius: 20px;
-  border-width: 2px;
+  border-radius: 2%;
+  
   box-shadow: -2.3px -2.3px 0 rgb(66, 4, 58, 0.4),
     2.3px -2.3px 0 rgb(66, 4, 58, 0.4), -2.3px 2.3px 0 rgb(66, 4, 58, 0.4),
     1.3px 1.3px 0 rgb(66, 4, 58, 0.4), 0 0 4px white, 0 0 9px white,
@@ -482,9 +506,12 @@ border: 2px solid green;
 
 .skills {
   width: 80%;
-  height: 10%;
+  height: 10rem;
   border: 2px solid black;
   margin-bottom: 1%;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=index.css.map */
