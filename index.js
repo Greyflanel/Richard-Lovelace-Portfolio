@@ -16,7 +16,7 @@ window.addEventListener('resize', () => {
 window.onload = function () {
   function mediaqueryresponse(mql) {
     let tl = gsap.timeline({ repeat: -1 });
-    let tl2 = gsap.timeline({ repeat: -1 });
+    let tl2 = gsap.timeline({ repeat: -1, repeatDelay: 5 });
     let tl3 = gsap.timeline({ repeat: -1 });
     let tl4 = gsap.timeline({ repeat: 5 });
     let tl5 = gsap.timeline({ repeat: 5 });
@@ -65,6 +65,7 @@ window.onload = function () {
         ease: "linear",
       })
         .to(".container", {
+          
           x: "+=38%",
           y: "+=13%",
           duration: 20,
