@@ -83,10 +83,13 @@ body {
   transition: all 0.5s ease-out;
 }
 .menu-btn .btn-line {
-  width: 28px;
-  height: 3px;
+  width: 39px;
+  height: 6px;
   margin: 0 0 5px 0;
-  background: #fff;
+  border: 0.5px solid blueviolet;
+  box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 4px 5px #3a043a,
+    0 4px 5px #3a043a;
+  background-color: rgba(20, 5, 18, 0.507);
   transition: all 0.5s ease-out;
 }
 .menu-btn.close {
@@ -99,7 +102,7 @@ body {
   opacity: 0;
 }
 .menu-btn.close .btn-line:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -6px);
+  transform: rotate(-45deg) translate(10px, -11px);
 }
 
 .menu {
@@ -356,31 +359,7 @@ a:active {
   padding-top: 1%;
   padding-bottom: 6%;
   box-shadow: 0px 0px 6px #3a043a;
-  background: radial-gradient(rgb(24, 104, 37) 3px, transparent 4px),
-    radial-gradient(rgb(24, 104, 37) 3px, transparent 4px),
-    linear-gradient(#fff 4px, transparent 0),
-    linear-gradient(
-      45deg,
-      transparent 74px,
-      transparent 75px,
-      #a4a4a4 75px,
-      #a4a4a4 76px,
-      transparent 77px,
-      transparent 109px
-    ),
-    linear-gradient(
-      -45deg,
-      transparent 75px,
-      transparent 76px,
-      #a4a4a4 76px,
-      #a4a4a4 77px,
-      transparent 78px,
-      transparent 109px
-    ),
-    #fff;
-  background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
-  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-  background-color: rgba(21, 255, 0, 0.685);
+  background-image: url("/assets/pattern.png")
 }
 
 .card-wrapper {
