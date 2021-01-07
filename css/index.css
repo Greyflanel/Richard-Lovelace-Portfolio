@@ -330,7 +330,7 @@ a:active {
   margin: 4% 0;
   padding: 1%;
   box-shadow: 3px 3px 6px #3a043a;
-  background-color: #6e076e7e;
+  background-color: #561264b4;
 }
 
 @media (max-width: 1280px) {
@@ -341,8 +341,8 @@ a:active {
 
 .second-section-title h1 {
   margin: 0;
-  text-shadow: 0 0 1px white, 0 0 3px white, 0 0 2px white, 0 4px 5px #3a043a,
-    0 4px 5px #8009805e;
+  text-shadow: 0 0 3px white, 0 0 3px white, 0 0 3px #3a043a73, 0 2px 5px #3a043a,
+    0 3px 5px #800980a8;
 }
 
 #second-section a {
@@ -359,7 +359,7 @@ a:active {
   padding-top: 1%;
   padding-bottom: 6%;
   box-shadow: 0px 0px 6px #3a043a;
-  background-image: url("/assets/pattern.png")
+  background-image: url("/assets/pattern2.png")
 }
 
 .card-wrapper {
@@ -518,11 +518,11 @@ a:active {
 }
 
 #link {
-  color: #0a0111;
+  color: #ffffff;
   font-size: 2rem;
-  font-weight: 700;
-  text-shadow: 0 0 0.3px rgba(137, 43, 226, 0.411), 0 0 2px white, 0 0 2px white,
-    0 2px 2px white, 0 2px 4px blueviolet;
+  font-weight: 500;
+  text-shadow: 0 0 0.3px white, 0 0 0.5px white, 0 0 0.8px white,
+    0 2px 2px blueviolet, 0 2px 4px white;
   filter: contrast(6);
 }
 
@@ -540,7 +540,7 @@ a:active {
   font-size: 1.8rem;
   box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 4px 5px #3a043a,
     0 4px 5px #3a043a;
-  background-color: #800980bd;
+  background-color:#561264c4;
 }
 
 .skills {
@@ -555,9 +555,9 @@ a:active {
   box-shadow: 3px 3px 6px #3a043a;
   border-radius: 10px;
   margin-bottom: 10%;
-  text-shadow: 0 0 1px white, 0 0 3px white, 0 0 2px white, 0 4px 5px #3a043a,
-    0 4px 5px #8009805e;
-  background-color: #80098000;
+  text-shadow: 0 0 1px white, 0 0 3px white,  0 1px 2px #3a043a,
+    0 2px 3px #8009805e;
+  background-color:#561264b4;
 }
 
 .skills .icon-wrapper {
@@ -570,7 +570,7 @@ a:active {
   padding: 1%;
   margin-bottom: -30%;
   margin-top: -25%;
-  background-color: #f3e3f379;
+  background-color: #f3e3f346;
 
   box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 4px 5px #3a043a,
     0 4px 5px #3a043a;
@@ -583,7 +583,6 @@ a:active {
 }
 
 .skills .icon-wrapper h6 {
-  text-shadow: 0 0 0.3px rgba(137, 43, 226, 0.411), 0 0 0.5px white, 0 0 0.5px white,
-    0 2px 2px white, 0 2px 2px blueviolet;
+  
 }
 /*# sourceMappingURL=index.css.map */
