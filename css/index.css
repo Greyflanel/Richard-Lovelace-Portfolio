@@ -43,6 +43,7 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
+  
 }
 
 #third-section {
@@ -51,9 +52,10 @@ body {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   padding-bottom: 2%;
-  background: url("/assets/pattern.png");
+  background: url("/assets/pattern3.png");
 }
 
 #fourth-section {
@@ -331,7 +333,7 @@ a:active {
   margin: 4% 0;
   padding: 1%;
   box-shadow: 3px 3px 6px #3a043a;
-  background-color: #561264b4;
+  background-color:#56126496;
 }
 
 @media (max-width: 1280px) {
@@ -359,8 +361,8 @@ a:active {
   flex-wrap: wrap;
   padding-top: 1%;
   padding-bottom: 6%;
-  box-shadow: 0 8px 10px 6px #5f085f48;
-  background-image: url("/assets/pattern2.png");
+  box-shadow: 5px 10px 30px 8px #46324648;
+  background-image: url("/assets/pattern.png");
 }
 
 .card-wrapper {
@@ -547,6 +549,7 @@ a:active {
 .skills {
   width: 80%;
   margin: 5% 0;
+  padding: 3%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -559,40 +562,35 @@ a:active {
   margin-bottom: 10%;
   text-shadow: 0 0 2px white, 0 0 3px white, 0 0 3px #3a043a73, 0 2px 5px #3a043a,
     0 3px 5px #800980a8;
-  background-color:#561264b4;
+  background-color:#56126496;
 }
 
 .skills .icon-wrapper {
-  padding-top: 5%;
-  margin-bottom: -3%;
+  margin: 1% 0.5%;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
+
 
 .skills .icon-wrapper > img {
   width: 6rem;
   padding: 1%;
-  margin-bottom: -45%;
-  margin-top: -25%;
-  background-color: #f8cff846;
+  background-color: #c773c746;
   box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 4px 5px #3a043a,
     2px 3px 5px #3a043a;
 }
 
-
-
-#js-icon {
-  width: 6rem;
-  margin-top: -22%;
-  margin-bottom: -33%;
+.skills .icon-wrapper h6 {
+  margin: 0;
 }
 
 #third-section .about-div {
   display: flex;
   border-radius: 10px;
+  padding: 2%;
   width: 80%;
-  height: 75%;
+  
   box-shadow: 3px 3px 5px #3a043a;
-  background-color: #0a0111c9;
+  background-color: #f7f5f8;
 }
 
 .third-section-title  {
@@ -605,11 +603,15 @@ a:active {
   margin: 1% 0;
   padding: 0%;
   box-shadow: 3px 3px 5px #3a043a;
-
   color: rgb(214, 198, 198);
   text-shadow: 0 0 0.3px white, 0 0 0.5px white, 0 0 0.8px white,
-    0 4px 4px#140114, 0 0 6px #3b033b, 0 0 6px blueviolet;
-  background-color: #271633c9;
+    0 3px 4px#140114, 0 0 6px #3b033b, 0 0 4px blueviolet;
+  background: linear-gradient(45deg, #3f185c, #eec6df, #560858);
+  
 }
 
+#third-section .about-div p {
+  font-size: 1.8rem;
+  
+}
 /*# sourceMappingURL=index.css.map */
