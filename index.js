@@ -7,11 +7,16 @@ var mqls = [
   window.matchMedia("(min-width: 360px)"),
   window.matchMedia("(min-width: 280px)"),
 ];
-
+// We listen to the resize event
+window.addEventListener('resize', () => {
+  // We execute the same script as before
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
 window.onload = function () {
   function mediaqueryresponse(mql) {
     let tl = gsap.timeline({ repeat: -1 });
-    let tl2 = gsap.timeline({ repeat: -1 });
+    let tl2 = gsap.timeline({ repeat: -1, repeatDelay: 5 });
     let tl3 = gsap.timeline({ repeat: -1 });
     let tl4 = gsap.timeline({ repeat: 5 });
     let tl5 = gsap.timeline({ repeat: 5 });
@@ -44,6 +49,7 @@ window.onload = function () {
     tl.set(".container", {
       visibility: "visible",
       autoAlpha: 1,
+      width: "35%",
       xPercent: -50,
       yPercent: -50,
       x: "-40%",
@@ -52,16 +58,17 @@ window.onload = function () {
     if (mqls[0].matches) {
       
       tl.to(".container", {
-        delay: 0,
-        x: "+=50%",
-        y: "-=26%",
-        duration: 28,
+        
+        x: "+=38%",
+        y: "-=13%",
+        duration: 20,
         ease: "linear",
       })
         .to(".container", {
-          x: "+=50%",
-          y: "+=26%",
-          duration: 28,
+          
+          x: "+=38%",
+          y: "+=13%",
+          duration: 20,
           ease: "linear",
         })
         .to(".container", {
@@ -78,7 +85,8 @@ window.onload = function () {
         });
     } else if (mqls[1].matches) {
       tl.set(".container", {
-        x: "+=10%"
+        x: "+=10%",
+        delay: 0
       });
       tl.to(".container", {
         x: "+=38%",
@@ -164,6 +172,7 @@ window.onload = function () {
     } else if (mqls[4].matches) {
       tl.set(".container", {
         x: "+=10%",
+        width: "60%"
       });
       tl.to(".container", {
         x: "+=34%",
@@ -191,7 +200,8 @@ window.onload = function () {
         });
     } else if (mqls[5].matches) {
       tl.set(".container", {
-        x: "+=10%"
+        x: "+=15%",
+        width: "65%"
       });
       tl.to(".container", {
         x: "+=34%",
@@ -219,7 +229,8 @@ window.onload = function () {
         });
     } else if (mqls[6].matches) {
       tl.set(".container", {
-        x: "+=10%",
+        width: "70%",
+        x: "+=13%",
       });
       tl.to(".container", {
         x: "+=34%",
