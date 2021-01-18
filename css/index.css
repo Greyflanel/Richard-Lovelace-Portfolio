@@ -237,7 +237,7 @@ a:active {
   left: 0;
   right: 0;
   border-radius: 60%;
-  filter: drop-shadow(0px 0px 70px #f8c5fc);
+  filter: drop-shadow(0px 0px 100px #f8c5fc);
   z-index: 0;
   box-shadow: 0 0 5px 300px transparent;
 }

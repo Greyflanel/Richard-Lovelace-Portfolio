@@ -52,7 +52,7 @@ window.onload = function () {
       width: "35%",
       xPercent: -50,
       yPercent: -50,
-      x: "-38%",
+      x: "-40%",
       y: "0%",
     });
     if (mqls[0].matches) {
@@ -72,15 +72,15 @@ window.onload = function () {
           ease: "linear",
         })
         .to(".container", {
-          x: "-=38%",
-          y: "+=13%",
-          duration: 20,
+          x: "-=50%",
+          y: "+=26%",
+          duration: 28,
           ease: "linear",
         })
         .to(".container", {
-          x: "-=38%",
-          y: "-=13%",
-          duration: 20,
+          x: "-=50%",
+          y: "-=26%",
+          duration: 28,
           ease: "linear",
         });
     } else if (mqls[1].matches) {
