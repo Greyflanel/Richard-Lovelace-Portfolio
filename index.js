@@ -7,12 +7,12 @@ var mqls = [
   window.matchMedia("(min-width: 360px)"),
   window.matchMedia("(min-width: 280px)"),
 ];
-// We listen to the resize event
-window.addEventListener('resize', () => {
-  // We execute the same script as before
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
+// // We listen to the resize event
+// window.addEventListener('resize', () => {
+//   // We execute the same script as before
+//   let vh = window.innerHeight * 0.01;
+//   document.documentElement.style.setProperty('--vh', `${vh}px`);
+// });
 window.onload = function () {
   function mediaqueryresponse(mql) {
     let tl = gsap.timeline({ repeat: -1 });
