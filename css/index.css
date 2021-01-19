@@ -55,7 +55,8 @@ body {
   height: 100%;
   min-height: 100vh;
   padding-bottom: 2%;
-  background: url("/assets/pattern3.png");
+  background: url("/assets/pattern14.png");
+  
 }
 
 #fourth-section {
@@ -327,7 +328,7 @@ a:active {
 
 .second-section-title {
   font-size: 4rem;
-  width: 40%;
+  width: 40vw;
   display: flex;
   justify-content: center;
   margin: 4% 0;
@@ -341,6 +342,14 @@ a:active {
     font-size: 3rem;
   }
 }
+@media (max-width: 700px) {
+  .second-section-title {
+    font-size: 2rem;
+    
+  }
+}
+
+
 
 .second-section-title h1 {
   margin: 0;
@@ -362,7 +371,7 @@ a:active {
   padding-top: 1%;
   padding-bottom: 6%;
   box-shadow: 5px 10px 30px 8px #46324648;
-  background-image: url("/assets/pattern.png");
+  background-image: url("/assets/pattern12.png");
 }
 
 .card-wrapper {
@@ -543,7 +552,7 @@ a:active {
   font-size: 1.8rem;
   box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 4px 5px #3a043a,
     0 4px 5px #0f000f;
-  background-color:#561264c4;
+  background-color:#561264da;
 }
 
 .skills {
@@ -593,20 +602,24 @@ a:active {
   background-color: #f7f5f8;
 }
 
+.third-section-title h1 {
+  margin: 0;
+ 
+}
+
 .third-section-title  {
-  font-size: 2.5rem;
-  width: 40%;
-  height: 20%;
+  font-size: 4rem;
+  width: 40vw;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 1% 0;
-  padding: 0%;
-  box-shadow: 3px 3px 5px #3a043a;
-  color: rgb(214, 198, 198);
-  text-shadow: 0 0 0.3px white, 0 0 0.5px white, 0 0 0.8px white,
-    0 3px 4px#140114, 0 0 6px #3b033b, 0 0 4px blueviolet;
-  background: linear-gradient(45deg, #3f185c, #eec6df, #560858);
+  margin: 4% 0;
+  padding: 1%;
+  box-shadow: 3px 3px 6px #3a043a;
+  
+  text-shadow: 0 0 2px white, 0 0 3px white, 0 0 3px #864E8F, 0 2px 5px #3a043a,
+    0 3px 5px #800980a8;
+  background-color: #864e8fea;
+  box-shadow: 3px 3px 6px #3a043a;
   
 }
 
