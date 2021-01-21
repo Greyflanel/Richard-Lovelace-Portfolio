@@ -213,10 +213,19 @@ a:active {
   justify-content: center;
 }
 
+@media (max-width: 1100px) {
+  .container {
+    width: 30%;
+    height: 40%;
+    
+  }
+}
+
 @media (max-width: 600px) {
   .container {
-    width: 70%;
-    height: 60%;
+    width: 40%;
+    height: 30%;
+    
   }
 }
 
@@ -260,7 +269,7 @@ a:active {
 @media (max-width: 600px) {
   .content-name {
     font-size: 3rem;
-    margin-top: -15%;
+    margin-top: 25%;
   }
 }
 
@@ -298,6 +307,7 @@ a:active {
     radial-gradient(circle, #422d52c0, #251233c0 250%) center / 10% 10%;
   mix-blend-mode: color-dodge;
 }
+
 
 .spotlight2 {
   z-index: 100;

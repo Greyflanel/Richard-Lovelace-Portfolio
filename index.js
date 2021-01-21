@@ -45,6 +45,7 @@ window.onload = function () {
       delay: 1,
     });
     tl3.set(".smoke, .smoke-vid", {
+      
       autoAlpha: 1,
     }).to(".smoke-vid", {
       
@@ -53,13 +54,13 @@ window.onload = function () {
       .set(".smoke-text", {
         visibility: "visible",
         opacity: 0, 
-        delay: 1.9,
+        delay: 1.7,
       })
       .to(
         ".smoke-text",
         {
           delay: 1.8,
-          duration: 6,
+          duration: 8,
           opacity: 1,
           
         }
@@ -75,35 +76,33 @@ window.onload = function () {
       width: "35%",
       xPercent: -50,
       yPercent: -50,
-      x: "-40%",
+      x: "-35%",
       y: "0%",
     });
     if (mqls[0].matches) {
       
       tl.to(".container", {
-        
-        x: "+=38%",
-        y: "-=13%",
+        x: "+=45%",
+        y: "-=20%",
         duration: 20,
         ease: "linear",
       })
         .to(".container", {
-          
-          x: "+=38%",
-          y: "+=13%",
+          x: "+=45%",
+          y: "+=20%",
           duration: 20,
           ease: "linear",
         })
         .to(".container", {
-          x: "-=50%",
-          y: "+=26%",
-          duration: 28,
+          x: "-=45%",
+          y: "+=20%",
+          duration: 20,
           ease: "linear",
         })
         .to(".container", {
-          x: "-=50%",
-          y: "-=26%",
-          duration: 28,
+          x: "-=45%",
+          y: "-=20%",
+          duration: 20,
           ease: "linear",
         });
     } else if (mqls[1].matches) {
