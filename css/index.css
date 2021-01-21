@@ -608,7 +608,7 @@ a:active {
   
   text-shadow: 0 0 2px white, 0 0 3px white, 0 0 3px #864E8F, 0 2px 5px #3a043a,
     0 3px 5px #800980a8;
-  background-color: #864e8fea;
+  background-color: #864e8f;
   box-shadow: 3px 3px 6px #3a043a;
   
 }
@@ -626,8 +626,8 @@ a:active {
   position: absolute;
   z-index: 380;
   top: 40%;
-  left: 40%;
-  font-size: 3rem;
+  left: 45%;
+  font-size: 4rem;
   visibility: hidden;
   text-shadow: 0 0 1px white, 0 0 1.5px white, 0 0 2px white, 0 0 2.5px #3a043a,
     0 0 9px #3a043a;

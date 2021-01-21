@@ -44,11 +44,10 @@ window.onload = function () {
       opacity: 0,
       delay: 1,
     });
-    tl3.set(".smoke", {
+    tl3.set(".smoke, .smoke-vid", {
       autoAlpha: 1,
-    }).to(".smoke", {
+    }).to(".smoke-vid", {
       
-     
     })
     tl4
       .set(".smoke-text", {
@@ -59,8 +58,8 @@ window.onload = function () {
       .to(
         ".smoke-text",
         {
-          delay: 0.7,
-          duration: 12,
+          delay: 1.8,
+          duration: 6,
           opacity: 1,
           
         }
