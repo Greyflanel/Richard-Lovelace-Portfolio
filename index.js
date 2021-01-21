@@ -53,7 +53,7 @@ window.onload = function () {
       .set(".smoke-text", {
         visibility: "visible",
         opacity: 0, 
-        delay: 1.8,
+        delay: 1.9,
       })
       .to(
         ".smoke-text",

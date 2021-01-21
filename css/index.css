@@ -625,9 +625,9 @@ a:active {
 .smoke-text {
   position: absolute;
   z-index: 380;
-  top: 40%;
+  top: 38%;
   left: 45%;
-  font-size: 4rem;
+  font-size: 5rem;
   visibility: hidden;
   text-shadow: 0 0 1px white, 0 0 1.5px white, 0 0 2px white, 0 0 2.5px #3a043a,
     0 0 9px #3a043a;
