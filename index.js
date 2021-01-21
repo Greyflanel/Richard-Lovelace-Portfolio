@@ -7,18 +7,18 @@ var mqls = [
   window.matchMedia("(min-width: 360px)"),
   window.matchMedia("(min-width: 280px)"),
 ];
-// // We listen to the resize event
-// window.addEventListener('resize', () => {
-//   // We execute the same script as before
-//   let vh = window.innerHeight * 0.01;
-//   document.documentElement.style.setProperty('--vh', `${vh}px`);
-// });
+// We listen to the resize event
+window.addEventListener('resize', () => {
+  // We execute the same script as before
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
 window.onload = function () {
   function mediaqueryresponse(mql) {
     let tl = gsap.timeline({ repeat: -1 });
     let tl2 = gsap.timeline({ repeat: -1, repeatDelay: 5 });
     let tl3 = gsap.timeline({ repeat: -1 });
-    let tl4 = gsap.timeline({ repeat: 5 });
+    let tl4 = gsap.timeline({ repeat: 0 });
     let tl5 = gsap.timeline({ repeat: 5 });
 
     tl2
@@ -35,8 +35,7 @@ window.onload = function () {
           duration: 6,
           opacity: 1,
           delay: 1,
-        },
-        "-=0.8"
+        }
       );
 
     tl2.to(".content", {
@@ -44,7 +43,32 @@ window.onload = function () {
       duration: 5,
       opacity: 0,
       delay: 1,
-    }, "+=0.2");
+    });
+    tl3.set(".smoke", {
+      autoAlpha: 1,
+    }).to(".smoke", {
+      
+     
+    })
+    tl4
+      .set(".smoke-text", {
+        visibility: "visible",
+        opacity: 0, 
+        delay: 1.8,
+      })
+      .to(
+        ".smoke-text",
+        {
+          delay: 0.7,
+          duration: 12,
+          opacity: 1,
+          
+        }
+      ).to(".smoke-text", {
+        
+        opacity: 0,
+        duration: 0.5
+      });
 
     tl.set(".container", {
       visibility: "visible",
