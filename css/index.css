@@ -557,13 +557,14 @@ a:active {
 
 .skills {
   width: 80%;
-  margin: 5% 0;
+  margin-top: 1%;
+  margin-bottom: 5%;
   padding: 3%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  font-size: 1.9rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
   box-shadow: 0 4px 10px #3a043a8c;
@@ -613,12 +614,13 @@ a:active {
 }
 
 .third-section-title h1{
+  font-size: 6rem;
   width: 40vw;
   margin: 4% 0;
   padding: 1%;
   text-align: center;
   text-shadow: 0 0 2px white, 0 0 3px white, 0 0 3px #3a043a73, 0 2px 5px #3a043a,
-    0 3px 5px #800980a8;
+    0 2px 5px #800980a8;
   box-shadow: 3px 3px 6px #3a043a;
   background-color:#56126496;
 }
