@@ -336,7 +336,7 @@ a:active {
   margin-bottom: 2%;
   padding: 1%;
   box-shadow: 5px 10px 30px 8px #46324648;
-  background-color: #422a5bda;
+  background-color:#6A5282;
 }
 
 @media (max-width: 1280px) {
@@ -568,7 +568,7 @@ a:active {
   color: #ffffff;
   text-shadow: 0 0 2px white, 0 0 3px white, 0 0 4px #3a043a73, 0 2px 5px #3a043a,
     0 3px 5px #800980a8;
-  background-color: #422a5bda;
+  background-color:#51356Dda;
 }
 
 .skills .icon-wrapper {
@@ -603,10 +603,11 @@ a:active {
   display: flex;
   width: 95%;
   height: 95%;
+  margin-bottom: 10%;
   border-radius: 0.5rem;
   flex-wrap: wrap;
   box-shadow: 5px 10px 30px 8px #46324648;
-  background-image: url("/assets/pattern15.png");
+  background-image: url("/assets/pattern4.png");
 }
 
 .third-section-title h1{
@@ -615,11 +616,12 @@ a:active {
   margin-bottom: 2%;
   width: 40vw;
   padding: 1%;
+  border-radius: 5px;
   text-align: center;
   color: #ffffff;
   text-shadow: 0 0 2px white, 0 0 3px white, 0 0 4px #3a043a73, 0 2px 5px #3a043a,
     0 3px 5px #800980a8;
-  background-color: #422a5bda;
+  background-color: #4E2063;
   box-shadow: 5px 10px 30px 8px #46324648;
 }
 
