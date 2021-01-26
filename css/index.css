@@ -570,11 +570,10 @@ a:active {
   color: #ffffff;
   text-shadow: 0 0 2px white, 0 0 3px white, 0 0 4px #3a043a73, 0 2px 5px #3a043a,
     0 3px 5px #800980a8;
-  background-color:#51356Dda;
+  background-color:#4c2e69da;
 }
 
 .skills .icon-wrapper {
-  
   padding: 0.3%;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
@@ -644,6 +643,15 @@ a:active {
   margin: 12%;
   padding: 2%;
   background-color: rgb(248, 241, 250);
+}
+
+.divider {
+  border-bottom: 2px solid rgb(75, 55, 83);
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 4%;
+  height: 2rem;
+  
 }
 
 .smoke {
