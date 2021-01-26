@@ -380,6 +380,7 @@ a:active {
 .card-wrapper {
   position: relative;
   margin-top: 5%;
+  
 }
 
 .card {
@@ -390,6 +391,7 @@ a:active {
   perspective: 1000px;
   box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 5px 5px #3a043a,
     0 6px 6px #3a043a;
+    
 }
 
 @media (max-width: 1281px) {
