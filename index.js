@@ -66,7 +66,7 @@ window.onload = function () {
       .to(
         ".smoke-text",
         {
-          delay: 1.8,
+          delay: 1.7,
           ease: "power2.in",
           duration: 4,
           opacity: 1,
