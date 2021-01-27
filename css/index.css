@@ -673,4 +673,10 @@ a:active {
     0 0 9px #3a043a;
 }
 
+.my-logo {
+  position: absolute;
+  z-index: 400;
+ 
+}
+
 /*# sourceMappingURL=index.css.map */

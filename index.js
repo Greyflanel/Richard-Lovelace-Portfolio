@@ -45,25 +45,29 @@ window.onload = function () {
       delay: 1,
     });
     tl3.set(".smoke, .smoke-vid", {
-      
+      opacity: 1,
       autoAlpha: 1,
+    }).to(".smoke-vid", {
+      opacity: 0,
+      autoAlpha: 0,
+      duration: 16
     }).to(".smoke-vid", {
       autoAlpha: 0,
       duration: 16
     }).set(".smoke-vid", {
       display: "none"
-    }, "-=7.5")
+    }, "-=24")
     tl4
       .set(".smoke-text", {
         visibility: "visible",
         opacity: 0, 
-        delay: 1.8,
+        delay: 2,
       })
       .to(
         ".smoke-text",
         {
-          delay: 1.6,
-          duration: 11,
+          delay: 1.2,
+          duration: 13,
           opacity: 1,
           
         }
