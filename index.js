@@ -61,20 +61,21 @@ window.onload = function () {
       .set(".smoke-text", {
         visibility: "visible",
         opacity: 0, 
-        delay: 2,
+        delay: 1,
       })
       .to(
         ".smoke-text",
         {
-          delay: 1.3,
-          duration: 13,
+          delay: 1.8,
+          ease: "power2.in",
+          duration: 4,
           opacity: 1,
           
         }
       ).to(".smoke-text", {
-        
+        delay: 4,
         opacity: 0,
-        duration: 0.3
+        duration: 0.4
       });
 
     tl.set(".container", {
