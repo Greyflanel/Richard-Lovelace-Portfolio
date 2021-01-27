@@ -75,7 +75,7 @@ window.onload = function () {
       ).to(".smoke-text", {
         delay: 4,
         opacity: 0,
-        duration: 0.4
+        duration: 0.8
       });
 
     tl.set(".container", {
