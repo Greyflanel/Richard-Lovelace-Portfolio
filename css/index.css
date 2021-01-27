@@ -657,6 +657,7 @@ a:active {
 .smoke {
   width: 55%;
   visibility: hidden;
+  opacity: 0;
   position: relative;
   display: flex;
   justify-content: center;
@@ -666,7 +667,7 @@ a:active {
 .smoke-text {
   position: absolute;
   z-index: 380;
-  font-size: 5rem;
+  font-size: 4rem;
   visibility: hidden;
   text-shadow: 0 0 1px white, 0 0 1.5px white, 0 0 2px white, 0 0 2.5px #3a043a,
     0 0 9px #3a043a;

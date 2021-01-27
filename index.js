@@ -48,19 +48,22 @@ window.onload = function () {
       
       autoAlpha: 1,
     }).to(".smoke-vid", {
-      
-    })
+      autoAlpha: 0,
+      duration: 16
+    }).set(".smoke-vid", {
+      display: "none"
+    }, "-=7.5")
     tl4
       .set(".smoke-text", {
         visibility: "visible",
         opacity: 0, 
-        delay: 1.7,
+        delay: 1.8,
       })
       .to(
         ".smoke-text",
         {
-          delay: 1.8,
-          duration: 8,
+          delay: 1.6,
+          duration: 11,
           opacity: 1,
           
         }
