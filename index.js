@@ -44,39 +44,7 @@ window.onload = function () {
       opacity: 0,
       delay: 1,
     });
-    tl3.set(".smoke, .smoke-vid", {
-      opacity: 1,
-      autoAlpha: 1,
-    }).to(".smoke-vid", {
-      opacity: 0,
-      autoAlpha: 0,
-      duration: 16
-    }).to(".smoke-vid", {
-      autoAlpha: 0,
-      duration: 16
-    }).set(".smoke-vid", {
-      display: "none"
-    }, "-=24")
-    tl4
-      .set(".smoke-text", {
-        visibility: "visible",
-        opacity: 0, 
-        delay: 1,
-      })
-      .to(
-        ".smoke-text",
-        {
-          delay: 1.7,
-          ease: "power2.in",
-          duration: 4,
-          opacity: 1,
-          
-        }
-      ).to(".smoke-text", {
-        delay: 4,
-        opacity: 0,
-        duration: 0.8
-      });
+    
 
     tl.set(".container", {
       visibility: "visible",

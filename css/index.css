@@ -52,7 +52,7 @@ body {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  border: 15px solid transparent;
+  border: 10px solid transparent;
 }
 
 #fourth-section {
@@ -651,31 +651,27 @@ a:active {
   
 }
 
+
 .smoke {
   width: 55%;
-  visibility: hidden;
-  opacity: 0;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
 }
 
 .smoke-text {
   position: absolute;
+  visibility: hidden;
   z-index: 380;
   font-size: 4rem;
   font-weight: 550;
-  visibility: hidden;
   color: white;
   text-shadow: 0 0 1px #2e042e, 0 0 2px #1a011a, 0 0 3px white, 0 0 4px #250225,
     0 0 5px #000000;
 }
 
-.my-logo {
-  position: absolute;
-  z-index: 400;
- 
-}
+
 
 /*# sourceMappingURL=index.css.map */
