@@ -658,13 +658,15 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  visibility: hidden;
+  
 }
+
+
 
 .smoke-text {
   position: absolute;
-  visibility: hidden;
   z-index: 380;
+  visibility: hidden;
   font-size: 4rem;
   font-weight: 550;
   color: white;
