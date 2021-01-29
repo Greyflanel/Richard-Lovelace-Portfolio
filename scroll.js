@@ -10,7 +10,7 @@ function pauseVideo(el) {
   let vid = document.getElementById(el);
   vid.pause();
   console.log("pausing video");
-}
+};
 
 let timeline = gsap.timeline({
   repeat: 0,
@@ -21,62 +21,47 @@ let timeline2 = gsap.timeline({
   scrollTrigger: "body",
 });
 
+
 function scrollAnimation() {
   
-  timeline
-    .set(".smoke-vid, .smoke-text", {
-      autoAlpha: 0,
-    })
-    .to(".smoke-vid", {
+  timeline.set(".smoke-vid", {visibility: "hidden", opacity: 1}).set(".smoke-text", { 
+    opacity: 0
+  });
+  
+ScrollTrigger.batch(".smoke-vid, .smoke-text", {
+  interval: 0.1, // time window (in seconds) for batching to occur.
+  batchMax: 3, // maximum batch size (targets). Can be function-based for dynamic values
+
+  onEnter: (batch) =>
+    timeline.to(batch, {
+      opacity: 1,
       autoAlpha: 1,
-      scrollTrigger: {
-        trigger: "#fourth-section",
-        scroller: "body",
-        scrub: true,
+      onToggle: playVideo("smokey"),
+      y: 50,
+      stagger: { each: 2.3 , grid: [1, 100] },
+      overwrite: true,
+      duration: 5,
+    }).to(batch, {
+      autoAlpha: 0,
+      duration: 0.5
+    }),
+  onLeave: (batch) => timeline.to(batch, {   autoAlpha: 0, overwrite: true,
+   }),
+  onEnterBack: (batch) =>
+    timeline.to(batch, { opacity: 0, y: 50, stagger: 0.15, overwrite: true , }),
+  onLeaveBack: (batch) =>
+    timeline.set(batch, { opacity: 0, y: 50, overwrite: true }),
+  // you can also define most normal ScrollTrigger values like start, end, etc.
 
-        ease: "power1",
-        onToggle: (self) =>
-          self.isActive ? playVideo("smokey") : pauseVideo("smokey"),
-        start: "top 20%", //when top  passes the bottom viewport height
-        //events: onEnter onLeave onEnterBack onLeaveBack
+  start: "20px bottom",
+  
+});
 
-        //options: play, pause, resume, reset, restart, complete, reverse,none
-      },
-    })
-    .to(
-      ".smoke-text",
-      {
-        
-        autoAlpha: 1,
-        duration: 12,
-        delay: 5,
-        scrollTrigger: {
-          trigger: "#fourth-section",
-          scroller: "body",
-          scrub: true,
-
-          ease: "power1",
-          onToggle: (self) =>
-            self.isActive ? playVideo("smokey") : pauseVideo("smokey"),
-          start: "top 20%", //when top  passes the bottom viewport height
-          //events: onEnter onLeave onEnterBack onLeaveBack
-
-          //options: play, pause, resume, reset, restart, complete, reverse,none
-        },
-      },
-      ">5"
-    )
-    .to(
-      ".smoke-vid",
-      {
-        autoAlpha: 0,
-      },
-      "7.5"
-    )
-    .to(".smoke-text", {
-      opacity: 0,
-      duration: 2,
-    });
+// when ScrollTrigger does a refresh(), it maps all the positioning data which 
+// factors in transforms, but in this example we're initially setting all the ".box"
+// elements to a "y" of 100 solely for the animation in which would throw off the normal 
+// positioning, so we use a "refreshInit" listener to reset the y temporarily. When we 
+// return a gsap.set() in the listener, it'll automatically revert it after the refres
 }
 
 scrollAnimation();

@@ -661,12 +661,9 @@ a:active {
   
 }
 
-
-
 .smoke-text {
   position: absolute;
-  z-index: 380;
-  visibility: hidden;
+  z-index: 300;
   font-size: 4rem;
   font-weight: 550;
   color: white;
