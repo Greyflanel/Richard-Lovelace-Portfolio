@@ -39,6 +39,7 @@ ScrollTrigger.batch(".smoke-vid, .smoke-text", {
       opacity: 0.5,
       autoAlpha: 1,
       onToggle: playVideo("smokey"),
+      toggleActions: "restart none none none",
       y: 80,
       duration: 4,
       stagger: { each: 2.5 , grid: [1, 20] },
