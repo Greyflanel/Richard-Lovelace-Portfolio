@@ -39,16 +39,18 @@ ScrollTrigger.batch(".smoke-vid, .smoke-text", {
       opacity: 0.5,
       autoAlpha: 1,
       onToggle: playVideo("smokey"),
-      toggleActions: "restart none none none",
-      y: 80,
-      duration: 4,
-      stagger: { each: 2.5 , grid: [1, 20] },
+      
+      y: 60,
+      duration: 5,
+      stagger: { each: 1.8 , grid: [1, 20] },
       ease: "power1.in",
       duration: 5,
     }).to(batch, {
       autoAlpha: 0,
-      duration: 0.5
+      duration: 0.8
       
+    }).to(".smoke-vid, .smoke-text", {
+      display: "none"
     }),
   
 
