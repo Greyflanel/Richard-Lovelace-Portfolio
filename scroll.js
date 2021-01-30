@@ -47,14 +47,14 @@ ScrollTrigger.batch(".smoke-vid, .smoke-text", {
       duration: 5,
     }).to(batch, {
       autoAlpha: 0,
-      duration: 0.8
-      
+      duration: 0.8,
+      start: "1% bottom",
     }).to(".smoke-vid, .smoke-text", {
       display: "none"
     }),
   
 
-  start: "20px bottom",
+  
   
 });
 
