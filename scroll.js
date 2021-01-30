@@ -3,14 +3,15 @@ gsap.registerPlugin(ScrollTrigger);
 function playVideo(el) {
   let vid = document.getElementById(el);
   vid.play();
+  
   console.log("playing video");
 };
 
-function pauseVideo(el) {
-  let vid = document.getElementById(el);
-  vid.pause();
-  console.log("pausing video");
-};
+// function pauseVideo(el) {
+//   let vid = document.getElementById(el);
+//   vid.pause();
+//   console.log("pausing video");
+// };
 
 let timeline = gsap.timeline({
   repeat: 0,
@@ -25,7 +26,8 @@ let timeline2 = gsap.timeline({
 function scrollAnimation() {
   
   timeline.set(".smoke-vid", {visibility: "hidden", opacity: 1}).set(".smoke-text", { 
-    opacity: 0
+    opacity: 0,
+    repeat: 0
   });
   
 ScrollTrigger.batch(".smoke-vid, .smoke-text", {
@@ -34,24 +36,20 @@ ScrollTrigger.batch(".smoke-vid, .smoke-text", {
 
   onEnter: (batch) =>
     timeline.to(batch, {
-      opacity: 1,
+      opacity: 0.5,
       autoAlpha: 1,
       onToggle: playVideo("smokey"),
-      y: 50,
-      stagger: { each: 2.3 , grid: [1, 100] },
-      overwrite: true,
+      y: 80,
+      duration: 4,
+      stagger: { each: 2.5 , grid: [1, 20] },
+      ease: "power1.in",
       duration: 5,
     }).to(batch, {
       autoAlpha: 0,
       duration: 0.5
+      
     }),
-  onLeave: (batch) => timeline.to(batch, {   autoAlpha: 0, overwrite: true,
-   }),
-  onEnterBack: (batch) =>
-    timeline.to(batch, { opacity: 0, y: 50, stagger: 0.15, overwrite: true , }),
-  onLeaveBack: (batch) =>
-    timeline.set(batch, { opacity: 0, y: 50, overwrite: true }),
-  // you can also define most normal ScrollTrigger values like start, end, etc.
+  
 
   start: "20px bottom",
   
