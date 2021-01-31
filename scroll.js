@@ -35,10 +35,11 @@ let smokeAnimation = ScrollTrigger.batch(".smoke-vid, .smoke-text", {
   batchMax: 3, // maximum batch size (targets). Can be function-based for dynamic values
 
   onEnter: (batch) =>
-    timeline.to(batch, {
+    timeline.call
+    (playVideo,['smokey']).to(batch, {
       opacity: 0.5,
       autoAlpha: 1,
-      onToggle: playVideo("smokey"),
+      
       
       y: 60,
       duration: 5,
@@ -54,7 +55,7 @@ let smokeAnimation = ScrollTrigger.batch(".smoke-vid, .smoke-text", {
     }),
   
 });
-smokeAnimation.kill();
+
 }
 
 scrollAnimation();
