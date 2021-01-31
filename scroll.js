@@ -48,7 +48,7 @@ ScrollTrigger.batch(".smoke-vid, .smoke-text", {
     }).to(batch, {
       autoAlpha: 0,
       duration: 0.8,
-      start: "1% bottom",
+      
     }).to(".smoke-vid, .smoke-text", {
       display: "none"
     }),
