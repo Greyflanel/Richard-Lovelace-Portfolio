@@ -14,7 +14,7 @@ function playVideo(el) {
 // };
 
 let timeline = gsap.timeline({
-  repeat: 0,
+  repeat: 10,
   scrollTrigger: "body",
 });
 let timeline2 = gsap.timeline({
