@@ -653,7 +653,7 @@ a:active {
 
 
 .smoke {
-  width: 55%;
+  width: 55vw;
   position: relative;
   display: flex;
   justify-content: center;
