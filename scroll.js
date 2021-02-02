@@ -14,10 +14,10 @@ function playVideo(el) {
 
 let timeline = gsap.timeline({
   repeat: 0,
-  ease: "power1.out",
+  ease: "elastic.in",
   onStart: playVideo("smokey"),
 });
-
+let num = gsap.utils.wrap(5, 10, 12);
 
 function scrollAnimation() {
   timeline
@@ -32,17 +32,17 @@ function scrollAnimation() {
     .to(
       ".smoke-text",
       {
-        delay: 10.5,
+        delay: 9,
         duration: 16,
         autoAlpha: 1,
       },
-      "-=10"
+      "-=9"
     )
     .to(
       ".smoke-vid",
       {
         y: 60,
-        duration: 6,
+        duration: 6.5,
       },
       "-=20"
     )
@@ -50,9 +50,9 @@ function scrollAnimation() {
       ".smoke-text",
       {
         y: 60,
-        duration: 4.5,
+        duration: 4.6,
       },
-      "-=17.5"
+      "-=17"
     )
     .to(
       ".smoke-vid",
