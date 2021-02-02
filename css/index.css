@@ -663,7 +663,7 @@ a:active {
 
 .smoke-text {
   position: absolute;
-  margin-top: 12%;
+  margin-top: 2%;
   z-index: 300;
   font-size: 4rem;
   font-weight: 550;
