@@ -36,7 +36,7 @@ function scrollAnimation() {
         duration: 16,
         autoAlpha: 1,
       },
-      "-=10.3"
+      "-=10"
     )
     .to(
       ".smoke-vid",
@@ -50,9 +50,9 @@ function scrollAnimation() {
       ".smoke-text",
       {
         y: 60,
-        duration: 4,
+        duration: 4.5,
       },
-      "-=18"
+      "-=17.5"
     )
     .to(
       ".smoke-vid",
@@ -64,9 +64,10 @@ function scrollAnimation() {
     .to(
       ".smoke",
       {
-        autoAlpha: 0
+        autoAlpha: 0,
+        duration: 1.5
       },
-      "-=10.5"
+      "-=10"
     );
 
 }
