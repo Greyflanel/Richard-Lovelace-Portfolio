@@ -14,7 +14,7 @@ function playVideo(el) {
 
 let timeline = gsap.timeline({
   repeat: 0,
-  ease: "power1.inOut",
+  ease: "power1.out",
   onStart: playVideo("smokey"),
 });
 
@@ -32,43 +32,43 @@ function scrollAnimation() {
     .to(
       ".smoke-text",
       {
-        delay: 7.5,
-        duration: 23,
+        delay: 10.5,
+        duration: 16,
         autoAlpha: 1,
       },
-      "-=6.9"
+      "-=10.3"
     )
     .to(
       ".smoke-vid",
       {
         y: 60,
-        duration: 8,
+        duration: 6,
       },
-      "-=23.5"
+      "-=20"
     )
     .to(
       ".smoke-text",
       {
         y: 60,
-        duration: 6,
+        duration: 4,
       },
-      "-=23.5"
+      "-=18"
     )
     .to(
       ".smoke-vid",
       {
         autoAlpha: 0,
       },
-      "-=17"
+      "-=12"
     )
     .to(
       ".smoke",
       {
-        autoAlpha: 0,
+        autoAlpha: 0
       },
       "-=10.5"
     );
 
 }
-
+timeline.restart();
 scrollAnimation();
