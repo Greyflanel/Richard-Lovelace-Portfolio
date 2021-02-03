@@ -12,19 +12,21 @@ function playVideo(el) {
 //   console.log("pausing video");
 // };
 
-
+let timeline = gsap.timeline({
+  repeat: 0,
+  ease: "power1.inOut",
+  scrollTrigger: {
+    trigger: "#fourth-section",
+    start: "top 15%"
+  }
+});
 
 
 function scrollAnimation() {
-  let timeline = gsap.timeline({
-  repeat: 0,
-  ease: "elastic.in",
-  onStart: playVideo("smokey"),
-});
   timeline
     .set(".smoke-vid, .smoke-text", {
       opacity: 0,
-    })
+    }).call(playVideo, ["smokey"])
     .to(".smoke-vid", {
       duration: 3,
       autoAlpha: 1,
@@ -33,61 +35,46 @@ function scrollAnimation() {
     .to(
       ".smoke-text",
       {
-        delay: 9,
-        duration: 16,
+        delay: 7.2,
+        duration: 23,
         autoAlpha: 1,
       },
-      "-=9"
+      "-=6.9"
     )
     .to(
       ".smoke-vid",
       {
         y: 60,
-        duration: 6.5,
+        duration: 6,
       },
-      "-=20"
+      "-=24"
     )
     .to(
       ".smoke-text",
       {
         y: 60,
-        duration: 4.6,
+        duration: 4.5,
       },
-      "-=17"
+      "-=23.5"
     )
     .to(
       ".smoke-vid",
       {
         autoAlpha: 0,
       },
-      "-=12"
+      "-=18.5"
     )
     .to(
       ".smoke",
       {
         autoAlpha: 0,
-        duration: 1.5
+        duration: 1.5,
       },
-      "-=10"
+      "-=14"
     );
 
 }
-ScrollTrigger.create({
-  trigger: "#fourth-section",
-  start: "top 25%",
-  endTrigger: ".smoke-text",
-  end: "bottom 50%+=100px",
-  onStart: (self) => console.log("started", self.isActive),
-  onToggle: (self) => console.log("toggled, isActive:", self.isActive),
-  onUpdate: (self) => {
-    console.log(
-      "progress:",
-      self.progress.toFixed(3),
-      "direction:",
-      self.direction,
-      "velocity",
-      self.getVelocity().toFixed(3)
-    );
-  },
-});
+
+
+
 scrollAnimation();
