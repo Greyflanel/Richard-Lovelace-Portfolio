@@ -21,6 +21,9 @@ let timeline = gsap.timeline({
   }
 });
 
+let timeline2 = gsap.timeline({ 
+
+})
 
 function scrollAnimation() {
   timeline
@@ -76,8 +79,41 @@ function scrollAnimation() {
       duration: 16
     }, "-=15");
 
-}
+};
 
+timeline2.from(
+  ".developer-logo",
+  1,
+  {
+    
+    delay: 13,
+    opacity: 0,
+    scale: 0,
+  },
+  {
+    duration: 8,
+    opacity: 1,
+    scale: 1,
+    ease: "power1.inOut",
+  }
+);
 
+timeline2.fromTo(
+  ".developer-logo",
+  1,
+  {
+    rotation: 0,
+    
+  },
+  {
+    duration: 5,
+    x: "-140%",
+    rotateY: 2880,
+    repeat: 0,
+    ease: "smooth.inOut"
+    
+  }
+);
 
+ 
 scrollAnimation();

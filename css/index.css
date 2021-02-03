@@ -29,8 +29,7 @@ body {
 #first-section {
   position: relative;
   width: 100%;
-  height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100);
+  height: 100vh;
   display: flex;
   justify-content: center;
   overflow: auto;
@@ -64,6 +63,14 @@ body {
   align-items: center;
   background-color: #2E002E;
   position: relative;
+}
+
+@media (min-width: 280px) and (max-width: 600px) {
+  #fourth-section {
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 2rem;
+  }
 }
 
 .menu-btn {
@@ -612,7 +619,7 @@ a:active {
   font-size: 6rem;
   margin-top: 4%;
   margin-bottom: 2%;
-  width: 40vw;
+  width: 50vw;
   padding: 1%;
   border-radius: 5px;
   text-align: center;
@@ -630,7 +637,7 @@ a:active {
 }
 @media (max-width: 700px) {
   .third-section-title h1{
-    font-size: 2rem;
+    font-size: 3rem;
     
   }
 }
@@ -658,7 +665,12 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+}
+
+@media (min-width: 280px) and (max-width: 600px) {
+  .smoke {
+    width: 100%;
+  }
 }
 
 .smoke-text {
@@ -669,19 +681,30 @@ a:active {
   font-weight: 550;
   color: white;
   text-shadow: 0 0 1px #2e042e, 0 0 2px #1a011a, 0 0 3px white, 0 0 4px #250225,
-    0 0 5px #000000;
-    
+    0 0 5px #000000; 
 }
 
+@media (min-width: 280px) and (max-width: 600px) {
+  .smoke-text {
+    font-size: 2rem;
+  }
+}
 
 .contact-container {
-  width: 40%;
+  width: 30%;
   border-radius: 5px;
-  background-color: #673a7c;
+  background-color:#6b016b;
   padding: 20px;
   color: white;
   font-size: 1.2rem;
-  margin-top: 4%;
+  
+  
+}
+
+@media (min-width: 280px) and (max-width: 600px) {
+  .contact-container {
+    width: 85%;
+  }
 }
 
 form {
@@ -689,6 +712,7 @@ form {
   flex-direction: column;
   justify-content: center;
 }
+
 
 input[type=text], select, textarea {
   width: 100%;
@@ -698,25 +722,33 @@ input[type=text], select, textarea {
   margin-top: 1%;
   margin-bottom: 1%;
   resize: vertical;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 
 input[type=submit] {
   background-color: chartreuse;
-  padding: 12px 20px;
+  padding: 2%;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 25%;
+  font-size: 1rem;
 }
 
+@media (min-width: 280px) and (max-width: 600px) {
+  input[type=submit] {
+    width: 60%;
+  }
+}
 
 input[type=submit]:hover {
   background-color: #19dd20;
   color: white;
 }
 
+.developer-logo {
+  
+}
 
 /*# sourceMappingURL=index.css.map */
