@@ -674,5 +674,49 @@ a:active {
 }
 
 
+.contact-container {
+  width: 40%;
+  border-radius: 5px;
+  background-color: #673a7c;
+  padding: 20px;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 4%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 2%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  resize: vertical;
+}
+
+
+input[type=submit] {
+  background-color: chartreuse;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+input[type=submit]:hover {
+  background-color: #19dd20;
+  color: white;
+}
+
 
 /*# sourceMappingURL=index.css.map */

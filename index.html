@@ -185,7 +185,22 @@
         <video  id="smokey" class="smoke-vid" width="100%" src="/assets/smoke2.mp4" type="video/mp4" muted></video>
         <h1 class="smoke-text">Thank You</h1>
       </div>
-      
+      <div class="contact-container">
+    <form name="contact" action="POST" data-netlify="true" >
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name...">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email address...">
+    <label for="email">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="The subject...">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Write a message..." style="height:200px"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<div class="contact-logo"></div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>

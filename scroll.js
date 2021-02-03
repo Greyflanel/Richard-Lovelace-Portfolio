@@ -35,7 +35,7 @@ function scrollAnimation() {
     .to(
       ".smoke-text",
       {
-        delay: 7.2,
+        delay: 7.3,
         duration: 23,
         autoAlpha: 1,
       },
@@ -71,7 +71,10 @@ function scrollAnimation() {
         duration: 1.5,
       },
       "-=14"
-    );
+    ).to(".contact-container", {
+      autoAlpha: 1,
+      duration: 16
+    }, "-=15");
 
 }
 
