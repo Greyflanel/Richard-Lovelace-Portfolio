@@ -61,7 +61,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2E002E;
+  background-color:#260033;
   position: relative;
 }
 
@@ -748,9 +748,18 @@ input[type=submit]:hover {
 }
 
 .developer-logo {
+  position: fixed;
+  z-index: 500;
+  top: 1%;
+  left: 1%;
   border-radius: 50%;
-  box-shadow: inset 200px 200px 1045px 80px #850985;
+  opacity: 1; 
   }
 
+  .dev-logo-img {
+    width: 12%;
+    
+    
+  }
   
 /*# sourceMappingURL=index.css.map */

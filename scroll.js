@@ -12,55 +12,32 @@ function playVideo(el) {
 //   console.log("pausing video");
 // };
 
-let timeline = gsap.timeline({
-  repeat: 0,
+let timeline = gsap.timeline().from(".smoke", {
+  
   ease: "power1.inOut",
   scrollTrigger: {
     trigger: "#fourth-section",
-    start: "top 15%"
-  }
+    start: "top 5%",
+    
+  },
 });
 
-let timeline2 = gsap.timeline({ 
+let timeline2 = gsap.timeline().from(".developer-logo",{
+  scrollTrigger: {
+    trigger: "#fourth-section",
+    start: "top 5%",
+  },
+});
 
-})
-
+console.log(timeline2)
 function scrollAnimation() {
-  timeline2.from(
-    ".developer-logo",
-    1,
-    {
-      opacity: 0,
-    },
-    {
-      duration: 8,
-      opacity: 1,
-      scale: 0.6,
-      
-    }
-  );
-
-  timeline2.fromTo(
-    ".developer-logo",
-    10,
-    {
-      scale: 0,
-    },
-    {
-      delay: 3,
-      rotation: 360,
-      scale: 0.8,
-      duration: 12,
-      x: "20%",
-      
-      repeat: 0,
-      ease: "smooth",
-    }
-  );
-
+  
+  
+    
   timeline
     .set(".smoke-vid, .smoke-text", {
       opacity: 0,
+      
     }).call(playVideo, ["smokey"])
     .to(".smoke-vid", {
       duration: 3,
@@ -97,7 +74,7 @@ function scrollAnimation() {
       {
         autoAlpha: 0,
       },
-      "-=18.5"
+      "-=19"
     )
     .to(
       ".smoke",
@@ -111,8 +88,37 @@ function scrollAnimation() {
       duration: 16
     }, "-=15");
 
+// New timeline
+
+    timeline2.fromTo(
+      ".dev-logo-img",
+      8,
+      {},
+      {
+        rotation: 360,
+        scale: 3,
+        
+        x: "10vw",
+        y: "50vh",
+        repeat: 0,
+      }
+    );
+
+    timeline2
+      .to(".developer-logo", {
+        opacity: 0,
+        duration: 2,
+      })
+      .to(".developer-logo", {
+        width: "10%",
+        height: "11%",
+        x: "-9vw",
+        y: "-48vh",
+      })
+      .to(".developer-logo", {
+        opacity: 1,
+        duration: 2
+      });
 };
-
-
  
 scrollAnimation();
