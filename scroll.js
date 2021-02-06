@@ -85,8 +85,7 @@ function scrollAnimation() {
       duration: 16
     }, "-=15");
 
-// New timeline
-
+  }
     
  
 scrollAnimation();
