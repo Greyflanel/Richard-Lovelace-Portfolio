@@ -17,7 +17,7 @@ window.onload = function () {
   function mediaqueryresponse(mql) {
     let tl = gsap.timeline({ repeat: -1 });
     let tl2 = gsap.timeline({ repeat: -1, repeatDelay: 5 });
-    let tl3 = gsap.timeline({ repeat: -1 });
+    let tl3 = gsap.timeline({ repeat: -1, repeatDelay: 1});
     let tl4 = gsap.timeline({ repeat: 0 });
     let tl5 = gsap.timeline({ repeat: 5 });
 
@@ -45,6 +45,16 @@ window.onload = function () {
       delay: 1,
     });
     
+    tl3.set(".scroll-down-arrow-img", {
+      visibility: "hidden", duration:1,     
+    }).to(".scroll-down-arrow-img", {
+      autoAlpha: 1,
+      duration: 0.9,
+      y: "15px",
+    }).to(".scroll-down-arrow-img", {
+      autoAlpha: 0,
+      
+    }, "-=1")
 
     tl.set(".container", {
       visibility: "visible",
@@ -58,6 +68,7 @@ window.onload = function () {
     if (mqls[0].matches) {
       
       tl.to(".container", {
+        
         x: "+=45%",
         y: "-=20%",
         duration: 20,

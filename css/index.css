@@ -85,7 +85,7 @@ body {
   width: 39px;
   height: 6px;
   margin: 0 0 5px 0;
-  border: 0.5px solid blueviolet;
+  border: 0.5px solid #8a2be2;
   box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 4px 5px #3a043a,
     0 4px 5px #3a043a;
   background-color: rgba(20, 5, 18, 0.507);
@@ -235,15 +235,15 @@ a:active {
 
 .moon {
   position: absolute;
-  width: 75%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-  border-radius: 60%;
-  filter: drop-shadow(0px 0px 100px #f8c5fc);
+  
+  filter: drop-shadow(0px -9px 120px #ffffff);
   z-index: 0;
-  box-shadow: 0 0 5px 300px transparent;
+  box-shadow: 0 0 0px 20px transparent;
 }
 
 .content {
@@ -254,7 +254,7 @@ a:active {
   visibility: hidden;
   color: #0a0111;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  text-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px white, 0 0 7px #3a043a,
+  text-shadow: 0 0 0.5px white, 0 0 1px white, 0 0 3px white, 0 0 7px #3a043a,
     0 0 9px #3a043a;
 }
 
@@ -299,16 +299,16 @@ a:active {
   z-index: 1;
   width: 100%;
   height: 100%;
-  filter: blur(7rem) brightness(310%) contrast(1.1);
-  opacity: 0.6;
-  border-radius: 50%;
+  filter: blur(7rem) brightness(105%);
+  opacity: 0.8;
+  border-radius: 10%;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle, #260e36c0, transparent 550%) center / 650%,
-    radial-gradient(circle, #422d52c0, #251233c0 250%) center / 10% 10%;
+  background: radial-gradient(circle, #200331ea, transparent  150%) center / 80%,
+    radial-gradient(circle, #330649c0, #480953c0 10%) center / 10% 10%;
   mix-blend-mode: color-dodge;
 }
 
@@ -316,16 +316,16 @@ a:active {
 .spotlight2 {
   z-index: 100;
   margin: 0 auto;
-  width: 60%;
-  height: 35%;
-  filter: blur(5rem) brightness(205%) contrast(1.5);
+  
+ 
+  filter: blur(7rem) brightness(135%);
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 0%;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle, rgb(75, 55, 83), rgb(36, 32, 36)) center /
-    10% 10%;
+  background: radial-gradient(circle, rgb(70, 27, 88), rgb(92, 49, 92)) center /
+    100% 100%;
   mix-blend-mode: color-dodge;
 }
 
@@ -723,6 +723,7 @@ input[type=text], select, textarea {
   margin-bottom: 1%;
   resize: vertical;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 0.92rem;
 }
 
 
@@ -762,4 +763,34 @@ input[type=submit]:hover {
     
   }
   
+.scroll-down-arrow {
+  position: absolute;
+  bottom: 2%;
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+
+.scroll-down-arrow-img {
+  margin-left: 30%;
+  color: blueviolet;
+  
+}
+
+.scroll-down-text {
+  position: absolute;
+  z-index: 500;
+  font-family: Georgia, Times, "Times New Roman", sans-serif;
+  text-align: center;
+  bottom: 50%;
+  left: -70%;
+  width: 15rem;
+  font-size: 2rem;
+  font-weight: 200;
+  color: white;
+  border: 3px solid #550055;
+  padding: 8px;
+  border-radius: 10px;
+}
+
 /*# sourceMappingURL=index.css.map */
