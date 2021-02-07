@@ -59,7 +59,7 @@ body {
   height: 100%;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   background-color:#260033;
   position: relative;
@@ -619,7 +619,7 @@ a:active {
   font-size: 6rem;
   margin-top: 4%;
   margin-bottom: 2%;
-  width: 50vw;
+  width: 45vw;
   padding: 1%;
   border-radius: 5px;
   text-align: center;
@@ -658,6 +658,21 @@ a:active {
   
 }
 
+.fourth-section-title h1 {
+  position: absolute;
+  top: -3%;
+  left: 28%;
+  font-size: 6rem;
+  width: 45vw;
+  padding: 1%;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 2px white, 0 0 3px white, 0 0 4px #3a043a73, 0 2px 5px #3a043a,
+    0 3px 5px #000000a8;
+  background-color: #550055;
+  box-shadow: 5px 10px 30px 8px #46324648;
+}
 
 .smoke {
   width: 55vw;
@@ -665,6 +680,7 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 6%;
 }
 
 @media (min-width: 280px) and (max-width: 600px) {
@@ -697,7 +713,8 @@ a:active {
   padding: 20px;
   color: white;
   font-size: 1.2rem;
-  margin-right: 2rem;
+  
+  margin-top: 25vh;
   border: 2px solid rgba(5, 0, 5, 0.658);
 }
 
@@ -721,7 +738,7 @@ input[type=text], select, textarea {
   border-radius: 4px;
   margin-top: 1%;
   margin-bottom: 1%;
-  resize: vertical;
+  resize: none;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 0.92rem;
 }
