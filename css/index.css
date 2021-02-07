@@ -744,8 +744,9 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #19dd20;
+  background-color: #0a01119a;
   color: white;
+  box-shadow: 0 0 4px white;
 }
 
 .developer-logo {

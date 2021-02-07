@@ -71,25 +71,25 @@ window.onload = function () {
           
         x: "+=45%",
         y: "-=20%",
-        duration: 20,
+        duration: 30,
         ease: "linear",
       })
         .to(".container", {
           x: "+=45%",
           y: "+=20%",
-          duration: 20,
+          duration: 30,
           ease: "linear",
         })
         .to(".container", {
           x: "-=45%",
           y: "+=20%",
-          duration: 20,
+          duration: 30,
           ease: "linear",
         })
         .to(".container", {
           x: "-=45%",
           y: "-=20%",
-          duration: 20,
+          duration: 30,
           ease: "linear",
         });
     } else if (mqls[1].matches) {
@@ -100,25 +100,25 @@ window.onload = function () {
       tl.to(".container", {
         x: "+=38%",
         y: "-=13%",
-        duration: 20,
+        duration: 30,
         ease: "linear",
       })
         .to(".container", {
           x: "+=38%",
           y: "+=13%",
-          duration: 20,
+          duration: 30,
           ease: "linear",
         })
         .to(".container", {
           x: "-=38%",
           y: "+=13%",
-          duration: 20,
+          duration: 30,
           ease: "linear",
         })
         .to(".container", {
           x: "-=38%",
           y: "-=13%",
-          duration: 20,
+          duration: 30,
           ease: "linear",
         });
 
@@ -130,25 +130,25 @@ window.onload = function () {
       tl.to(".container", {
         x: "+=34%",
         y: "-=13%",
-        duration: 20,
+        duration: 30,
         ease: "linear",
       })
         .to(".container", {
           x: "+=34%",
           y: "+=13%",
-          duration: 20,
+          duration: 30,
           ease: "linear",
         })
         .to(".container", {
           x: "-=34%",
           y: "+=13%",
-          duration: 20,
+          duration: 30,
           ease: "linear",
         })
         .to(".container", {
           x: "-=34%",
           y: "-=13%",
-          duration: 20,
+          duration: 30,
           ease: "linear",
         });
     } else if (mqls[3].matches) {
@@ -158,25 +158,25 @@ window.onload = function () {
       tl.to(".container", {
         x: "+=34%",
         y: "-=13%",
-        duration: 20,
+        duration: 30,
         ease: "linear",
       })
         .to(".container", {
           x: "+=34%",
           y: "+=13%",
-          duration: 20,
+          duration: 30,
           ease: "linear",
         })
         .to(".container", {
           x: "-=34%",
           y: "+=13%",
-          duration: 20,
+          duration: 30,
           ease: "linear",
         })
         .to(".container", {
           x: "-=34%",
           y: "-=13%",
-          duration: 20,
+          duration: 30,
           ease: "linear",
         });
     } else if (mqls[4].matches) {
@@ -187,25 +187,25 @@ window.onload = function () {
       tl.to(".container", {
         x: "+=34%",
         y: "-=13%",
-        duration: 20,
+        duration: 30,
         ease: "linear",
       })
         .to(".container", {
           x: "+=34%",
           y: "+=13%",
-          duration: 20,
+          duration: 30,
           ease: "linear",
         })
         .to(".container", {
           x: "-=34%",
           y: "+=13%",
-          duration: 20,
+          duration: 30,
           ease: "linear",
         })
         .to(".container", {
           x: "-=34%",
           y: "-=13%",
-          duration: 20,
+          duration: 30,
           ease: "linear",
         });
     } else if (mqls[5].matches) {
@@ -216,25 +216,25 @@ window.onload = function () {
       tl.to(".container", {
         x: "+=34%",
         y: "-=13%",
-        duration: 20,
+        duration: 30,
         ease: "linear",
       })
         .to(".container", {
           x: "+=34%",
           y: "+=13%",
-          duration: 20,
+          duration: 30,
           ease: "linear",
         })
         .to(".container", {
           x: "-=34%",
           y: "+=13%",
-          duration: 20,
+          duration: 30,
           ease: "linear",
         })
         .to(".container", {
           x: "-=34%",
           y: "-=13%",
-          duration: 20,
+          duration: 30,
           ease: "linear",
         });
     } else if (mqls[6].matches) {
@@ -245,25 +245,25 @@ window.onload = function () {
       tl.to(".container", {
         x: "+=34%",
         y: "-=13%",
-        duration: 20,
+        duration: 30,
         ease: "linear",
       })
         .to(".container", {
           x: "+=34%",
           y: "+=13%",
-          duration: 20,
+          duration: 30,
           ease: "linear",
         })
         .to(".container", {
           x: "-=34%",
           y: "+=13%",
-          duration: 20,
+          duration: 30,
           ease: "linear",
         })
         .to(".container", {
           x: "-=34%",
           y: "-=13%",
-          duration: 20,
+          duration: 30,
           ease: "linear",
         });
     }
