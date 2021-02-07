@@ -76,20 +76,21 @@ body {
 .menu-btn {
   position: fixed;
   z-index: 350;
-  right: 40px;
-  top: 40px;
+  right: 35px;
+  top: 35px;
   cursor: pointer;
   transition: all 0.5s ease-out;
 }
 .menu-btn .btn-line {
   width: 39px;
   height: 6px;
-  margin: 0 0 5px 0;
-  border: 0.5px solid #8a2be2;
+  margin: 0 0 7px 0;
+  border: 0.5px solid #550055;
   box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 4px 5px #3a043a,
     0 4px 5px #3a043a;
   background-color: rgba(20, 5, 18, 0.507);
   transition: all 0.5s ease-out;
+  filter: brightness(150%);
 }
 .menu-btn.close {
   transform: rotate(180deg);
@@ -101,7 +102,7 @@ body {
   opacity: 0;
 }
 .menu-btn.close .btn-line:nth-child(3) {
-  transform: rotate(-45deg) translate(10px, -11px);
+  transform: rotate(-45deg) translate(13px, -13px);
 }
 
 .menu {
@@ -220,7 +221,7 @@ a:active {
 @media (max-width: 1100px) {
   .container {
     width: 30%;
-    height: 40%;
+    height: 30%;
     
   }
 }
@@ -272,7 +273,7 @@ a:active {
 
 @media (max-width: 600px) {
   .content-name {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-top: 25%;
   }
 }
@@ -291,7 +292,8 @@ a:active {
 
 @media (max-width: 600px) {
   .content-title {
-    margin-top: 50%;
+    margin-top: 40%;
+    font-size: 2.7rem;
   }
 }
 
@@ -299,15 +301,15 @@ a:active {
   z-index: 1;
   width: 100%;
   height: 100%;
-  filter: blur(7rem) brightness(105%);
-  opacity: 0.8;
-  border-radius: 10%;
+  filter: blur(5rem) brightness(70%);
+
+  border-radius: 6%;
   position: absolute;
-  top: 0;
+  top: -5%;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle, #200331ea, transparent  150%) center / 80%,
+  background: radial-gradient(circle, #200331ea, transparent  100%) center / 80%,
     radial-gradient(circle, #330649c0, #480953c0 10%) center / 10% 10%;
   mix-blend-mode: color-dodge;
 }
@@ -316,8 +318,6 @@ a:active {
 .spotlight2 {
   z-index: 100;
   margin: 0 auto;
-  
- 
   filter: blur(7rem) brightness(135%);
   position: absolute;
   top: 20%;
@@ -751,7 +751,7 @@ input[type=submit]:hover {
 .developer-logo {
   position: fixed;
   z-index: 500;
-  top: 1%;
+  top: 25px;
   left: 1%;
   border-radius: 50%;
   opacity: 1; 
@@ -766,31 +766,37 @@ input[type=submit]:hover {
 .scroll-down-arrow {
   position: absolute;
   bottom: 2%;
-  margin-right: auto;
-  margin-left: auto;
-  
-}
-
-.scroll-down-arrow-img {
-  margin-left: 30%;
-  color: blueviolet;
-  
+  width: 15rem;
+  display: flex;
+  justify-content: center;
 }
 
 .scroll-down-text {
   position: absolute;
-  z-index: 500;
+  z-index: 200;
   font-family: Georgia, Times, "Times New Roman", sans-serif;
   text-align: center;
-  bottom: 50%;
-  left: -70%;
+  bottom: 60%;
   width: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 2rem;
   font-weight: 200;
   color: white;
-  border: 3px solid #550055;
-  padding: 8px;
+  border: 2px solid #550055;
+  padding: 5px;
   border-radius: 10px;
+  box-shadow: 0 0 0.5px white, 0 0 1px white, 0 0 3px white, 0 0 7px #3a043a,
+    0 0 9px #3a043a;
+    background-color: rgba(5, 0, 5, 0.2);
+    filter: brightness(150%);
+    right: 0%;
+}
+
+.scroll-down-arrow a h3:hover {
+  color: #550055;
+  
 }
 
 /*# sourceMappingURL=index.css.map */

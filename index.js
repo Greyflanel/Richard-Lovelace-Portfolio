@@ -31,7 +31,7 @@ window.onload = function () {
       .to(
         ".content",
         {
-          filter: "brightness(130%)",
+          filter: "brightness(120%)",
           duration: 6,
           opacity: 1,
           delay: 1,
@@ -54,7 +54,7 @@ window.onload = function () {
     }).to(".scroll-down-arrow-img", {
       autoAlpha: 0,
       
-    }, "-=1")
+    }, "-=0.3")
 
     tl.set(".container", {
       visibility: "visible",
@@ -68,7 +68,7 @@ window.onload = function () {
     if (mqls[0].matches) {
       
       tl.to(".container", {
-        
+          
         x: "+=45%",
         y: "-=20%",
         duration: 20,
@@ -124,6 +124,7 @@ window.onload = function () {
 
     } else if (mqls[2].matches) {
       tl.set(".container", {
+        width: "55%",
         x: "+=10%",
       });
       tl.to(".container", {
@@ -181,7 +182,7 @@ window.onload = function () {
     } else if (mqls[4].matches) {
       tl.set(".container", {
         x: "+=10%",
-        width: "60%"
+        width: "65%"
       });
       tl.to(".container", {
         x: "+=34%",
@@ -210,7 +211,7 @@ window.onload = function () {
     } else if (mqls[5].matches) {
       tl.set(".container", {
         x: "+=15%",
-        width: "65%"
+        width: "70%"
       });
       tl.to(".container", {
         x: "+=34%",
@@ -238,7 +239,7 @@ window.onload = function () {
         });
     } else if (mqls[6].matches) {
       tl.set(".container", {
-        width: "70%",
+        width: "75%",
         x: "+=13%",
       });
       tl.to(".container", {
