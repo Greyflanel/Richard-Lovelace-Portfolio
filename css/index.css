@@ -320,7 +320,7 @@ a:active {
   margin: 0 auto;
   filter: blur(7rem) brightness(135%);
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 0%;
   right: 0;
   bottom: 0;
@@ -338,7 +338,7 @@ a:active {
   border-radius: 5px;
   margin-top: 4%;
   margin-bottom: 2%;
-  padding: 1%;
+  padding: 0.5%;
   box-shadow: 5px 10px 30px 8px #46324648;
   background-color:#673a7c;
 }
@@ -664,7 +664,7 @@ a:active {
   left: 28%;
   font-size: 6rem;
   width: 45vw;
-  padding: 1%;
+  padding: 0.5%;
   border-radius: 5px;
   text-align: center;
   color: white;
@@ -713,7 +713,6 @@ a:active {
   padding: 20px;
   color: white;
   font-size: 1.2rem;
-  
   margin-top: 25vh;
   border: 2px solid rgba(5, 0, 5, 0.658);
 }
@@ -769,14 +768,17 @@ input[type=submit]:hover {
 .developer-logo {
   position: fixed;
   z-index: 500;
+  
   top: 25px;
   left: 1%;
-  border-radius: 50%;
-  opacity: 1; 
+  border-radius: 5%;
+  opacity: 1;
+  
+  
   }
 
   .dev-logo-img {
-    width: 12%;
+    height: 4rem;
     
     
   }
@@ -795,18 +797,18 @@ input[type=submit]:hover {
   font-family: Georgia, Times, "Times New Roman", sans-serif;
   text-align: center;
   bottom: 60%;
-  width: 15rem;
+  width: 16rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 2rem;
   font-weight: 200;
   color: white;
-  border: 2px solid #550055;
   padding: 5px;
   border-radius: 10px;
-  box-shadow: 0 0 0.5px white, 0 0 1px white, 0 0 3px white, 0 0 7px #3a043a,
-    0 0 9px #3a043a;
+  border: 0.5px solid #550055;
+  box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 4px 5px #3a043a,
+    0 4px 5px #3a043a;
     background-color: rgba(5, 0, 5, 0.2);
     filter: brightness(150%);
     right: 0%;
@@ -815,6 +817,10 @@ input[type=submit]:hover {
 .scroll-down-arrow a h3:hover {
   color: #550055;
   
+}
+
+.contact-info {
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=index.css.map */
