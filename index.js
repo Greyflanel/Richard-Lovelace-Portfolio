@@ -45,17 +45,7 @@ window.onload = function () {
       delay: 1,
     });
     
-    tl3.set(".scroll-down-arrow-img", {
-      visibility: "hidden", duration:1,     
-    }).to(".scroll-down-arrow-img", {
-      autoAlpha: 1,
-      duration: 0.9,
-      y: "15px",
-    }).to(".scroll-down-arrow-img", {
-      autoAlpha: 0,
-      
-    }, "-=0.3")
-
+    
     tl.set(".container", {
       visibility: "visible",
       autoAlpha: 1,

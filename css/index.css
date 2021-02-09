@@ -236,15 +236,15 @@ a:active {
 
 .moon {
   position: absolute;
-  width: 70%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
   
-  filter: drop-shadow(0px -9px 120px #ffffff);
+  filter: drop-shadow(0px 0px 120px #ffffff);
   z-index: 0;
-  box-shadow: 0 0 0px 20px transparent;
+  
 }
 
 .content {
@@ -301,16 +301,16 @@ a:active {
   z-index: 1;
   width: 100%;
   height: 100%;
-  filter: blur(5rem) brightness(70%);
+  filter: blur(4rem) brightness(80%);
 
   border-radius: 6%;
   position: absolute;
-  top: -5%;
+  top: 10%;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle, #200331ea, transparent  100%) center / 80%,
-    radial-gradient(circle, #330649c0, #480953c0 10%) center / 10% 10%;
+  background: radial-gradient(circle, #200331, transparent  1%) center / 200%,
+    radial-gradient(circle, #330649dc, #2a0331c0 200%) center / 100% 100%;
   mix-blend-mode: color-dodge;
 }
 
@@ -318,14 +318,14 @@ a:active {
 .spotlight2 {
   z-index: 100;
   margin: 0 auto;
-  filter: blur(7rem) brightness(135%);
+  filter: blur(4rem) brightness(140%);
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 0%;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle, rgb(70, 27, 88), rgb(92, 49, 92)) center /
-    100% 100%;
+  background: radial-gradient(circle, rgb(69, 21, 90), rgb(52, 15, 61)) center /
+    10% 150%;
   mix-blend-mode: color-dodge;
 }
 
@@ -785,7 +785,7 @@ input[type=submit]:hover {
   
 .scroll-down-arrow {
   position: absolute;
-  bottom: 2%;
+  bottom: 5%;
   width: 15rem;
   display: flex;
   justify-content: center;
@@ -797,7 +797,7 @@ input[type=submit]:hover {
   font-family: Georgia, Times, "Times New Roman", sans-serif;
   text-align: center;
   bottom: 60%;
-  width: 16rem;
+  width: 18rem;
   display: flex;
   flex-direction: column;
   align-items: center;
