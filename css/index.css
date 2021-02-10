@@ -247,6 +247,12 @@ a:active {
   
 }
 
+@media (max-width: 1280px) {
+  .moon {
+    filter: drop-shadow(0px 0px 100px #ffffff);
+  }
+}
+
 .content {
   position: absolute;
   top: 20%;
@@ -305,7 +311,7 @@ a:active {
 
   border-radius: 6%;
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 0;
   right: 0;
   bottom: 0;
@@ -318,7 +324,7 @@ a:active {
 .spotlight2 {
   z-index: 100;
   margin: 0 auto;
-  filter: blur(4rem) brightness(140%);
+  filter: blur(4rem) brightness(110%);
   position: absolute;
   top: 5%;
   left: 0%;
@@ -389,12 +395,12 @@ a:active {
 
 .card {
   position: relative;
-  width: 42rem;
-  height: 23rem;
+  width: 40rem;
+  height: 22rem;
   transform-style: preserve-3d;
   perspective: 1000px;
-  box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 5px 5px #3a043a,
-    0 6px 6px #3a043a;
+  box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 6px 6px #3a043a,
+    0 8px 8px #3a043a;
     
 }
 
@@ -768,12 +774,13 @@ input[type=submit]:hover {
 .developer-logo {
   position: fixed;
   z-index: 500;
-  
   top: 25px;
   left: 1%;
-  border-radius: 5%;
+  border-radius: 50%;
   opacity: 1;
-  
+  box-shadow: 0px 0px 1px white, 0 0 2px white, 0 1px 2.5px white, 0 4px 5px #3a043a,
+    0 4px 5px #3a043a;
+  background-color: rgba(20, 5, 18, 0.7);
   
   }
 
@@ -785,6 +792,7 @@ input[type=submit]:hover {
   
 .scroll-down-arrow {
   position: absolute;
+  z-index: 200;
   bottom: 5%;
   width: 15rem;
   display: flex;
@@ -806,17 +814,18 @@ input[type=submit]:hover {
   color: white;
   padding: 5px;
   border-radius: 10px;
-  border: 0.5px solid #550055;
   box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 4px 5px #3a043a,
     0 4px 5px #3a043a;
-    background-color: rgba(5, 0, 5, 0.2);
+  background-color: rgba(20, 5, 18, 0.507);
     filter: brightness(150%);
     right: 0%;
 }
 
-.scroll-down-arrow a h3:hover {
-  color: #550055;
+.scroll-down-text:hover {
   
+  background-color: rgb(246, 199, 252);
+  color: rgba(20, 5, 18, 0.9);
+  transition: 0.5s;
 }
 
 .contact-info {
