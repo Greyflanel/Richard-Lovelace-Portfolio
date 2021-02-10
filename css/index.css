@@ -236,13 +236,13 @@ a:active {
 
 .moon {
   position: absolute;
-  width: 80%;
+  width: 76%;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
   
-  filter: drop-shadow(0px 0px 120px #ffffff);
+  filter: drop-shadow(0px 0px 140px #fcccff);
   z-index: 0;
   
 }
@@ -307,16 +307,17 @@ a:active {
   z-index: 1;
   width: 100%;
   height: 100%;
-  filter: blur(4rem) brightness(80%);
+  filter: blur(0.5rem) brightness(200%);
 
-  border-radius: 6%;
+  border-radius: 50%;
   position: absolute;
-  top: 5%;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle, #200331, transparent  1%) center / 200%,
-    radial-gradient(circle, #330649dc, #2a0331c0 200%) center / 100% 100%;
+  background: radial-gradient(circle, #380644, transparent  250%) center / 150%,
+    radial-gradient(circle, #39084d6b, #590f68d7 150%) center / 50% 150%, radial-gradient(square, #360342, transparent  500%) center / 10%,
+    radial-gradient(ellipse, #39084d6b, #910dacd7 150%) center / 10% 10%;
   mix-blend-mode: color-dodge;
 }
 
@@ -324,15 +325,15 @@ a:active {
 .spotlight2 {
   z-index: 100;
   margin: 0 auto;
-  filter: blur(4rem) brightness(110%);
+  filter: blur(8rem) brightness(200%);
   position: absolute;
-  top: 5%;
-  left: 0%;
+  top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle, rgb(69, 21, 90), rgb(52, 15, 61)) center /
-    10% 150%;
-  mix-blend-mode: color-dodge;
+  background: radial-gradient(circle, rgba(65, 8, 75, 0.236), rgb(58, 13, 71)) center /
+    1% 1%;
+  mix-blend-mode: color;
 }
 
 .second-section-title {
