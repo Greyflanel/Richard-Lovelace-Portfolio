@@ -63,6 +63,7 @@ body {
   align-items: center;
   background-color:#260033;
   position: relative;
+  padding: 0 2%;
 }
 
 @media (min-width: 280px) and (max-width: 600px) {
@@ -71,6 +72,14 @@ body {
     justify-content: space-around;
     padding-top: 2rem;
   }
+}
+
+#fourth-section h5 {
+  position: absolute;
+  top: 25%;
+  right: 8%;
+  font-size: 2rem;
+  color: chartreuse;
 }
 
 .menu-btn {
@@ -192,15 +201,6 @@ body {
   transition-delay: 0.4s;
 }
 
-#linkedin {
-  width: 2.5vw;
-  height: auto;
-  box-shadow: -2.3px -2.3px 0 rgb(66, 4, 58, 0.4),
-    2.3px -2.3px 0 rgb(66, 4, 58, 0.4), -2.3px 2.3px 0 rgb(66, 4, 58, 0.4),
-    1.3px 1.3px 0 rgb(66, 4, 58, 0.4), 0 0 4px white, 0 0 9px white,
-    0 0 7px #42043a, 0 0 5px #3a043a;
-  background-color: rgba(20, 5, 18, 0.507);
-}
 
 a:active {
   color: chartreuse;
@@ -241,13 +241,13 @@ a:active {
   margin-right: auto;
   left: 0;
   right: 0;
-  filter: drop-shadow(0px 15px 100px #eabcff)  brightness(120%);
+  filter: drop-shadow(0px 15px 90px #ecc6fd)  brightness(120%);
   z-index: 0;
 }
 
 @media (max-width: 1280px) {
   .moon {
-    filter: drop-shadow(0px 0px 80px #ffffff);
+    filter: drop-shadow(0px 0px 80px #ecc6fd);
   }
 }
 
@@ -305,8 +305,8 @@ a:active {
   z-index: 1;
   width: 100%;
   height: 100%;
-  filter: blur(4rem) brightness(170%) ;
-  border-radius: 140%;
+  filter: blur(3rem) brightness(170%) ;
+  border-radius: 120%;
   position: absolute;
   top: 0;
   left: 0;
@@ -314,7 +314,7 @@ a:active {
   bottom: 0;
   background: radial-gradient(ellipse, #380644, transparent  200%) center / 100%,
     radial-gradient(ellipse, #39084d6b, #40094bd7 150%) center / 50% 150%, radial-gradient(ellipse, #360342, transparent  0%) center / 50%,
-    radial-gradient(ellipse, #480a616b, #43095a6b 200%) center / 200% 200%;
+    radial-gradient(ellipse, #480a616b, #3b08506b 200%) center / 200% 200%;
   mix-blend-mode: color-dodge;
 }
 
@@ -329,7 +329,7 @@ a:active {
   right: 0;
   bottom: 0;
   background: radial-gradient(ellipse, rgba(35, 2, 41, 0.4), rgba(36, 8, 43, 0.4)) center /
-    1% 1%;
+    0.5% 0.5%;
   mix-blend-mode: color;
 }
 
@@ -700,8 +700,7 @@ a:active {
   font-size: 4rem;
   font-weight: 550;
   color: white;
-  text-shadow: 0 0 1px #2e042e, 0 0 2px #1a011a, 0 0 3px white, 0 0 4px #250225,
-    0 0 5px #000000; 
+  
 }
 
 @media (min-width: 280px) and (max-width: 600px) {
@@ -709,6 +708,7 @@ a:active {
     font-size: 2rem;
   }
 }
+
 
 .contact-container {
   width: 30%;
@@ -776,7 +776,7 @@ input[type=submit]:hover {
   left: 1%;
   border-radius: 50%;
   opacity: 1;
-  box-shadow: 0px 0px 1px white, 0 0 2px white, 0 1px 2.5px white, 0 4px 5px #3a043a,
+  box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 4px 5px #3a043a,
     0 4px 5px #3a043a;
   background-color: rgba(20, 5, 18, 0.7);
   
@@ -788,7 +788,7 @@ input[type=submit]:hover {
     
   }
   
-.scroll-down-arrow {
+.my-projects-btn {
   position: absolute;
   z-index: 200;
   bottom: 5%;
@@ -797,7 +797,7 @@ input[type=submit]:hover {
   justify-content: center;
 }
 
-.scroll-down-text {
+.my-projects-text {
   position: absolute;
   z-index: 200;
   font-family: Georgia, Times, "Times New Roman", sans-serif;
@@ -819,7 +819,7 @@ input[type=submit]:hover {
     right: 0%;
 }
 
-.scroll-down-text:hover {
+.my-projects-text:hover {
   
   background-color: rgb(246, 199, 252);
   color: rgba(20, 5, 18, 0.9);
@@ -827,7 +827,43 @@ input[type=submit]:hover {
 }
 
 .contact-info {
-  font-size: 1rem;
+  font-size: 2rem;
+  width: 30%;
+  
+  margin-top: 8%;
+  overflow-wrap: break-word;
+}
+
+.contact-info h6 {
+   color: chartreuse;
+   margin-bottom: 2%;  
+}
+
+.contact-info p {
+  color: white;
+  font-size: 1.5rem;
+  max-width: 40%;
+  margin: 0;
+}
+
+#linkedin img {
+ width: 3.5rem;
+  border-radius: 4px;
+  border-width: 3px;
+  border: 0.5px solid blueviolet;
+  box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 4px 5px #3a043a,
+    0 4px 5px #3a043a;
+  background-color: rgba(20, 5, 18, 0.507);
+}
+
+#github img {
+  width: 3.5rem;
+  border-radius: 4px;
+  border-width: 3px;
+  border: 0.5px solid blueviolet;
+  box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 4px 5px #3a043a,
+    0 4px 5px #3a043a;
+  background-color: rgba(20, 5, 18, 0.507);
 }
 
 /*# sourceMappingURL=index.css.map */
