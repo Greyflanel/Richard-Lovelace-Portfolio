@@ -66,20 +66,41 @@ body {
   padding: 0 2%;
 }
 
-@media (min-width: 280px) and (max-width: 600px) {
+@media (min-width: 280px) and (max-width: 400px) {
   #fourth-section {
-    flex-direction: column;
-    justify-content: space-around;
+    
+    justify-content: space-evenly;
     padding-top: 2rem;
   }
 }
 
-#fourth-section h5 {
+.send-me-a-message {
   position: absolute;
   top: 25%;
   right: 8%;
   font-size: 2rem;
   color: chartreuse;
+}
+
+@media (min-width: 1280px) {
+  .send-me-a-message {
+    top: 17%;
+    
+  }
+}
+
+@media (max-width: 1100px) {
+  .send-me-a-message {
+    top: 1%;
+    
+  }
+}
+
+@media (min-width: 200px) {
+  .send-me-a-message {
+    top: 15%;
+    
+  }
 }
 
 .menu-btn {
@@ -677,6 +698,26 @@ a:active {
   box-shadow: 5px 10px 30px 8px #46324648;
 }
 
+@media (min-width: 1280px) {
+  .fourth-section-title h1 {
+    top: -7%;
+    left: 28%;
+    
+  }
+}
+@media (max-width: 1280px) {
+  .fourth-section-title h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 700px) {
+  .fourth-section-title h1{
+    font-size: 2rem;
+    width: 45vw;
+    top: 1%;
+    
+  }
+}
 .smoke {
   width: 55vw;
   position: relative;
@@ -688,7 +729,7 @@ a:active {
 
 @media (min-width: 280px) and (max-width: 600px) {
   .smoke {
-    width: 100%;
+    display: none;
   }
 }
 
@@ -699,12 +740,12 @@ a:active {
   font-size: 4rem;
   font-weight: 550;
   color: white;
-  
+  text-align: center;
 }
 
 @media (min-width: 280px) and (max-width: 600px) {
   .smoke-text {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 
@@ -716,15 +757,29 @@ a:active {
   padding: 20px;
   color: white;
   font-size: 1.2rem;
-  margin-top: 25vh;
+  margin-top: 28vh;
   border: 2px solid rgba(5, 0, 5, 0.658);
 }
 
-@media (min-width: 280px) and (max-width: 600px) {
+@media (min-width: 1280px) {
   .contact-container {
-    width: 85%;
+    width: 40%;
   }
 }
+
+@media (min-width: 800px) {
+  .contact-container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 800px) {
+  .contact-container {
+    width: 500%;
+  }
+}
+
+
 
 form {
   display: flex;
@@ -833,6 +888,14 @@ input[type=submit]:hover {
   overflow-wrap: break-word;
 }
 
+@media (max-width: 600px) {
+  .contact-info {
+    margin-top: -55%;
+}
+
+}
+
+
 .contact-info h6 {
    color: chartreuse;
    margin-bottom: 2%;  
@@ -843,6 +906,25 @@ input[type=submit]:hover {
   font-size: 1.5rem;
   max-width: 40%;
   margin: 0;
+}
+
+@media (max-width: 600px) {
+  .contact-info p{
+    display: flex;
+    margin-top: -5%;
+}
+
+}
+
+@media (max-width: 375px) {
+  .contact-info p {
+    display: none;
+    
+}
+.contact-info h6:nth-child(1) {
+  display: none;
+}
+
 }
 
 .linkedin img {
