@@ -671,15 +671,10 @@ a:active {
   box-shadow: 5px 10px 30px 8px #46324648;
 }
 
-
-
-
 @media (max-width: 1280px) {
   .fourth-section-title h1{
-    font-size: 3.5rem;
-    
+    font-size: 3.5rem;    
     top: 1%;
-    
   }
 }
 
@@ -730,14 +725,20 @@ a:active {
   margin-bottom: -15%;
 }
 
-.send-me-a-message {
-  margin: 0;
-  font-size: 2rem;
-  color: chartreuse;
-  text-align: center;
-  
+.form-wrapper:nth-child(4) {
+  align-items: center;
 }
 
+.send-me-a-message {
+  margin: 0;
+  font-size: 2.1rem;
+  color: chartreuse;
+  text-align: center;
+  border-bottom: 1px solid chartreuse;
+  margin-bottom: 0.5%;
+  width: 62%;
+  
+}
 
 .contact-container {
   width: 100%;
@@ -855,8 +856,10 @@ input[type=submit]:hover {
 .contact-info {
   font-size: 2rem;
   width: 15%;
-  margin-top: 8%;
+  margin-bottom: -5%;
   overflow-wrap: break-word;
+  align-items: baseline;
+  color: chartreuse;
 }
 
 @media (max-width: 600px) {
@@ -865,10 +868,21 @@ input[type=submit]:hover {
 }
 }
 
+.contact-info a {
+  display: flex;
+  flex-direction: row;
+}
 
-.contact-info h6 {
+.contact-info h3 {
+  border-bottom: 1px solid chartreuse;
+  text-align: center;
+  margin-bottom: -5%;
+}
+
+.contact-info h5 {
    color: chartreuse;
-   margin-bottom: 2%;  
+   margin-bottom: 3%;
+   font-size: 1.4rem;  
 }
 
 .contact-info p {
@@ -876,6 +890,7 @@ input[type=submit]:hover {
   font-size: 1.5rem;
   width: 100%;
   margin: 0;
+  margin-top: -2%;
 }
 
 @media (max-width: 600px) {
@@ -891,7 +906,7 @@ input[type=submit]:hover {
     
     
 }
-.contact-info h6:nth-child(1) {
+.contact-info h5:nth-child(2) {
   
 }
 
