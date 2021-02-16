@@ -66,10 +66,10 @@ body {
   padding: 0 2%;
 }
 
-@media (min-width: 280px) and (max-width: 400px) {
+@media  (max-width: 600px) {
   #fourth-section {
-    
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-around;
     
   }
 }
@@ -79,7 +79,7 @@ body {
   position: fixed;
   z-index: 350;
   right: 35px;
-  top: 35px;
+  top: 40px;
   cursor: pointer;
   transition: all 0.5s ease-out;
 }
@@ -234,7 +234,7 @@ a:active {
   margin-right: auto;
   left: 0;
   right: 0;
-  filter: drop-shadow(0px 5px 100px #f7e7ff)  brightness(110%);
+  filter: drop-shadow(0px 10px 90px #f1d6ff)  brightness(110%);
   z-index: 0;
 }
 
@@ -307,7 +307,7 @@ a:active {
   bottom: 0;
   background: radial-gradient(ellipse, #380644, transparent  200%) center / 100%,
     radial-gradient(ellipse, #39084d6b, #40094bd7 150%) center / 50% 150%, radial-gradient(ellipse, #360342, transparent  0%) center / 50%,
-    radial-gradient(ellipse, #480a616b, #3006416b 200%) center / 200% 200%;
+    radial-gradient(ellipse, #480a616b, #22022e6b 200%) center / 200% 200%;
   mix-blend-mode: color-dodge;
 }
 
@@ -347,7 +347,7 @@ a:active {
 }
 @media (max-width: 700px) {
   .second-section-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     width: 65vw;
   }
 }
@@ -634,7 +634,7 @@ a:active {
 }
 @media (max-width: 700px) {
   .third-section-title h1{
-    font-size: 3rem;
+    font-size: 2.2rem;
     width: 50vw;
   }
 }
@@ -680,19 +680,19 @@ a:active {
 
 @media (min-width: 280px) and (max-width: 700px){
   .fourth-section-title h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
     width: 50vw;
     top: 1%;
     
   }
 }
 .smoke {
-  width: 55vw;
+  width: 50vw;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 6%;
+  margin-top: 4%;
 }
 
 @media (min-width: 280px) and (max-width: 600px) {
@@ -705,7 +705,7 @@ a:active {
   position: absolute;
   margin-top: 5%;
   z-index: 300;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 550;
   color: white;
   text-align: center;
@@ -713,7 +713,7 @@ a:active {
 
 @media (min-width: 280px) and (max-width: 600px) {
   .smoke-text {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -729,6 +729,13 @@ a:active {
   align-items: center;
 }
 
+@media (max-width: 600px) {
+  .form-wrapper {
+    width: 90%;
+    margin-bottom: 10%;
+  }
+}
+
 .send-me-a-message {
   margin: 0;
   font-size: 2.1rem;
@@ -738,6 +745,13 @@ a:active {
   margin-bottom: 0.5%;
   width: 62%;
   
+}
+
+@media (max-width: 600px) {
+  .send-me-a-message {
+    width: 90%;
+    font-size: 1.5rem;
+  }
 }
 
 .contact-container {
@@ -777,15 +791,23 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  width: 25%;
+  width: 20%;
   font-size: 1rem;
 }
 
-@media (min-width: 280px) and (max-width: 600px) {
+@media (max-width: 1000px) {
   input[type=submit] {
     width: 60%;
   }
 }
+
+@media (max-width: 600px) {
+  input[type=submit] {
+    width: 40%;
+  }
+}
+
+
 
 input[type=submit]:hover {
   background-color: #0a01119a;
@@ -816,9 +838,9 @@ input[type=submit]:hover {
   position: absolute;
   z-index: 200;
   bottom: 5%;
-  width: 15rem;
+  width: 16rem;
   display: flex;
-  justify-content: center;
+  
 }
 
 .my-projects-text {
@@ -840,7 +862,7 @@ input[type=submit]:hover {
     0 4px 5px #3a043a;
   background-color: rgba(20, 5, 18, 0.507);
     filter: brightness(150%);
-    right: 0%;
+    
 }
 
 .my-projects-text:hover {
@@ -857,16 +879,21 @@ input[type=submit]:hover {
   font-size: 2rem;
   width: 15%;
   margin-bottom: -5%;
-  overflow-wrap: break-word;
   align-items: baseline;
   color: chartreuse;
 }
-
+@media (max-width: 350px) {
+  .contact-info {
+    margin-left: -65%;
+}
+}
 @media (max-width: 600px) {
   .contact-info {
-    
+    margin-left: -85%;
 }
 }
+
+
 
 .contact-info a {
   display: flex;
@@ -879,37 +906,58 @@ input[type=submit]:hover {
   margin-bottom: -5%;
 }
 
+@media (max-width: 600px) {
+  .contact-info h3 {
+    display: none;
+    
+  }
+}
+
 .contact-info h5 {
    color: chartreuse;
    margin-bottom: 3%;
    font-size: 1.4rem;  
 }
 
+@media (max-width: 600px) {
+  .contact-info a {
+    margin-top: -10%;
+  }
+}
+
 .contact-info p {
   color: white;
-  font-size: 1.5rem;
-  width: 100%;
+  font-size: 1.2rem;
   margin: 0;
   margin-top: -2%;
+  
 }
 
 @media (max-width: 600px) {
   .contact-info p {
-    display: flex;
-    
+    margin-top: -5%;
 }
 
 }
 
 @media (max-width: 375px) {
-  .contact-info p {
+  .contact-info  {
     
     
 }
-.contact-info h5:nth-child(2) {
+
+}
+
+.social-container {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
   
 }
 
+.social-container img {
+  margin-top: 150%;
+  margin-left: -130%;
 }
 
 .linkedin img {

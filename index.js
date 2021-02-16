@@ -58,7 +58,7 @@ window.onload = function () {
     if (mqls[0].matches) {
       
       tl.to(".container", {
-          delay: 99999999999999999999999999999999,
+          
         x: "+=45%",
         y: "-=20%",
         duration: 30,
