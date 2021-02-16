@@ -234,13 +234,13 @@ a:active {
   margin-right: auto;
   left: 0;
   right: 0;
-  filter: drop-shadow(0px 15px 90px #ecc6fd)  brightness(120%);
+  filter: drop-shadow(0px 5px 100px #f7e7ff)  brightness(110%);
   z-index: 0;
 }
 
 @media (max-width: 1280px) {
   .moon {
-    filter: drop-shadow(0px 0px 80px #ecc6fd);
+    filter: drop-shadow(0px 0px 80px #f5e3fd8e);
   }
 }
 
@@ -307,7 +307,7 @@ a:active {
   bottom: 0;
   background: radial-gradient(ellipse, #380644, transparent  200%) center / 100%,
     radial-gradient(ellipse, #39084d6b, #40094bd7 150%) center / 50% 150%, radial-gradient(ellipse, #360342, transparent  0%) center / 50%,
-    radial-gradient(ellipse, #480a616b, #3b08506b 200%) center / 200% 200%;
+    radial-gradient(ellipse, #480a616b, #3006416b 200%) center / 200% 200%;
   mix-blend-mode: color-dodge;
 }
 
