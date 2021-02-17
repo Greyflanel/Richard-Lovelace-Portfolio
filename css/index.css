@@ -306,8 +306,8 @@ a:active {
   right: 0;
   bottom: 0;
   background: radial-gradient(ellipse, #380644, transparent  100%) center / 100%,
-    radial-gradient(ellipse, #39084d6b, #40094bd7 150%) center / 50% 150%, radial-gradient(ellipse, #360342, transparent  0%) center / 50%,
-    radial-gradient(ellipse, #480a616b, #22022e6b 200%) center / 200% 200%;
+    radial-gradient(ellipse, #39084d6b, #40094bd7 150%) center / 50% 150%, radial-gradient(ellipse, #280231, transparent  0%) center / 50%,
+    radial-gradient(ellipse, #480a616b, #1901226b 200%) center / 200% 200%;
   mix-blend-mode: color-dodge;
 }
 
