@@ -234,7 +234,7 @@ a:active {
   margin-right: auto;
   left: 0;
   right: 0;
-  filter: drop-shadow(0px 10px 90px #f1d6ff)  brightness(110%);
+  filter: drop-shadow(0px 15px 90px #f1d6ffdf)  brightness(110%);
   z-index: 0;
 }
 
@@ -298,14 +298,14 @@ a:active {
   z-index: 1;
   width: 100%;
   height: 100%;
-  filter: blur(3rem) brightness(170%) ;
+  filter: blur(4rem) brightness(170%) ;
   border-radius: 120%;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(ellipse, #380644, transparent  200%) center / 100%,
+  background: radial-gradient(ellipse, #380644, transparent  100%) center / 100%,
     radial-gradient(ellipse, #39084d6b, #40094bd7 150%) center / 50% 150%, radial-gradient(ellipse, #360342, transparent  0%) center / 50%,
     radial-gradient(ellipse, #480a616b, #22022e6b 200%) center / 200% 200%;
   mix-blend-mode: color-dodge;
@@ -321,7 +321,7 @@ a:active {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(ellipse, rgba(35, 2, 41, 0.4), rgba(36, 8, 43, 0.4)) center /
+  background: radial-gradient(ellipse, rgba(35, 2, 41, 0.6), rgba(40, 4, 48, 0.6)) center /
     0.5% 0.5%;
   mix-blend-mode: color;
 }
