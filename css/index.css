@@ -74,6 +74,13 @@ body {
   }
 }
 
+@media  (max-width: 900px) {
+  #fourth-section {
+    
+    justify-content: space-between;
+    
+  }
+}
 
 .menu-btn {
   position: fixed;
@@ -381,7 +388,7 @@ a:active {
 
 .card-wrapper {
   position: relative;
-  margin-top: 5%;
+  margin-top: 10%;
   
 }
 
@@ -575,6 +582,7 @@ a:active {
   background-color:#673a7c;
 }
 
+
 .skills .icon-wrapper {
   padding: 0.3%;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -695,7 +703,7 @@ a:active {
   margin-top: 4%;
 }
 
-@media (min-width: 280px) and (max-width: 600px) {
+@media (min-width: 280px) and (max-width: 1000px) {
   .smoke, .smoke-text {
     display: none;
   }
@@ -711,11 +719,7 @@ a:active {
   text-align: center;
 }
 
-@media (min-width: 280px) and (max-width: 600px) {
-  .smoke-text {
-    font-size: 0.8rem;
-  }
-}
+
 
 .form-wrapper {
   display: flex;
@@ -727,6 +731,13 @@ a:active {
 
 .form-wrapper:nth-child(4) {
   align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .form-wrapper {
+    width: 45%;
+    
+  }
 }
 
 @media (max-width: 600px) {
@@ -839,8 +850,14 @@ input[type=submit]:hover {
   z-index: 200;
   bottom: 5%;
   width: 16rem;
-  display: flex;
   
+  
+}
+
+@media (max-width: 500px) {
+  .my-projects-btn {
+    
+  }
 }
 
 .my-projects-text {
@@ -882,18 +899,24 @@ input[type=submit]:hover {
   align-items: baseline;
   color: chartreuse;
 }
-@media (max-width: 350px) {
+
+@media (max-width: 1000px) {
   .contact-info {
-    margin-left: -65%;
+    margin-left: -30%;
 }
 }
+
 @media (max-width: 600px) {
   .contact-info {
-    margin-left: -85%;
+    margin-left: -30%;
 }
 }
 
-
+@media (max-width: 400px) {
+  .contact-info {
+    margin-left: -70%;
+}
+}
 
 .contact-info a {
   display: flex;
