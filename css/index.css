@@ -234,7 +234,7 @@ a:active {
   margin-right: auto;
   left: 0;
   right: 0;
-  filter: drop-shadow(0px 15px 90px #f1d6ffdf)  brightness(110%);
+  filter: drop-shadow(0px 15px 90px #f2e4fadf)  brightness(115%);
   z-index: 0;
 }
 
@@ -298,7 +298,7 @@ a:active {
   z-index: 1;
   width: 100%;
   height: 100%;
-  filter: blur(4rem) brightness(170%) ;
+  filter: blur(5.5rem) brightness(170%) ;
   border-radius: 120%;
   position: absolute;
   top: 0;
@@ -306,8 +306,8 @@ a:active {
   right: 0;
   bottom: 0;
   background: radial-gradient(ellipse, #380644, transparent  100%) center / 100%,
-    radial-gradient(ellipse, #39084d6b, #40094bd7 150%) center / 50% 150%, radial-gradient(ellipse, #280231, transparent  0%) center / 50%,
-    radial-gradient(ellipse, #480a616b, #1901226b 200%) center / 200% 200%;
+    radial-gradient(ellipse, #39084d6b, #34063dd7 150%) center / 50% 150%, radial-gradient(ellipse, #280231, transparent  0%) center / 50%,
+    radial-gradient(ellipse, #3e06536b, #1901229d 200%) center / 200% 200%;
   mix-blend-mode: color-dodge;
 }
 
@@ -315,13 +315,13 @@ a:active {
 .spotlight2 {
   z-index: 40;
   margin: 0 auto;
-  filter: blur(1rem) brightness(320%);
+  filter: blur(2rem) brightness(320%);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(ellipse, rgba(35, 2, 41, 0.6), rgba(40, 4, 48, 0.6)) center /
+  background: radial-gradient(ellipse, rgba(39, 1, 46, 0.5), rgba(40, 4, 48, 0.55)) center /
     0.5% 0.5%;
   mix-blend-mode: color;
 }
@@ -877,7 +877,7 @@ input[type=submit]:hover {
 
 .contact-info {
   font-size: 2rem;
-  width: 15%;
+  width: 25%;
   margin-bottom: -5%;
   align-items: baseline;
   color: chartreuse;
