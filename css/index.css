@@ -314,7 +314,7 @@ a:active {
   bottom: 0;
   background: radial-gradient(ellipse, #380644, transparent  100%) center / 100%,
     radial-gradient(ellipse, #39084d6b, #34063dd7 150%) center / 50% 150%, radial-gradient(ellipse, #280231, transparent  0%) center / 50%,
-    radial-gradient(ellipse, #3e06536b, #1901229d 200%) center / 200% 200%;
+    radial-gradient(ellipse, #3e06539a, #190122c5 200%) center / 200% 200%;
   mix-blend-mode: color-dodge;
 }
 
