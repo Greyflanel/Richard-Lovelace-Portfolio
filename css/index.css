@@ -241,13 +241,13 @@ a:active {
   margin-right: auto;
   left: 0;
   right: 0;
-  filter: drop-shadow(0px 15px 100px #fbf3fff1)  brightness(115%);
+  filter: drop-shadow(0px 0px 80px #d5b9e0f6)  brightness(115%);
   z-index: 0;
 }
 
 @media (max-width: 1280px) {
   .moon {
-    filter: drop-shadow(0px 0px 80px #f5e3fd8e);
+    filter: drop-shadow(0px 20px 80px #f1d6fdf3);
   }
 }
 
@@ -305,16 +305,16 @@ a:active {
   z-index: 1;
   width: 100%;
   height: 100%;
-  filter: blur(5.5rem) brightness(170%) ;
-  border-radius: 120%;
+  filter: blur(3rem) brightness(190%) ;
+  border-radius: 50%;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(ellipse, #380644, transparent  100%) center / 100%,
-    radial-gradient(ellipse, #39084d6b, #34063dd7 150%) center / 50% 150%, radial-gradient(ellipse, #280231, transparent  0%) center / 50%,
-    radial-gradient(ellipse, #3e06539a, #190122c5 200%) center / 200% 200%;
+  background: radial-gradient(ellipse, #33043f, transparent  10%) center / 100%,
+    radial-gradient(ellipse, #39084d7e, #2e0436c5 150%) center / 150% 150%, radial-gradient(ellipse, #280231, transparent  0%) center / 50%,
+    radial-gradient(ellipse, #3c04509a, #190122c5 200%) center / 200% 200%;
   mix-blend-mode: color-dodge;
 }
 
@@ -322,14 +322,14 @@ a:active {
 .spotlight2 {
   z-index: 40;
   margin: 0 auto;
-  filter: blur(2rem) brightness(320%);
+  filter: blur(2.5rem) brightness(320%);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(ellipse, rgba(39, 1, 46, 0.5), rgba(40, 4, 48, 0.55)) center /
-    0.1% 0.1%;
+  background: radial-gradient(ellipse, rgba(35, 2, 41, 0.51), rgba(29, 1, 36, 0.242)) center /
+    300% 350%;
   mix-blend-mode: color;
 }
 
@@ -894,94 +894,38 @@ input[type=submit]:hover {
 
 .contact-info {
   font-size: 2rem;
-  width: 25%;
-  margin-bottom: -5%;
-  align-items: baseline;
   color: chartreuse;
-}
-
-@media (max-width: 1000px) {
-  .contact-info {
-    margin-left: -30%;
-}
-}
-
-@media (max-width: 600px) {
-  .contact-info {
-    margin-left: -30%;
-}
-}
-
-@media (max-width: 400px) {
-  .contact-info {
-    margin-left: -80%;
-}
-}
-
-.contact-info a {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-auto-flow: row;
+  
 }
 
 .contact-info h3 {
   border-bottom: 1px solid chartreuse;
   text-align: center;
-  margin-bottom: -5%;
+  margin: 0;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  align-self: center;
+  
 }
 
-@media (max-width: 600px) {
-  .contact-info h3 {
-    display: none;
-    
-  }
-}
 
 .contact-info h5 {
    color: chartreuse;
-   margin-bottom: 3%;
-   font-size: 1.4rem;  
+   font-size: 1.4rem;
+   margin: 0;
+   align-self: center;  
 }
 
-@media (max-width: 600px) {
-  .contact-info a {
-    margin-top: -10%;
-  }
-}
 
 .contact-info p {
   color: white;
   font-size: 1.2rem;
-  margin: 0;
-  margin-top: -2%;
-  
+ grid-column-start: 1;
+grid-column-end: 3;
 }
 
-@media (max-width: 600px) {
-  .contact-info p {
-    margin-top: -5%;
-}
-
-}
-
-@media (max-width: 375px) {
-  .contact-info  {
-    
-    
-}
-
-}
-
-.social-container {
-  display: flex;
-  width: 100%;
-  align-items: flex-start;
-  
-}
-
-.social-container img {
-  margin-top: 150%;
-  margin-left: -130%;
-}
 
 .linkedin img {
   width: 3.5rem;
