@@ -41,7 +41,6 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-  
 }
 
 #third-section {
@@ -61,24 +60,21 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color:#260033;
+  background-color: #260033;
   position: relative;
   padding: 0 2%;
 }
 
-@media  (max-width: 600px) {
+@media (max-width: 600px) {
   #fourth-section {
     flex-direction: column;
     justify-content: space-around;
-    
   }
 }
 
-@media  (max-width: 900px) {
+@media (max-width: 900px) {
   #fourth-section {
-    
     justify-content: space-between;
-    
   }
 }
 
@@ -201,7 +197,6 @@ body {
   transition-delay: 0.4s;
 }
 
-
 a:active {
   color: chartreuse;
 }
@@ -222,7 +217,6 @@ a:active {
   .container {
     width: 30%;
     height: 30%;
-    
   }
 }
 
@@ -230,7 +224,6 @@ a:active {
   .container {
     width: 40%;
     height: 30%;
-    
   }
 }
 
@@ -241,13 +234,13 @@ a:active {
   margin-right: auto;
   left: 0;
   right: 0;
-  filter: drop-shadow(0px 0px 80px #d5b9e0f6)  brightness(115%);
+  filter: drop-shadow(5px 0px 100px #f0daf8e5) brightness(115%);
   z-index: 0;
 }
 
 @media (max-width: 1280px) {
   .moon {
-    filter: drop-shadow(0px 20px 80px #f1d6fdf3);
+    filter: drop-shadow(0 0 50px white, 0px 80px #f1d6fdbe);
   }
 }
 
@@ -305,31 +298,35 @@ a:active {
   z-index: 1;
   width: 100%;
   height: 100%;
-  filter: blur(3rem) brightness(190%) ;
+  filter: blur(4rem) brightness(190%);
   border-radius: 50%;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(ellipse, #33043f, transparent  10%) center / 100%,
-    radial-gradient(ellipse, #39084d7e, #2e0436c5 150%) center / 150% 150%, radial-gradient(ellipse, #280231, transparent  0%) center / 50%,
-    radial-gradient(ellipse, #3c04509a, #190122c5 200%) center / 200% 200%;
+  background: radial-gradient(ellipse, #33043f, transparent 10%) center / 100%,
+    radial-gradient(ellipse, #39084d7e, #210227d3 150%) center / 150% 150%,
+    radial-gradient(ellipse, #280231, transparent 0%) center / 50%,
+    radial-gradient(ellipse, #3c04509a, #190122e3 200%) center / 200% 50%;
   mix-blend-mode: color-dodge;
 }
-
 
 .spotlight2 {
   z-index: 40;
   margin: 0 auto;
-  filter: blur(2.5rem) brightness(320%);
+  filter: blur(2rem) brightness(300%);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(ellipse, rgba(35, 2, 41, 0.51), rgba(29, 1, 36, 0.242)) center /
-    300% 350%;
+  background: radial-gradient(
+      ellipse,
+      rgba(35, 2, 41, 0.31),
+      rgba(29, 1, 36, 0.842)
+    )
+    center / 300% 250%;
   mix-blend-mode: color;
 }
 
@@ -344,7 +341,7 @@ a:active {
   margin-bottom: 2%;
   padding: 0.5%;
   box-shadow: 5px 10px 30px 8px #46324648;
-  background-color:#673a7c;
+  background-color: #673a7c;
 }
 
 @media (max-width: 1280px) {
@@ -359,14 +356,12 @@ a:active {
   }
 }
 
-
-
 .second-section-title h1 {
   margin: 0;
   text-align: center;
   color: #ffffffad;
-  text-shadow: 0 0 2px white, 0 0 3px white, 0 0 4px #3a043a73, 0 2px 5px #3a043a,
-    0 3px 5px #000000a8;
+  text-shadow: 0 0 2px white, 0 0 3px white, 0 0 4px #3a043a73,
+    0 2px 5px #3a043a, 0 3px 5px #000000a8;
 }
 
 #second-section a {
@@ -389,7 +384,6 @@ a:active {
 .card-wrapper {
   position: relative;
   margin-top: 10%;
-  
 }
 
 .card {
@@ -400,7 +394,6 @@ a:active {
   perspective: 1000px;
   box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 6px 6px #3a043a,
     0 8px 8px #3a043a;
-    
 }
 
 @media (max-width: 1281px) {
@@ -431,14 +424,12 @@ a:active {
   }
 }
 
-
-
 .box {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
   transition: 0.8s ease;
-  background: linear-gradient(45deg, #280741, #fadcee,#422A5B);
+  background: linear-gradient(45deg, #280741, #fadcee, #422a5b);
 }
 
 .card:hover .box {
@@ -560,7 +551,7 @@ a:active {
   font-size: 1.8rem;
   box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 4px 5px #3a043a,
     0 4px 5px #0f000f;
-  background-color:#4e2063be;
+  background-color: #4e2063be;
 }
 
 .skills {
@@ -577,17 +568,15 @@ a:active {
   box-shadow: 5px 10px 30px 8px #46324648;
   border-radius: 10px;
   color: #ffffff;
-  text-shadow: 0 0 2px white, 0 0 3px white, 0 0 4px #3a043a73, 0 2px 5px #3a043a,
-    0 3px 5px #800980a8;
-  background-color:#673a7c;
+  text-shadow: 0 0 2px white, 0 0 3px white, 0 0 4px #3a043a73,
+    0 2px 5px #3a043a, 0 3px 5px #800980a8;
+  background-color: #673a7c;
 }
-
 
 .skills .icon-wrapper {
   padding: 0.3%;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-
 
 .skills .icon-wrapper > img {
   width: 6rem;
@@ -601,12 +590,10 @@ a:active {
   margin: 0;
 }
 
-
 .third-section-title {
   display: flex;
   flex-direction: column;
   align-items: center;
- 
 }
 
 .about-div {
@@ -620,7 +607,7 @@ a:active {
   background-image: url("/assets/pattern4.png");
 }
 
-.third-section-title h1{
+.third-section-title h1 {
   font-size: 6rem;
   margin-top: 4%;
   margin-bottom: 2%;
@@ -629,19 +616,19 @@ a:active {
   border-radius: 5px;
   text-align: center;
   color: white;
-  text-shadow: 0 0 2px white, 0 0 3px white, 0 0 4px #3a043a73, 0 2px 5px #3a043a,
-    0 3px 5px #000000a8;
+  text-shadow: 0 0 2px white, 0 0 3px white, 0 0 4px #3a043a73,
+    0 2px 5px #3a043a, 0 3px 5px #000000a8;
   background-color: #673a7c;
   box-shadow: 5px 10px 30px 8px #46324648;
 }
 
 @media (max-width: 1280px) {
-  .third-section-title h1{
+  .third-section-title h1 {
     font-size: 4rem;
   }
 }
 @media (max-width: 700px) {
-  .third-section-title h1{
+  .third-section-title h1 {
     font-size: 2.2rem;
     width: 50vw;
   }
@@ -660,38 +647,36 @@ a:active {
   margin: 0 auto;
   margin-top: 4%;
   height: 2rem;
-  
 }
 
 .fourth-section-title h1 {
   position: absolute;
   top: -3%;
   left: 28%;
-  font-size: 6rem;
+  font-size: 5.5rem;
   width: 45vw;
   padding: 0.5%;
   border-radius: 5px;
   text-align: center;
   color: white;
-  text-shadow: 0 0 2px white, 0 0 3px white, 0 0 4px #3a043a73, 0 2px 5px #3a043a,
-    0 3px 5px #000000a8;
+  text-shadow: 0 0 2px white, 0 0 3px white, 0 0 4px #3a043a73,
+    0 2px 5px #3a043a, 0 3px 5px #000000a8;
   background-color: #550055;
   box-shadow: 5px 10px 30px 8px #46324648;
 }
 
 @media (max-width: 1280px) {
-  .fourth-section-title h1{
-    font-size: 3.5rem;    
+  .fourth-section-title h1 {
+    font-size: 3.5rem;
     top: 1%;
   }
 }
 
-@media (min-width: 280px) and (max-width: 700px){
-  .fourth-section-title h1{
+@media (min-width: 280px) and (max-width: 700px) {
+  .fourth-section-title h1 {
     font-size: 2rem;
     width: 50vw;
     top: 1%;
-    
   }
 }
 .smoke {
@@ -704,7 +689,8 @@ a:active {
 }
 
 @media (min-width: 280px) and (max-width: 1000px) {
-  .smoke, .smoke-text {
+  .smoke,
+  .smoke-text {
     display: none;
   }
 }
@@ -713,13 +699,11 @@ a:active {
   position: absolute;
   margin-top: 5%;
   z-index: 300;
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   font-weight: 550;
   color: white;
   text-align: center;
 }
-
-
 
 .form-wrapper {
   display: flex;
@@ -736,7 +720,6 @@ a:active {
 @media (max-width: 1000px) {
   .form-wrapper {
     width: 45%;
-    
   }
 }
 
@@ -755,7 +738,6 @@ a:active {
   border-bottom: 1px solid chartreuse;
   margin-bottom: 0.5%;
   width: 62%;
-  
 }
 
 @media (max-width: 600px) {
@@ -768,13 +750,12 @@ a:active {
 .contact-container {
   width: 100%;
   border-radius: 5px;
-  background-color:#550055;
+  background-color: #550055;
   padding: 20px;
   color: white;
   font-size: 1.2rem;
   border: 2px solid rgba(5, 0, 5, 0.658);
 }
-
 
 form {
   display: flex;
@@ -782,8 +763,9 @@ form {
   justify-content: center;
 }
 
-
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 2%;
   border: 1px solid #ccc;
@@ -795,8 +777,7 @@ input[type=text], select, textarea {
   font-size: 0.92rem;
 }
 
-
-input[type=submit] {
+input[type="submit"] {
   background-color: chartreuse;
   padding: 2%;
   border: none;
@@ -807,20 +788,18 @@ input[type=submit] {
 }
 
 @media (max-width: 1000px) {
-  input[type=submit] {
+  input[type="submit"] {
     width: 60%;
   }
 }
 
 @media (max-width: 600px) {
-  input[type=submit] {
+  input[type="submit"] {
     width: 40%;
   }
 }
 
-
-
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #0a01119a;
   color: white;
   box-shadow: 0 0 4px white;
@@ -836,27 +815,21 @@ input[type=submit]:hover {
   box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 4px 5px #3a043a,
     0 4px 5px #3a043a;
   background-color: rgba(20, 5, 18, 0.7);
-  
-  }
+}
 
-  .dev-logo-img {
-    height: 4rem;
-    
-    
-  }
-  
+.dev-logo-img {
+  height: 4rem;
+}
+
 .my-projects-btn {
   position: absolute;
   z-index: 200;
   bottom: 5%;
   width: 16rem;
-  
-  
 }
 
 @media (max-width: 500px) {
   .my-projects-btn {
-    
   }
 }
 
@@ -878,26 +851,21 @@ input[type=submit]:hover {
   box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 4px 5px #3a043a,
     0 4px 5px #3a043a;
   background-color: rgba(20, 5, 18, 0.507);
-    filter: brightness(150%);
-    
+  filter: brightness(150%);
 }
 
 .my-projects-text:hover {
-  
   background-color: rgb(246, 199, 252);
   color: rgba(20, 5, 18, 0.9);
   transition: 0.5s;
 }
-
-
-
 
 .contact-info {
   font-size: 2rem;
   color: chartreuse;
   display: grid;
   grid-auto-flow: row;
-  
+  grid-gap: 15px;
 }
 
 .contact-info h3 {
@@ -906,26 +874,34 @@ input[type=submit]:hover {
   margin: 0;
   grid-column-start: 1;
   grid-column-end: 3;
-  align-self: center;
   
 }
 
 
+
 .contact-info h5 {
-   color: chartreuse;
-   font-size: 1.4rem;
-   margin: 0;
-   align-self: center;  
+  color: chartreuse;
+  font-size: 1.4rem;
+  margin: 0;
+  align-self: center;
+  
 }
 
+.contact-info h5:nth-child(4) {
+  margin-left: 20%;
+}
+
+.contact-info h5:nth-child(6) {
+  justify-self: end;
+  margin-left: 70%;
+}
 
 .contact-info p {
   color: white;
-  font-size: 1.2rem;
- grid-column-start: 1;
-grid-column-end: 3;
+  font-size: 1.4rem;
+  
+  grid-column-end: 3;
 }
-
 
 .linkedin img {
   width: 3.5rem;
@@ -935,6 +911,7 @@ grid-column-end: 3;
   box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 4px 5px #3a043a,
     0 4px 5px #3a043a;
   background-color: rgba(20, 5, 18, 0.507);
+  margin-left: 30%;
 }
 
 .github img {
@@ -945,6 +922,7 @@ grid-column-end: 3;
   box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 4px 5px #3a043a,
     0 4px 5px #3a043a;
   background-color: rgba(20, 5, 18, 0.507);
+  margin-left: 45%;
 }
 
 /*# sourceMappingURL=index.css.map */

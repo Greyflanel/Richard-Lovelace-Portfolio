@@ -61,7 +61,7 @@ function scrollAnimation() {
     .to(
       ".smoke-text",
       {
-        y: 60,
+        y: 50,
         duration: 4.5,
       },
       "-=23.5"
