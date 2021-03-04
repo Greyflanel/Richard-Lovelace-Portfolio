@@ -912,7 +912,7 @@ input[type="submit"]:hover {
 @media (max-width: 600px) {
   .contact-info p {
    word-wrap: break-word;
-   width: 80%;
+   width: 100%;
    
    
   }
@@ -965,8 +965,15 @@ input[type="submit"]:hover {
   grid-column-start: 1;
   grid-row-start: 3;
   text-decoration: none;
- margin-left: 15%;
+  margin-left: 15%;
 }
+
+@media (max-width: 500px) {
+  .linkedin {
+    margin-left: 10%;
+  }
+}
+
 
 .linkedin img {
   width: 4rem;
@@ -987,6 +994,12 @@ input[type="submit"]:hover {
   justify-self: flex-end;
   text-decoration: none;
   margin-right: 18%;
+}
+
+@media (max-width: 500px) {
+  .github {
+    margin-right: 25%;
+  }
 }
 
 .github img {
