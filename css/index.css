@@ -65,7 +65,7 @@ body {
   padding: 0 2%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   #fourth-section {
     flex-direction: column;
     justify-content: space-around;
@@ -721,7 +721,7 @@ a:active {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .form-wrapper {
     width: 95%;
     height: 80%;
@@ -871,10 +871,11 @@ input[type="submit"]:hover {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .contact-info {
    width: 100%;
-   margin-top: 25%;
+   margin-top: 38%;
+   gap: 1px;
   }
 }
 
