@@ -462,9 +462,10 @@ a:active {
   transform: rotateY(180deg);
 }
 
+
 @media (max-width: 1280px) {
   .card .box .contentBx {
-    top: -3%;
+    top: -6%;
   }
 }
 
@@ -478,12 +479,12 @@ a:active {
 
 .card .box .contentBx div h2 {
   color: #fff;
-  font-size: clamp(0.5rem, 1.8rem, 2rem);
+  font-size: 1.7rem;
   letter-spacing: 1px;
   background-color: #0a0111;
   padding: 3px;
   text-align: center;
-  width: 60%;
+  width: 70%;
   min-width: 100px;
   margin-left: auto;
   margin-right: auto;
@@ -491,22 +492,49 @@ a:active {
 
 @media (max-width: 1280px) {
   .card .box .contentBx div h2 {
-    
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 801px) {
+  .card .box .contentBx div h2 {
+    margin-bottom: 2%;
+    font-size: 1.3rem;
+    width: 85%;
   }
 }
 
 .card .box .contentBx div p {
   color: #fff;
-  font-size: clamp(0.1rem, 1.3rem, 1.5rem);
+  font-size: 1.5rem;
   background-color: #0a0111;
-  padding: 10px;
-  width: 80%;
+  padding: 6px;
+  width: 90%;
   margin: 0 auto;
 }
 
 @media (max-width: 1280px) {
   .card .box .contentBx div p {
-    
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .card .box .contentBx div p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 661px) {
+  .card .box .contentBx div p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .card .box .contentBx div p {
+    font-size: 1rem;
   }
 }
 
@@ -821,14 +849,17 @@ input[type="submit"]:hover {
 }
 
 .my-projects-btn {
-  position: absolute;
+  position: relative;
   z-index: 200;
-  bottom: 5%;
-  width: 16rem;
+  width: 18rem;
+  display: flex;
+  align-self: flex-end;
+  
 }
 
 @media (max-width: 500px) {
   .my-projects-btn {
+    left: 10%;
   }
 }
 
@@ -838,14 +869,13 @@ input[type="submit"]:hover {
   font-family: Georgia, Times, "Times New Roman", sans-serif;
   text-align: center;
   bottom: 60%;
-  width: 18rem;
+  width: 15rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   font-size: 2rem;
   font-weight: 200;
   color: white;
-  padding: 5px;
+  padding: 3px;
   border-radius: 10px;
   box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 4px 5px #3a043a,
     0 4px 5px #3a043a;
