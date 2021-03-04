@@ -54,11 +54,12 @@ window.onload = function () {
       yPercent: -50,
       x: "-35%",
       y: "0%",
+      
     });
     if (mqls[0].matches) {
       
       tl.to(".container", {
-          delay: 9999999999999999999999999999999,
+        
         x: "+=45%",
         y: "-=20%",
         duration: 30,

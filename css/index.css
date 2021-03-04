@@ -81,8 +81,8 @@ body {
 .menu-btn {
   position: fixed;
   z-index: 350;
-  right: 35px;
-  top: 40px;
+  right: clamp(2%, 35px, 6%);
+  top: 35px;
   cursor: pointer;
   transition: all 0.5s ease-out;
 }
@@ -204,8 +204,8 @@ a:active {
 .container {
   position: absolute;
   visibility: hidden;
-  width: 35%;
-  height: 55%;
+  width: 30%;
+  height: 50%;
   top: 55%;
   left: 45%;
   display: flex;
@@ -229,12 +229,12 @@ a:active {
 
 .moon {
   position: absolute;
-  width: 72%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-  filter: drop-shadow(5px 0px 100px #f0daf8e5) brightness(115%);
+  filter: drop-shadow(0px 0px 60px #ce84ee)  brightness(130%);
   z-index: 0;
 }
 
@@ -298,37 +298,35 @@ a:active {
   z-index: 1;
   width: 100%;
   height: 100%;
-  filter: blur(4rem) brightness(190%);
+  filter: blur(5.5rem) brightness(130%) ;
   border-radius: 50%;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(ellipse, #33043f, transparent 10%) center / 100%,
-    radial-gradient(ellipse, #39084d7e, #210227d3 150%) center / 150% 150%,
-    radial-gradient(ellipse, #280231, transparent 0%) center / 50%,
-    radial-gradient(ellipse, #3c04509a, #190122e3 200%) center / 200% 50%;
-  mix-blend-mode: color-dodge;
+  background: radial-gradient(ellipse, #750791ef, transparent  110%) center / 110%,
+     
+    radial-gradient(ellipse, #20012552, #24032b7c 30%) center / 50% 50%;
+  mix-blend-mode: color;
 }
+
 
 .spotlight2 {
   z-index: 40;
   margin: 0 auto;
-  filter: blur(2rem) brightness(300%);
+  filter: blur(7rem) brightness(220%);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(
-      ellipse,
-      rgba(35, 2, 41, 0.31),
-      rgba(29, 1, 36, 0.842)
-    )
-    center / 300% 250%;
+  background: radial-gradient(ellipse, rgba(28, 1, 32, 0.95), rgba(23, 1, 27, 0.12)) center /
+    90% 50%;
   mix-blend-mode: color;
 }
+
+
 
 .second-section-title {
   color: rgb(245, 224, 248);
@@ -480,7 +478,7 @@ a:active {
 
 .card .box .contentBx div h2 {
   color: #fff;
-  font-size: 2rem;
+  font-size: clamp(0.5rem, 1.8rem, 2rem);
   letter-spacing: 1px;
   background-color: #0a0111;
   padding: 3px;
@@ -493,13 +491,13 @@ a:active {
 
 @media (max-width: 1280px) {
   .card .box .contentBx div h2 {
-    font-size: 1.5rem;
+    
   }
 }
 
 .card .box .contentBx div p {
   color: #fff;
-  font-size: 1.4rem;
+  font-size: clamp(0.1rem, 1.3rem, 1.5rem);
   background-color: #0a0111;
   padding: 10px;
   width: 80%;
@@ -508,7 +506,7 @@ a:active {
 
 @media (max-width: 1280px) {
   .card .box .contentBx div p {
-    font-size: 1.095rem;
+    
   }
 }
 
@@ -725,19 +723,20 @@ a:active {
 
 @media (max-width: 600px) {
   .form-wrapper {
-    width: 90%;
-    margin-bottom: 10%;
+    width: 95%;
+    height: 80%;
+    margin-bottom: 2%;
   }
 }
 
 .send-me-a-message {
   margin: 0;
-  font-size: 2.1rem;
+  font-size: 2.5rem;
   color: chartreuse;
   text-align: center;
   border-bottom: 1px solid chartreuse;
   margin-bottom: 0.5%;
-  width: 62%;
+  width: 85%;
 }
 
 @media (max-width: 600px) {
@@ -808,7 +807,7 @@ input[type="submit"]:hover {
 .developer-logo {
   position: fixed;
   z-index: 500;
-  top: 25px;
+  top: 20px;
   left: 1%;
   border-radius: 50%;
   opacity: 1;
@@ -861,68 +860,109 @@ input[type="submit"]:hover {
 }
 
 .contact-info {
-  font-size: 2rem;
   color: chartreuse;
   display: grid;
   grid-auto-flow: row;
-  grid-gap: 15px;
+  gap: 15px;
+  border: 3px solid #550055;
+  padding: 3%;
+  margin-top: 10%;
+  
+
 }
+
+@media (max-width: 600px) {
+  .contact-info {
+   width: 100%;
+   margin-top: 25%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-info p {
+   word-wrap: break-word;
+   width: 80%;
+   
+   
+  }
+}
+
+.email {
+  grid-row-start: 2;
+  width: 100%;
+  max-width: 90vw;
+}
+
+
 
 .contact-info h3 {
   border-bottom: 1px solid chartreuse;
   text-align: center;
   margin: 0;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  
+  font-size: 2.5rem;
 }
 
+@media (max-width: 600px) {
+  .contact-info h3 {
+    display: none;
+  }
 
+}
 
 .contact-info h5 {
   color: chartreuse;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin: 0;
   align-self: center;
-  
+  margin-bottom: 15%;
 }
 
-.contact-info h5:nth-child(4) {
-  margin-left: 20%;
-}
-
-.contact-info h5:nth-child(6) {
-  justify-self: end;
-  margin-left: 70%;
-}
 
 .contact-info p {
   color: white;
-  font-size: 1.4rem;
-  
-  grid-column-end: 3;
+  font-size: clamp(5%, 2rem, 1.6rem);
+  margin-top: -12%;
+}
+
+.linkedin {
+  width: 5rem;
+  grid-column-start: 1;
+  grid-row-start: 3;
+  text-decoration: none;
+ margin-left: 15%;
 }
 
 .linkedin img {
-  width: 3.5rem;
+  width: 4rem;
+  margin-left: 15%;
   border-radius: 4px;
   border-width: 5px;
-  border: 0.5px solid blueviolet;
+  border: 0.5px solid #550055;
   box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 4px 5px #3a043a,
     0 4px 5px #3a043a;
   background-color: rgba(20, 5, 18, 0.507);
-  margin-left: 30%;
+  
+}
+
+.github {
+  width: 5rem;
+  grid-column-start: 1;
+  grid-row-start: 3;
+  justify-self: flex-end;
+  text-decoration: none;
+  margin-right: 18%;
 }
 
 .github img {
-  width: 3.5rem;
+  width: 4rem;
+  margin-left: 15%;
   border-radius: 4px;
   border-width: 3px;
-  border: 0.5px solid blueviolet;
+  border: 0.5px solid #550055;
   box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 4px 5px #3a043a,
     0 4px 5px #3a043a;
   background-color: rgba(20, 5, 18, 0.507);
-  margin-left: 45%;
+  
 }
 
 /*# sourceMappingURL=index.css.map */
