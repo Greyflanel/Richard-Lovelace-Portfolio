@@ -302,7 +302,7 @@ a:active {
 @media (max-width: 600px) {
   .content-name {
     font-size: 4rem;
-    margin-top: 25%;
+    margin-top: 2%;
   }
 }
 
@@ -320,7 +320,7 @@ a:active {
 
 @media (max-width: 600px) {
   .content-title {
-    margin-top: 40%;
+    margin-top: 65%;
     font-size: 2.7rem;
   }
 }
@@ -336,11 +336,12 @@ a:active {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(ellipse, #750791ef, transparent  110%) center / 110%,
+  background: radial-gradient(ellipse, #750791de, transparent  110%) center / 110%,
      
     radial-gradient(ellipse, #20012552, #24032b7c 30%) center / 50% 50%;
   mix-blend-mode: color;
 }
+
 
 
 .spotlight2 {
@@ -410,6 +411,7 @@ a:active {
   background-image: url("/assets/pattern.png");
 }
 
+
 .card-wrapper {
   position: relative;
   margin-top: 10%;
@@ -460,6 +462,12 @@ a:active {
   transform-style: preserve-3d;
   transition: 0.8s ease;
   background: linear-gradient(45deg, #280741, #fadcee, #422a5b);
+}
+
+@media (max-width: 450px) {
+  .box {
+    margin-top: 5%;
+  }
 }
 
 .card:hover .box {
@@ -636,6 +644,12 @@ a:active {
   text-shadow: 0 0 2px white, 0 0 3px white, 0 0 4px #3a043a73,
     0 2px 5px #3a043a, 0 3px 5px #800980a8;
   background-color: #673a7c;
+}
+
+@media (max-width: 450px) {
+  .skills {
+    margin-top: 8%;
+  }
 }
 
 .skills .icon-wrapper {
