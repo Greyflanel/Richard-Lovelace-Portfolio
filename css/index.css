@@ -78,6 +78,37 @@ body {
   }
 }
 
+.fullscreen-nav {
+  position: fixed;
+  z-index: 500;
+  right: -1.5%;
+  top: 15px;
+  font-size: 2rem;
+  width: 35rem;
+  font-weight: 550;
+}
+
+.fullscreen-nav a {
+  color: #673A7C;
+  text-decoration: none;
+  margin: 0 2.5%;
+}
+
+.fullscreen-nav a:hover {
+  color: chartreuse;
+}
+
+@media (max-width: 900px) {
+  .fullscreen-nav {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .menu-btn {
+    display: none;
+  }
+}
 .menu-btn {
   position: fixed;
   z-index: 350;
@@ -677,7 +708,7 @@ a:active {
 
 .fourth-section-title h1 {
   position: absolute;
-  top: -3%;
+  top: 1%;
   left: 28%;
   font-size: 5.5rem;
   width: 45vw;
@@ -848,46 +879,6 @@ input[type="submit"]:hover {
   height: 4rem;
 }
 
-.my-projects-btn {
-  position: relative;
-  z-index: 200;
-  width: 18rem;
-  display: flex;
-  align-self: flex-end;
-  
-}
-
-@media (max-width: 500px) {
-  .my-projects-btn {
-    left: 10%;
-  }
-}
-
-.my-projects-text {
-  position: absolute;
-  z-index: 200;
-  font-family: Georgia, Times, "Times New Roman", sans-serif;
-  text-align: center;
-  bottom: 60%;
-  width: 15rem;
-  display: flex;
-  flex-direction: column;
-  font-size: 2rem;
-  font-weight: 200;
-  color: white;
-  padding: 3px;
-  border-radius: 10px;
-  box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 4px 5px #3a043a,
-    0 4px 5px #3a043a;
-  background-color: rgba(20, 5, 18, 0.507);
-  filter: brightness(150%);
-}
-
-.my-projects-text:hover {
-  background-color: rgb(246, 199, 252);
-  color: rgba(20, 5, 18, 0.9);
-  transition: 0.5s;
-}
 
 .contact-info {
   color: chartreuse;
