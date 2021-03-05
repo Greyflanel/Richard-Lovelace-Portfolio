@@ -98,13 +98,13 @@ body {
   color: chartreuse;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .fullscreen-nav {
     display: none;
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 950px) {
   .menu-btn {
     display: none;
   }
@@ -417,6 +417,7 @@ a:active {
 
 .card {
   position: relative;
+  z-index: 100;
   width: 40rem;
   height: 22rem;
   transform-style: preserve-3d;
@@ -565,7 +566,7 @@ a:active {
 
 @media (max-width: 410px) {
   .card .box .contentBx div p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -578,6 +579,13 @@ a:active {
   box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white, 0 4px 5px #3a043a,
     0 4px 5px #3a043a;
   background-color: rgba(20, 5, 18, 0.507);
+}
+
+@media (max-width: 660px) {
+  .github-link {
+    width: 2.2rem;
+    margin-top: 20%;
+  }
 }
 
 .github-link:hover {
@@ -745,7 +753,7 @@ a:active {
   margin-top: 4%;
 }
 
-@media (min-width: 280px) and (max-width: 1000px) {
+@media (min-width: 280px) and (max-width: 1100px) {
   .smoke,
   .smoke-text {
     display: none;
