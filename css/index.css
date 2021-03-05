@@ -302,7 +302,7 @@ a:active {
 @media (max-width: 600px) {
   .content-name {
     font-size: 4rem;
-    margin-top: 2%;
+    
   }
 }
 
@@ -320,7 +320,7 @@ a:active {
 
 @media (max-width: 600px) {
   .content-title {
-    margin-top: 65%;
+    margin-top: 60%;
     font-size: 2.7rem;
   }
 }
@@ -466,7 +466,7 @@ a:active {
 
 @media (max-width: 450px) {
   .box {
-    margin-top: 5%;
+    margin-top: 8%;
   }
 }
 
@@ -539,9 +539,10 @@ a:active {
 
 @media (max-width: 801px) {
   .card .box .contentBx div h2 {
-    margin-bottom: 2%;
+    margin-top: -2%;
+    margin-bottom: 1%;
     font-size: 1.3rem;
-    width: 85%;
+    width: 80%;
   }
 }
 
