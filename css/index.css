@@ -275,6 +275,12 @@ a:active {
   }
 }
 
+@media (max-width: 500px) {
+  .moon {
+    filter: drop-shadow(0 0 50px white, 0px 80px #f2defabe);
+  }
+}
+
 .content {
   position: absolute;
   top: 20%;
@@ -320,7 +326,7 @@ a:active {
 
 @media (max-width: 600px) {
   .content-title {
-    margin-top: 60%;
+    margin-top: 85%;
     font-size: 2.7rem;
   }
 }
@@ -342,7 +348,13 @@ a:active {
   mix-blend-mode: color;
 }
 
-
+@media (max-width: 500px) {
+  .spotlight {
+    background: radial-gradient(ellipse, #750791de, transparent  150%) center / 80%,
+     
+    radial-gradient(ellipse, #20012552, #24032b7c 10%) center / 10% 10%;
+  }
+}
 
 .spotlight2 {
   z-index: 40;
@@ -354,11 +366,16 @@ a:active {
   right: 0;
   bottom: 0;
   background: radial-gradient(ellipse, rgba(28, 1, 32, 0.95), rgba(23, 1, 27, 0.12)) center /
-    90% 50%;
+    60% 30%;
   mix-blend-mode: color;
 }
 
-
+@media (max-width: 500px) {
+  .spotlight2 {
+    background: radial-gradient(ellipse, rgba(28, 1, 32, 0.95), rgba(23, 1, 27, 0.12)) center /
+    40% 20%;
+  }
+}
 
 .second-section-title {
   color: rgb(245, 224, 248);
