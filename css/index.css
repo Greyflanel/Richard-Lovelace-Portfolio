@@ -811,6 +811,13 @@ a:active {
   text-align: center;
 }
 
+@media (max-width: 1280px) {
+  .smoke-text {
+    font-size: 2.5rem;
+    margin-top: 7%;
+  }
+}
+
 .form-wrapper {
   display: flex;
   flex-direction: column;

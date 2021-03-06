@@ -48,23 +48,23 @@ function scrollAnimation() {
         duration: 23,
         autoAlpha: 1,
       },
-      "-=6.9"
+      "-=7.25"
     )
     .to(
       ".smoke-vid",
       {
-        y: 60,
-        duration: 6,
+        y: 65,
+        duration: 6.5,
       },
-      "-=24"
+      "-=26"
     )
     .to(
       ".smoke-text",
       {
-        y: 50,
-        duration: 4.5,
+        y: 60,
+        duration: 3,
       },
-      "-=23.5"
+      "-=24"
     )
     .to(
       ".smoke-vid",
@@ -79,11 +79,11 @@ function scrollAnimation() {
         autoAlpha: 0,
         duration: 1.5,
       },
-      "-=14"
+      "-=10"
     ).to(".contact-container", {
       autoAlpha: 1,
       duration: 16
-    }, "-=15");
+    }, "-=15")
 
   }
     
