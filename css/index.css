@@ -539,6 +539,15 @@ a:active {
 
 @media (max-width: 801px) {
   .card .box .contentBx div h2 {
+    margin-top: 6%;
+    margin-bottom: 1%;
+    font-size: 1.3rem;
+    
+  }
+}
+
+@media (max-width: 500px) {
+  .card .box .contentBx div h2 {
     margin-top: -2%;
     margin-bottom: 1%;
     font-size: 1.3rem;
