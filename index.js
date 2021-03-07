@@ -205,6 +205,7 @@ window.onload = function () {
         width: "70%"
       });
       tl.to(".container", {
+        delay: 99999999999999999999999999999,
         x: "+=34%",
         y: "-=13%",
         duration: 30,
