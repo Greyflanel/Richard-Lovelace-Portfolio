@@ -22,15 +22,15 @@ let timeline = gsap.timeline({
 });
 
 
+
 let timeline2 = gsap.timeline().from(".developer-logo",{
   
 });
 
-console.log(timeline2)
+
 function scrollAnimation() {
   
   
-    
   timeline
     .set(".smoke-vid, .smoke-text", {
       opacity: 0,
@@ -53,7 +53,7 @@ function scrollAnimation() {
     .to(
       ".smoke-vid",
       {
-        y: 65,
+        y: 67,
         duration: 6.5,
       },
       "-=26"
@@ -61,7 +61,7 @@ function scrollAnimation() {
     .to(
       ".smoke-text",
       {
-        y: 60,
+        y: 62,
         duration: 3,
       },
       "-=24"
@@ -83,9 +83,25 @@ function scrollAnimation() {
     ).to(".contact-container", {
       autoAlpha: 1,
       duration: 16
-    }, "-=15")
+    }, "-=14")
 
-  }
-    
+    ScrollTrigger.matchMedia({
+      "(min-width: 1100px)": () => {
+        timeline
+          .to(".contact-info", { 
+            x: "15vw", duration: 3, }, "17")
+          .to(".form-wrapper", { x: "-15vw", duration: 3 }, "17");
+      },
+      "(min-width: 1400px)": () => {
+        timeline
+          .to(".contact-info", { 
+            ease: "power1.out",
+            x: "18vw", duration: 4 }, "17")
+          .to(".form-wrapper", { 
+            ease: "power1.out",
+            x: "-18vw", duration: 4 }, "17");
+      },
+    });
+}
  
 scrollAnimation();
