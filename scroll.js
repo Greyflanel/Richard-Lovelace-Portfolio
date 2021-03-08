@@ -44,11 +44,11 @@ function scrollAnimation() {
     .to(
       ".smoke-text",
       {
-        delay: 7.3,
+        delay: 7,
         duration: 23,
         autoAlpha: 1,
       },
-      "-=7.25"
+      "-=6.8"
     )
     .to(
       ".smoke-vid",
@@ -61,8 +61,8 @@ function scrollAnimation() {
     .to(
       ".smoke-text",
       {
-        y: 62,
-        duration: 3,
+        y: 64,
+        duration: 3.3,
       },
       "-=24"
     )
@@ -79,27 +79,51 @@ function scrollAnimation() {
         autoAlpha: 0,
         duration: 1.5,
       },
-      "-=10"
-    ).to(".contact-container", {
-      autoAlpha: 1,
-      duration: 16
-    }, "-=14")
+      "-=16.5"
+    )
 
     ScrollTrigger.matchMedia({
-      "(min-width: 1100px)": () => {
-        timeline
-          .to(".contact-info", { 
-            x: "15vw", duration: 3, }, "17")
-          .to(".form-wrapper", { x: "-15vw", duration: 3 }, "17");
-      },
       "(min-width: 1400px)": () => {
         timeline
-          .to(".contact-info", { 
-            ease: "power1.out",
-            x: "18vw", duration: 4 }, "17")
-          .to(".form-wrapper", { 
-            ease: "power1.out",
-            x: "-18vw", duration: 4 }, "17");
+          .to(
+            ".contact-info",
+            {
+              ease: "power1.inOut",
+              x: "15vw",
+              duration: 4.5,
+            },
+            "-=16.5"
+          )
+          .to(
+            ".form-wrapper",
+            {
+              ease: "power1.inOut",
+              x: "-15vw",
+              duration: 4.5,
+            },
+            "-=16.5"
+          );
+      },
+
+      "(min-width: 1100px)": () => {
+        timeline
+          .to(
+            ".contact-info",
+            {
+              x: "15vw",
+              duration: 3,
+            },
+            "17"
+          )
+          .to(".form-wrapper", { x: "-15vw", duration: 3 }, "17")
+          .to(
+            ".border1, .border2",
+            {
+              autoAlpha: 1,
+              duration: 4,
+            },
+            "-=14"
+          );
       },
     });
 }

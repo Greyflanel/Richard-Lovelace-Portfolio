@@ -718,7 +718,7 @@ a:active {
   margin-top: 4%;
   margin-bottom: 2%;
   width: 45vw;
-  padding: 1%;
+  padding: 0.5%;
   border-radius: 5px;
   text-align: center;
   color: white;
@@ -759,7 +759,7 @@ a:active {
   position: absolute;
   top: 1%;
   left: 28%;
-  font-size: 5rem;
+  font-size: 5.2rem;
   width: 45vw;
   padding: 0.5%;
   border-radius: 5px;
@@ -823,7 +823,7 @@ a:active {
   flex-direction: column;
   width: 35%;
   margin: 0;
-  margin-bottom: -15%;
+  margin-bottom: -9%;
 }
 
 .form-wrapper:nth-child(4) {
@@ -845,7 +845,7 @@ a:active {
 }
 
 .send-me-a-message {
-  margin: 0;
+  margin: 0 auto;
   font-size: 2.5rem;
   color: chartreuse;
   text-align: center;
@@ -1066,6 +1066,23 @@ input[type="submit"]:hover {
   width: 50%;
   align-items: center;
 }
+
+.border1 {
+  position: absolute;
+  z-index: 450;
+  top: 25%;
+  left: 5%;
+  visibility: hidden;
+}
+
+.border2 {
+  position: absolute;
+  bottom: 1%;
+  right: 5%;
+  transform: rotate(180deg);
+  visibility: hidden;
+}
+
 
 
 /*# sourceMappingURL=index.css.map */
