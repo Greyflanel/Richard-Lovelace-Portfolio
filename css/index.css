@@ -819,6 +819,8 @@ a:active {
 }
 
 .form-wrapper {
+  position: relative;
+  z-index: 500;
   display: flex;
   flex-direction: column;
   width: 35%;
@@ -941,11 +943,12 @@ input[type="submit"]:hover {
   display: grid;
   grid-auto-flow: row;
   gap: 15px;
-  border: 3px solid #550055;
+  border: 5px solid #550055;
   padding: 3%;
   margin-top: 10%;
   width: 32%;
-
+  position: relative;
+  z-index: 500;
 }
 
 @media (max-width: 700px) {
@@ -967,8 +970,7 @@ input[type="submit"]:hover {
 
 .email {
   grid-row-start: 2;
-  width: 100%;
-  max-width: 90vw;
+  
 }
 
 @media (max-width: 500px) {
@@ -1069,7 +1071,7 @@ input[type="submit"]:hover {
 
 .border1 {
   position: absolute;
-  z-index: 450;
+  z-index: 50;
   top: 25%;
   left: 5%;
   visibility: hidden;
@@ -1077,6 +1079,7 @@ input[type="submit"]:hover {
 
 .border2 {
   position: absolute;
+  z-index: 50;
   bottom: 1%;
   right: 5%;
   transform: rotate(180deg);

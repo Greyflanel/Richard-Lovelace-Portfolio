@@ -44,11 +44,11 @@ function scrollAnimation() {
     .to(
       ".smoke-text",
       {
-        delay: 7,
+        delay: 7.5,
         duration: 23,
         autoAlpha: 1,
       },
-      "-=6.8"
+      "-=6.9"
     )
     .to(
       ".smoke-vid",
@@ -77,9 +77,9 @@ function scrollAnimation() {
       ".smoke",
       {
         autoAlpha: 0,
-        duration: 1.5,
+        
       },
-      "-=16.5"
+      "-=17.9"
     )
 
     ScrollTrigger.matchMedia({
@@ -89,19 +89,19 @@ function scrollAnimation() {
             ".contact-info",
             {
               ease: "power1.inOut",
-              x: "15vw",
-              duration: 4.5,
+              x: "16.5vw",
+              duration: 2.2,
             },
-            "-=16.5"
+            "-=19"
           )
           .to(
             ".form-wrapper",
             {
               ease: "power1.inOut",
-              x: "-15vw",
-              duration: 4.5,
+              x: "-16.5vw",
+              duration: 2.2,
             },
-            "-=16.5"
+            "-=19"
           );
       },
 
@@ -110,19 +110,19 @@ function scrollAnimation() {
           .to(
             ".contact-info",
             {
-              x: "15vw",
+              x: "16.5vw",
               duration: 3,
             },
             "17"
           )
-          .to(".form-wrapper", { x: "-15vw", duration: 3 }, "17")
+          .to(".form-wrapper", { x: "-16.5vw", duration: 3 }, "17")
           .to(
             ".border1, .border2",
             {
               autoAlpha: 1,
               duration: 4,
             },
-            "-=14"
+            "-=18"
           );
       },
     });
