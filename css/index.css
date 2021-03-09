@@ -1014,11 +1014,6 @@ input[type="submit"]:hover {
   
 }
 
-@media (max-width: 500px) {
-  .social {
-    
-  }
-}
 
 .linkedin {
   
@@ -1080,6 +1075,7 @@ input[type="submit"]:hover {
 
 @media (max-width: 500px) {
   .email {
+    width: 90%;
     margin-top: 5%;
     margin-left: 25%;
   }
@@ -1110,7 +1106,7 @@ input[type="submit"]:hover {
 
 @media (max-width: 500px) {
   .email p {
-    width: 85%;
+    width: 80%;
   }
 }
 
