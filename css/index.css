@@ -1014,6 +1014,11 @@ input[type="submit"]:hover {
   
 }
 
+@media (max-width: 500px) {
+  .social {
+    margin-top: -10%;
+  }
+}
 
 .linkedin {
   
