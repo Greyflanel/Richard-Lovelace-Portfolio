@@ -79,7 +79,7 @@ function scrollAnimation() {
         autoAlpha: 0,
         
       },
-      "-=17.9"
+      "-=18"
     )
 
     ScrollTrigger.matchMedia({
