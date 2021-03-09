@@ -82,8 +82,8 @@ body {
   z-index: 600;
   right: -1.5%;
   top: 15px;
-  font-size: 2rem;
-  width: 35rem;
+  font-size: 2.2rem;
+  width: 40rem;
   font-weight: 550;
 }
 
@@ -782,6 +782,7 @@ a:active {
     font-size: 1.6rem;
     width: 50vw;
     top: 3%;
+    left: 25%;
   }
 }
 
@@ -789,7 +790,7 @@ a:active {
   .fourth-section-title h1 {
     font-size: 1.8rem;
     width: 50vw;
-    top: 1%;
+    top: 2%;
   }
 }
 .smoke {
@@ -851,9 +852,10 @@ a:active {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   .form-wrapper {
-    width: 95%;
+    width: 90%;
+    
   }
 }
 
@@ -871,6 +873,13 @@ a:active {
   .send-me-a-message {
     width: 90%;
     font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .send-me-a-message {
+    width: 90%;
+    font-size: 2rem;
   }
 }
 
@@ -962,19 +971,34 @@ input[type="submit"]:hover {
   align-items: center;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .contact-info {
-    width: 80%;
+    width: 75%;
+    margin-bottom: -5%;
+    
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-info {
+    width: 90%;
     margin-bottom: -5%;
   }
 }
 
 .contact-info h3 {
- font-size: 3rem;
+ font-size: 2.6rem;
  margin: 0 auto;
  text-align: center;
  border-bottom: 1px solid chartreuse;
  width: 90%;
+}
+
+@media (max-width: 1400px) {
+  .contact-info h3 {
+    width: 95%;
+    font-size: 2.3rem;
+  }
 }
 
 @media (max-width: 800px) {
@@ -987,9 +1011,14 @@ input[type="submit"]:hover {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+  
 }
 
-
+@media (max-width: 500px) {
+  .social {
+    margin-top: -5%;
+  }
+}
 
 .linkedin {
   
@@ -1049,9 +1078,29 @@ input[type="submit"]:hover {
   width: 100%;
 }
 
+@media (max-width: 500px) {
+  .email {
+    margin-top: 5%;
+  }
+}
+
+@media (min-width: 800px) {
+  .email h5 {
+    margin-bottom: -1%;
+    
+  }
+}
+
+@media (max-width: 800px) {
+  .email h5 {
+    margin-bottom: 4%;
+    
+  }
+}
+
 .email p {
   margin: 0;
-  margin-top: -8%;
+  margin-top: 5%;
   padding: 0;
   color: white;
   font-size: 1.7rem;

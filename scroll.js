@@ -113,9 +113,9 @@ function scrollAnimation() {
               x: "16.5vw",
               duration: 3,
             },
-            "17"
+            "-=19"
           )
-          .to(".form-wrapper", { x: "-16.5vw", duration: 3 }, "17")
+          .to(".form-wrapper", { x: "-16.5vw", duration: 3 }, "-=19")
           .to(
             ".border1, .border2",
             {
