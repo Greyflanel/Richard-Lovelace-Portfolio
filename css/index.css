@@ -1067,7 +1067,7 @@ input[type="submit"]:hover {
 .border1 {
   position: absolute;
   z-index: 50;
-  top: 23%;
+  top: 21%;
   left: 5%;
   visibility: hidden;
 }
