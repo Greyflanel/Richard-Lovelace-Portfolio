@@ -110,7 +110,7 @@ body {
 }
 .menu-btn {
   position: fixed;
-  z-index: 600;
+  z-index: 610;
   right: clamp(2%, 35px, 6%);
   top: 35px;
   cursor: pointer;
@@ -142,7 +142,7 @@ body {
 
 .menu {
   position: fixed;
-  z-index: 300;
+  z-index: 600;
   top: 0;
   width: 100%;
   opacity: 0.9;
