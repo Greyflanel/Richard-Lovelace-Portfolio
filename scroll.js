@@ -79,7 +79,7 @@ function scrollAnimation() {
         autoAlpha: 0,
         
       },
-      "-=18"
+      "-=18.3"
     )
 
     ScrollTrigger.matchMedia({
@@ -90,18 +90,18 @@ function scrollAnimation() {
             {
               ease: "power1.inOut",
               x: "16.5vw",
-              duration: 2.2,
+              duration: 2.7,
             },
-            "-=19"
+            "-=19.7"
           )
           .to(
             ".form-wrapper",
             {
               ease: "power1.inOut",
               x: "-16.5vw",
-              duration: 2.2,
+              duration: 2.7,
             },
-            "-=19"
+            "-=19.7"
           );
       },
 
@@ -120,7 +120,7 @@ function scrollAnimation() {
             ".border1, .border2",
             {
               autoAlpha: 1,
-              duration: 4,
+              duration: 3,
             },
             "-=18"
           );
