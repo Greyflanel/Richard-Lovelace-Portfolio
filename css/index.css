@@ -1016,7 +1016,7 @@ input[type="submit"]:hover {
 
 @media (max-width: 500px) {
   .social {
-    margin-top: -5%;
+    
   }
 }
 
@@ -1081,6 +1081,7 @@ input[type="submit"]:hover {
 @media (max-width: 500px) {
   .email {
     margin-top: 5%;
+    margin-left: 25%;
   }
 }
 
@@ -1107,10 +1108,10 @@ input[type="submit"]:hover {
   
 }
 
-.alien {
-  display: flex;
-  width: 50%;
-  align-items: center;
+@media (max-width: 500px) {
+  .email p {
+    width: 85%;
+  }
 }
 
 .border1 {
