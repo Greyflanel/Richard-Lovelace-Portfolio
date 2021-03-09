@@ -790,7 +790,7 @@ a:active {
   .fourth-section-title h1 {
     font-size: 1.8rem;
     width: 50vw;
-    top: 2%;
+    top: 3%;
   }
 }
 .smoke {
@@ -1080,7 +1080,7 @@ input[type="submit"]:hover {
 
 @media (max-width: 500px) {
   .email {
-    width: 90%;
+    width: 95%;
     margin-top: 5%;
     margin-left: 25%;
   }
