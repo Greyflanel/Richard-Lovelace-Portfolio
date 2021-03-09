@@ -1046,7 +1046,7 @@ input[type="submit"]:hover {
 .email {
   font-size: 1.8rem;
   word-wrap: break-word;
-  width: 90%;
+  width: 100%;
 }
 
 .email p {
