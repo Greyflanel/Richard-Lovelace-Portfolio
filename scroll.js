@@ -44,7 +44,7 @@ function scrollAnimation() {
     .to(
       ".smoke-text",
       {
-        delay: 7.5,
+        delay: 6.98,
         duration: 23,
         autoAlpha: 1,
       },
@@ -62,7 +62,7 @@ function scrollAnimation() {
       ".smoke-text",
       {
         y: 64,
-        duration: 3.3,
+        duration: 3.4,
       },
       "-=24"
     )
@@ -71,7 +71,7 @@ function scrollAnimation() {
       {
         autoAlpha: 0,
       },
-      "-=19"
+      "-=19.5"
     )
     .to(
       ".smoke",
@@ -79,7 +79,7 @@ function scrollAnimation() {
         autoAlpha: 0,
         
       },
-      "-=18.3"
+      "-=18.5"
     )
 
     ScrollTrigger.matchMedia({
@@ -90,18 +90,18 @@ function scrollAnimation() {
             {
               ease: "power1.inOut",
               x: "16.5vw",
-              duration: 2.7,
+              duration: 2.8,
             },
-            "-=19.7"
+            "-=19.8"
           )
           .to(
             ".form-wrapper",
             {
               ease: "power1.inOut",
               x: "-16.5vw",
-              duration: 2.7,
+              duration: 2.8,
             },
-            "-=19.7"
+            "-=19.8"
           );
       },
 
@@ -113,9 +113,9 @@ function scrollAnimation() {
               x: "16.5vw",
               duration: 3,
             },
-            "-=19"
+            "-=19.5"
           )
-          .to(".form-wrapper", { x: "-16.5vw", duration: 3 }, "-=19")
+          .to(".form-wrapper", { x: "-16.5vw", duration: 3 }, "-=19.5")
           .to(
             ".border1, .border2",
             {
