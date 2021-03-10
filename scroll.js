@@ -88,7 +88,7 @@ function scrollAnimation() {
           .to(
             ".contact-info",
             {
-              ease: "power1.inOut",
+              ease: "linear",
               x: "16.5vw",
               duration: 2.8,
             },
@@ -97,7 +97,7 @@ function scrollAnimation() {
           .to(
             ".form-wrapper",
             {
-              ease: "power1.inOut",
+              ease: "linear",
               x: "-16.5vw",
               duration: 2.8,
             },
