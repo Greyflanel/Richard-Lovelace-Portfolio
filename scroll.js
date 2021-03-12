@@ -71,7 +71,7 @@ function scrollAnimation() {
       {
         autoAlpha: 0,
       },
-      "-=19.8"
+      "-=19.82"
     )
     .to(
       ".smoke",
@@ -92,12 +92,12 @@ function scrollAnimation() {
               x: "16.5vw",
               duration: 4,
             },
-            "-=19.5"
+            "-=19.65"
           )
           .to(".form-wrapper", { 
             x: "-16.5vw",
              duration: 4,
-             }, "-=19.5")
+             }, "-=19.65")
           .to(
             ".border1, .border2",
             {
