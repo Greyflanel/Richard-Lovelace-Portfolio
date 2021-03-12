@@ -62,7 +62,7 @@ function scrollAnimation() {
       ".smoke-text",
       {
         y: 64,
-        duration: 3.4,
+        duration: 3.3,
       },
       "-=24"
     )
@@ -71,7 +71,7 @@ function scrollAnimation() {
       {
         autoAlpha: 0,
       },
-      "-=19.5"
+      "-=19.8"
     )
     .to(
       ".smoke",
@@ -79,43 +79,25 @@ function scrollAnimation() {
         autoAlpha: 0,
         
       },
-      "-=18.5"
+      "-=18"
     )
 
     ScrollTrigger.matchMedia({
-      "(min-width: 1400px)": () => {
-        timeline
-          .to(
-            ".contact-info",
-            {
-              ease: "linear",
-              x: "16.5vw",
-              duration: 2.8,
-            },
-            "-=19.8"
-          )
-          .to(
-            ".form-wrapper",
-            {
-              ease: "linear",
-              x: "-16.5vw",
-              duration: 2.8,
-            },
-            "-=19.8"
-          );
-      },
-
+      
       "(min-width: 1100px)": () => {
         timeline
           .to(
             ".contact-info",
             {
               x: "16.5vw",
-              duration: 3,
+              duration: 4,
             },
             "-=19.5"
           )
-          .to(".form-wrapper", { x: "-16.5vw", duration: 3 }, "-=19.5")
+          .to(".form-wrapper", { 
+            x: "-16.5vw",
+             duration: 4,
+             }, "-=19.5")
           .to(
             ".border1, .border2",
             {
