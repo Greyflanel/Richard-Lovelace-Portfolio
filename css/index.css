@@ -758,9 +758,9 @@ a:active {
 .fourth-section-title h1 {
   position: absolute;
   top: 1%;
-  left: 28%;
+  left: 30%;
   font-size: 5.2rem;
-  width: 40vw;
+  width: 39vw;
   padding: 0.5%;
   border-radius: 5px;
   text-align: center;
@@ -778,12 +778,21 @@ a:active {
   }
 }
 
-@media (min-width: 500px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 800px) {
   .fourth-section-title h1 {
     font-size: 1.6rem;
-    width: 51vw;
+    width: 40vw;
     top: 3%;
-    left: 25%;
+    
+  }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+  .fourth-section-title h1 {
+    font-size: 1.6rem;
+    width: 45vw;
+    top: 3%;
+    
   }
 }
 
@@ -792,6 +801,7 @@ a:active {
     font-size: 1.7rem;
     width: 53vw;
     top: 4.5%;
+    left: 25%;
   }
 }
 .smoke {

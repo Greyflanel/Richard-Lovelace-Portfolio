@@ -34,53 +34,59 @@ function scrollAnimation() {
   timeline
     .set(".smoke-vid, .smoke-text", {
       opacity: 0,
-      
-    }).call(playVideo, ["smokey"])
+    })
+    .call(playVideo, ["smokey"])
     .to(".smoke-vid", {
       duration: 3,
       autoAlpha: 1,
-      
     })
     .to(
       ".smoke-text",
       {
         delay: 6.98,
-        duration: 23,
+        duration: 24,
         autoAlpha: 1,
       },
-      "-=6.7"
+      "-=6.9"
     )
     .to(
       ".smoke-vid",
       {
         y: 67,
-        duration: 6.5,
-      },
-      "-=26"
-    )
-    .to(
-      ".smoke-text",
-      {
-        y: 64,
-        duration: 3.3,
+        duration: 7,
       },
       "-=24"
     )
     .to(
       ".smoke-vid",
       {
+        y: 30,
+        duration: 3,
+      },
+      "-=27"
+    )
+    .to(
+      ".smoke-text",
+      {
+        y: 62,
+        duration: 4.15,
+      },
+      "-=24.9"
+    )
+    .to(
+      ".smoke-vid",
+      {
         autoAlpha: 0,
       },
-      "-=19.82"
+      "-=20.1"
     )
     .to(
       ".smoke",
       {
         autoAlpha: 0,
-        
       },
-      "-=18"
-    )
+      "-=18.8"
+    );
 
     ScrollTrigger.matchMedia({
       
@@ -92,12 +98,12 @@ function scrollAnimation() {
               x: "16.5vw",
               duration: 4.7,
             },
-            "-=19.65"
+            "-=20"
           )
           .to(".form-wrapper", { 
             x: "-16.5vw",
              duration: 4.7,
-             }, "-=19.65")
+             }, "-=20")
           .to(
             ".border1, .border2",
             {
