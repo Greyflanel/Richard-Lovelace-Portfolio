@@ -800,7 +800,7 @@ a:active {
   .fourth-section-title h1 {
     font-size: 1.7rem;
     width: 53vw;
-    top: 4.5%;
+    top: 5.8%;
     left: 25%;
   }
 }
@@ -993,7 +993,7 @@ input[type="submit"]:hover {
 @media (max-width: 500px) {
   .contact-info {
     width: 90%;
-    margin-bottom: -5%;
+    margin-bottom: -10%;
   }
 }
 
@@ -1039,6 +1039,11 @@ input[type="submit"]:hover {
  
 }
 
+@media (max-width: 500px) {
+  .linkedin {
+    font-size: 1.6rem;
+  }
+}
 
 .linkedin img {
   margin-top: -20%;
@@ -1064,7 +1069,11 @@ input[type="submit"]:hover {
   font-size: 1.8rem;
 }
 
-
+@media (max-width: 500px) {
+  .github {
+    font-size: 1.6rem;
+  }
+}
 
 .github img {
   width: 4rem;
@@ -1094,6 +1103,7 @@ input[type="submit"]:hover {
     width: 95%;
     margin-top: 5%;
     margin-left: 25%;
+    font-size: 1.6rem;
   }
 }
 
@@ -1123,7 +1133,7 @@ input[type="submit"]:hover {
 @media (max-width: 500px) {
   .email p {
     width: 80%;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
