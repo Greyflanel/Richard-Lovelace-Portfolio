@@ -68,6 +68,7 @@ body {
 @media (max-width: 1100px) {
   #fourth-section {
     justify-content: space-between;
+    
   }
 }
 
@@ -759,7 +760,7 @@ a:active {
   top: 1%;
   left: 28%;
   font-size: 5.2rem;
-  width: 45vw;
+  width: 40vw;
   padding: 0.5%;
   border-radius: 5px;
   text-align: center;
@@ -777,10 +778,10 @@ a:active {
   }
 }
 
-@media (min-width: 500px) and (max-width: 700px) {
+@media (min-width: 500px) and (max-width: 800px) {
   .fourth-section-title h1 {
     font-size: 1.6rem;
-    width: 50vw;
+    width: 51vw;
     top: 3%;
     left: 25%;
   }
@@ -788,9 +789,9 @@ a:active {
 
 @media (min-width: 280px) and (max-width: 500px) {
   .fourth-section-title h1 {
-    font-size: 1.8rem;
-    width: 50vw;
-    top: 3%;
+    font-size: 1.7rem;
+    width: 53vw;
+    top: 4.5%;
   }
 }
 .smoke {
@@ -1042,7 +1043,7 @@ input[type="submit"]:hover {
 
 @media (max-width: 1280px) {
   .linkedin img {
-    width: 4rem;
+    width: 3.5rem;
   }
 }
 
@@ -1068,7 +1069,7 @@ input[type="submit"]:hover {
 
 @media (max-width: 1280px) {
   .github img {
-    width: 4rem;
+    width: 3.5rem;
   }
 }
 
@@ -1112,6 +1113,7 @@ input[type="submit"]:hover {
 @media (max-width: 500px) {
   .email p {
     width: 80%;
+    font-size: 1.5rem;
   }
 }
 
@@ -1119,7 +1121,7 @@ input[type="submit"]:hover {
   position: absolute;
   z-index: 50;
   top: 21%;
-  left: 5%;
+  left: 2%;
   visibility: hidden;
 }
 
@@ -1127,7 +1129,7 @@ input[type="submit"]:hover {
   position: absolute;
   z-index: 50;
   bottom: 1%;
-  right: 5%;
+  right: 2%;
   transform: rotate(180deg);
   visibility: hidden;
 }
@@ -1142,7 +1144,7 @@ input[type="submit"]:hover {
 @media (max-width: 1280px) {
   .border2 {
     bottom: 1%;
-    right: 1%;
+    right: 0;
   }
 }
 

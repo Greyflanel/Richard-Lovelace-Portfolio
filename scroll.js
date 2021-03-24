@@ -48,7 +48,7 @@ function scrollAnimation() {
         duration: 23,
         autoAlpha: 1,
       },
-      "-=6.9"
+      "-=6.7"
     )
     .to(
       ".smoke-vid",
@@ -90,13 +90,13 @@ function scrollAnimation() {
             ".contact-info",
             {
               x: "16.5vw",
-              duration: 4,
+              duration: 4.7,
             },
             "-=19.65"
           )
           .to(".form-wrapper", { 
             x: "-16.5vw",
-             duration: 4,
+             duration: 4.7,
              }, "-=19.65")
           .to(
             ".border1, .border2",
