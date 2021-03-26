@@ -47,31 +47,55 @@ function scrollAnimation() {
         duration: 24,
         autoAlpha: 1,
       },
-      "-=6.9"
+      "-=6.95"
     )
     .to(
       ".smoke-vid",
       {
-        y: 67,
-        duration: 7,
-      },
-      "-=24"
-    )
-    .to(
-      ".smoke-vid",
-      {
-        y: 30,
-        duration: 3,
+        y: 70,
+        duration: 4,
       },
       "-=27"
     )
     .to(
+      ".smoke-vid",
+      {
+        y: 40,
+        duration: 2,
+      },
+      "-=26.5"
+    )
+    .to(
+      ".smoke-vid",
+      {
+        y: 50,
+        duration: 2.5,
+      },
+      "-=26"
+    )
+    .to(
+      ".smoke-vid",
+      {
+        y: 25,
+        duration: 2.2,
+      },
+      "-=25.5"
+    )
+    .to(
+      ".smoke-vid",
+      {
+        y: 55,
+        duration: 2.2,
+      },
+      "-=25"
+    )
+    .to(
       ".smoke-text",
       {
-        y: 62,
-        duration: 4.15,
+        y: 72,
+        duration: 4.2,
       },
-      "-=24.9"
+      "-=25.2"
     )
     .to(
       ".smoke-vid",
@@ -87,6 +111,8 @@ function scrollAnimation() {
       },
       "-=18.8"
     );
+
+
 
     ScrollTrigger.matchMedia({
       
@@ -107,6 +133,7 @@ function scrollAnimation() {
           .to(
             ".border1, .border2",
             {
+              
               autoAlpha: 1,
               duration: 3,
             },
