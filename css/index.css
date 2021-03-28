@@ -274,12 +274,12 @@ a:active {
 
 .moon {
   position: absolute;
-  width: 70%;
+  width: 73%;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-  filter: drop-shadow(0 5px 45px #ce84ee)  brightness(130%);
+  filter: drop-shadow(0 5px 40px #dd90fd)  brightness(130%) contrast(1.25);
   z-index: 0;
 }
 
@@ -349,16 +349,16 @@ a:active {
   z-index: 1;
   width: 80%;
   height: 100%;
-  filter: blur(4rem);
+  filter: blur(1rem);
   border-radius: 80%;
   position: absolute;
   top: 0;
   left: 10%;
   right: 0;
   bottom: 0;
-  background: radial-gradient(ellipse, #750791de, transparent  100%) center / 110%,
+  background: radial-gradient(ellipse, #63077ae5, transparent  110%) center / 110%,
      
-    radial-gradient(ellipse, #20012552, #24032b7c 50%) center / 50% 50%;
+    radial-gradient(ellipse, #20012552, #24032b7c 100%) center / 50% 50%;
   mix-blend-mode: color;
 }
 
@@ -373,14 +373,14 @@ a:active {
 .spotlight2 {
   z-index: 40;
   margin: 0 auto;
-  filter: blur(5rem) brightness(200%);
+  filter: blur(1.8rem) brightness(180%);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(ellipse, rgba(28, 1, 32, 0.95), rgba(23, 1, 27, 0.32)) center /
-    10% 40%;
+  background: radial-gradient(ellipse, rgba(28, 1, 32, 0.65), rgba(23, 1, 27, 0.42)) center /
+    50% 50%;
   mix-blend-mode: color;
 }
 

@@ -21,29 +21,29 @@ window.onload = function () {
     let tl4 = gsap.timeline({ repeat: 0 });
     let tl5 = gsap.timeline({ repeat: 5 });
 
-    tl2
-      .set(".content", {
-        visibility: "visible",
-        opacity: 0,
-        filter: "brightness(0%)",
-        delay: 0.5,
-      })
-      .to(
-        ".content",
-        {
-          filter: "brightness(120%)",
-          duration: 6,
-          opacity: 1,
-          delay: 1,
-        }
-      );
+    // tl2
+    //   .set(".content", {
+    //     visibility: "visible",
+    //     opacity: 0,
+    //     filter: "brightness(0%)",
+    //     delay: 0.5,
+    //   })
+    //   .to(
+    //     ".content",
+    //     {
+    //       filter: "brightness(120%)",
+    //       duration: 6,
+    //       opacity: 1,
+    //       delay: 1,
+    //     }
+    //   );
 
-    tl2.to(".content", {
-      filter: "brightness(0%)",
-      duration: 5,
-      opacity: 0,
-      delay: 1,
-    });
+    // tl2.to(".content", {
+    //   filter: "brightness(0%)",
+    //   duration: 5,
+    //   opacity: 0,
+    //   delay: 1,
+    // });
     
     
     tl.set(".container", {
@@ -61,13 +61,13 @@ window.onload = function () {
       tl.to(".container", {
        
         x: "+=45%",
-        y: "-=20%",
+        y: "-=30%",
         duration: 30,
         ease: "linear",
       })
         .to(".container", {
           x: "+=45%",
-          y: "+=20%",
+          y: "+=30%",
           duration: 30,
           ease: "linear",
         })
