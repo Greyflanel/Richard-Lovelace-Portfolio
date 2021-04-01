@@ -22,14 +22,7 @@ let timeline = gsap.timeline({
 });
 
 
-
-let timeline2 = gsap.timeline().from(".developer-logo",{
-  
-});
-
-
 function scrollAnimation() {
-  
   
   timeline
     .set(".smoke-vid, .smoke-text", {
@@ -43,59 +36,59 @@ function scrollAnimation() {
     .to(
       ".smoke-text",
       {
-        delay: 6.98,
+        delay: 6.8,
         duration: 24,
         autoAlpha: 1,
       },
-      "-=6.95"
+      "-=6.98"
     )
     .to(
       ".smoke-vid",
       {
-        y: 70,
-        duration: 4,
+        y: 30,
+        duration: 3.5,
       },
-      "-=27"
+      "-=25"
     )
     .to(
       ".smoke-vid",
       {
-        y: 40,
-        duration: 2,
-      },
-      "-=26.5"
-    )
-    .to(
-      ".smoke-vid",
-      {
-        y: 50,
-        duration: 2.5,
+        y: 30,
+        duration: 3,
       },
       "-=26"
     )
     .to(
       ".smoke-vid",
       {
-        y: 25,
-        duration: 2.2,
+        y: 55,
+        duration: 3.5,
       },
-      "-=25.5"
+      "-=26"
     )
     .to(
       ".smoke-vid",
       {
-        y: 55,
-        duration: 2.2,
+        y: -5,
+        duration: 5,
+      },
+      "-=26.5"
+    )
+    .to(
+      ".smoke-vid",
+      {
+        y: -5,
+        duration: 4.5,
       },
       "-=25"
     )
     .to(
       ".smoke-text",
       {
-        y: 72,
-        duration: 4.2,
+        y: 55,
+        duration: 5.5,
       },
-      "-=25.2"
+      "-=25.5"
     )
     .to(
       ".smoke-vid",
@@ -121,13 +114,13 @@ function scrollAnimation() {
           .to(
             ".contact-info",
             {
-              x: "16.5vw",
+              x: "16vw",
               duration: 4.7,
             },
             "-=20"
           )
           .to(".form-wrapper", { 
-            x: "-16.5vw",
+            x: "-16vw",
              duration: 4.7,
              }, "-=20")
           .to(
@@ -137,7 +130,7 @@ function scrollAnimation() {
               autoAlpha: 1,
               duration: 3,
             },
-            "-=18"
+            "-=17.3"
           );
       },
     });
