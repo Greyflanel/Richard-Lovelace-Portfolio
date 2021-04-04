@@ -68,7 +68,6 @@ body {
 @media (max-width: 1100px) {
   #fourth-section {
     justify-content: space-between;
-    
   }
 }
 
@@ -290,12 +289,13 @@ a:active {
   width: 73%;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 48%;
   left: 0;
   right: 0;
-  filter: drop-shadow(0 0 4px hsla(282, 100%, 95%, 0.98))  brightness(120%) contrast(1.99);
+  filter: drop-shadow(0.3px 0.2px 1px hsl(300, 17%, 34%)) contrast(1.6)
+    brightness(100%);
   z-index: 0;
 }
-
 
 @media (max-width: 1280px) {
   .moon {
@@ -336,7 +336,6 @@ a:active {
 @media (max-width: 600px) {
   .content-name {
     font-size: 4rem;
-    
   }
 }
 
@@ -363,49 +362,39 @@ a:active {
   z-index: 1;
   width: 100%;
   height: 100%;
-  filter: blur(8rem);
+  position: absolute;
+  filter: blur(2);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.121) 50%,
+    rgba(25, 2, 31, 0.9) 30%,
+    rgba(60, 24, 68, 0.01) 50%
+  );
+  mix-blend-mode: color;
+}
+
+.spotlight2 {
+  z-index: 500;
+  margin: 0 auto;
+  filter: blur(0.5) brightness(5%);
   border-radius: 50%;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(ellipse, #280031a6, transparent  150%) center / 100%,
-     
-    radial-gradient(ellipse, #32003a7e, #0a0111 100%) center / 100% 100%;
+  background: rgba(255, 255, 255, 0.007);
+  background: radial-gradient(
+    circle,
+    rgba(72, 9, 87, 0.882) 120%,
+    rgba(86, 14, 102, 0.54) 75%
+  );
   mix-blend-mode: color;
-}
-
-
-@media (max-width: 500px) {
-  .spotlight {
-    background: radial-gradient(ellipse, #6c0686cc, transparent  150%) center / 80%,
-     
-    radial-gradient(ellipse, #20012552, #24032b7c 10%) center / 10% 10%;
-  }
-}
-
-.spotlight2 {
-  z-index: 100;
-  margin: 0 auto;
-  filter: blur(25rem) brightness(180%);
-  border-radius: 50%;
-  position: absolute;
-  top: 1%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgb(255,255,255);
-background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(69,12,82,1) 50%, rgba(86,14,102,0.8) 51%, rgba(81,7,97,1) 54%, rgba(255,255,255,1) 100%);
-  mix-blend-mode: color;
-}
-
-
-@media (max-width: 500px) {
-  .spotlight2 {
-    background: radial-gradient(ellipse, rgba(28, 1, 32, 0.95), rgba(23, 1, 27, 0.42)) center /
-    40% 20%;
-  }
 }
 
 .second-section-title {
@@ -458,7 +447,6 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(69,12,82,1) 50%
   box-shadow: 5px 10px 30px 8px #46324648;
   background-image: url("/assets/pattern.png");
 }
-
 
 .card-wrapper {
   position: relative;
@@ -550,7 +538,6 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(69,12,82,1) 50%
   transform: rotateY(180deg);
 }
 
-
 @media (max-width: 1280px) {
   .card .box .contentBx {
     top: -6%;
@@ -590,7 +577,6 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(69,12,82,1) 50%
     margin-top: 6%;
     margin-bottom: 1%;
     font-size: 1.3rem;
-    
   }
 }
 
@@ -812,7 +798,6 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(69,12,82,1) 50%
     font-size: 1.6rem;
     width: 40vw;
     top: 3%;
-    
   }
 }
 
@@ -821,7 +806,6 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(69,12,82,1) 50%
     font-size: 1.6rem;
     width: 45vw;
     top: 3%;
-    
   }
 }
 
@@ -895,7 +879,6 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(69,12,82,1) 50%
 @media (max-width: 500px) {
   .form-wrapper {
     width: 90%;
-    
   }
 }
 
@@ -997,7 +980,6 @@ input[type="submit"]:hover {
   height: 4rem;
 }
 
-
 .contact-info {
   position: relative;
   z-index: 550;
@@ -1015,7 +997,6 @@ input[type="submit"]:hover {
   .contact-info {
     width: 75%;
     margin-bottom: -5%;
-    
   }
 }
 
@@ -1027,11 +1008,11 @@ input[type="submit"]:hover {
 }
 
 .contact-info h3 {
- font-size: 2.6rem;
- margin: 0 auto;
- text-align: center;
- border-bottom: 1px solid chartreuse;
- width: 90%;
+  font-size: 2.6rem;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid chartreuse;
+  width: 90%;
 }
 
 @media (max-width: 1400px) {
@@ -1051,7 +1032,6 @@ input[type="submit"]:hover {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-  
 }
 
 @media (max-width: 500px) {
@@ -1061,11 +1041,9 @@ input[type="submit"]:hover {
 }
 
 .linkedin {
-  
   color: chartreuse;
   text-decoration: none;
- font-size: 1.8rem;
- 
+  font-size: 1.8rem;
 }
 
 @media (max-width: 500px) {
@@ -1092,7 +1070,6 @@ input[type="submit"]:hover {
 }
 
 .github {
-  
   text-decoration: none;
   color: chartreuse;
   font-size: 1.8rem;
@@ -1139,14 +1116,12 @@ input[type="submit"]:hover {
 @media (min-width: 800px) {
   .email h5 {
     margin-bottom: -1%;
-    
   }
 }
 
 @media (max-width: 800px) {
   .email h5 {
     margin-bottom: 4%;
-    
   }
 }
 
@@ -1156,7 +1131,6 @@ input[type="submit"]:hover {
   padding: 0;
   color: white;
   font-size: 1.7rem;
-  
 }
 
 @media (max-width: 500px) {
