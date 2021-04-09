@@ -63,6 +63,7 @@ body {
   background-color: #260033;
   position: relative;
   padding: 0 2%;
+  overflow-x: hidden;
 }
 
 @media (max-width: 1100px) {
@@ -286,28 +287,18 @@ a:active {
 
 .moon {
   position: absolute;
-  width: 73%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 48%;
+  border-radius: 20%;
   left: 0;
   right: 0;
-  filter: drop-shadow(0.3px 0.2px 1px hsl(300, 17%, 34%)) contrast(1.6)
-    brightness(100%);
+  filter: drop-shadow(2px 0px 10px #9b87ac) contrast(1.2) ;
   z-index: 0;
+  mix-blend-mode: color;
 }
 
-@media (max-width: 1280px) {
-  .moon {
-    filter: drop-shadow(0 0 50px white, 0px 80px #f1d6fdbe);
-  }
-}
 
-@media (max-width: 500px) {
-  .moon {
-    filter: drop-shadow(0 0 20px white, 0px 40px #f2defa9a);
-  }
-}
 
 .content {
   position: absolute;
@@ -360,53 +351,63 @@ a:active {
 
 .spotlight {
   z-index: 1;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 110%;
   position: absolute;
-  filter: blur(2);
-  top: 0;
-  left: 0;
+  filter: blur(2rem) brightness(110%);
+  top: -5%;
+  left: 10%;
   right: 0;
   bottom: 0;
   border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.121) 50%,
-    rgba(25, 2, 31, 0.9) 30%,
-    rgba(60, 24, 68, 0.01) 50%
-  );
-  mix-blend-mode: color;
+  
+  background-color: #5f12996e;
+  mix-blend-mode: saturation;
 }
 
 .spotlight2 {
-  z-index: 500;
+  z-index: 0;
   margin: 0 auto;
-  filter: blur(0.5) brightness(5%);
+  width: 80%;
+  height: 110%;
+  filter: blur(3rem) brightness(130%);
   border-radius: 50%;
   position: absolute;
-  top: 0;
+  top: -5%;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.007);
-  background: radial-gradient(
-    circle,
-    rgba(72, 9, 87, 0.882) 120%,
-    rgba(86, 14, 102, 0.54) 75%
-  );
+  background-color: transparent;
+  mix-blend-mode: saturation;
+}
+
+.spotlight3 {
+  z-index: 0;
+  margin: 0 auto;
+  width: 80%;
+  height: 110%;
+  filter:  brightness(105%);
+  border-radius: 95%;
+  position: absolute;
+  top: -5%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #25043f;
+  
   mix-blend-mode: color;
 }
 
 .second-section-title {
   color: rgb(245, 224, 248);
-  font-size: 4rem;
-  width: 40vw;
+  font-size: 3rem;
+  padding: 0.3% 4.5%;
   display: flex;
-  justify-content: center;
+  
   border-radius: 5px;
-  margin-top: 4%;
+  margin-top: 2%;
   margin-bottom: 2%;
-  padding: 0.5%;
+ 
   box-shadow: 5px 10px 30px 8px #46324648;
   background-color: #673a7c;
 }
@@ -439,11 +440,11 @@ a:active {
   display: flex;
   justify-content: space-evenly;
   width: 95%;
-  height: 70%;
+  
   border-radius: 0.5rem;
   flex-wrap: wrap;
   padding-top: 1%;
-  padding-bottom: 6%;
+  padding-bottom: 10%;
   box-shadow: 5px 10px 30px 8px #46324648;
   background-image: url("/assets/pattern.png");
 }
@@ -811,7 +812,7 @@ a:active {
 
 @media (min-width: 280px) and (max-width: 500px) {
   .fourth-section-title h1 {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     width: 53vw;
     top: 5.8%;
     left: 25%;
@@ -882,7 +883,7 @@ a:active {
   }
 }
 
-.send-me-a-message {
+.send-a-message {
   margin: 0 auto;
   font-size: 2.5rem;
   color: chartreuse;
@@ -893,7 +894,7 @@ a:active {
 }
 
 @media (max-width: 600px) {
-  .send-me-a-message {
+  .send-a-message {
     width: 90%;
     font-size: 1.7rem;
   }
@@ -995,8 +996,9 @@ input[type="submit"]:hover {
 
 @media (max-width: 800px) {
   .contact-info {
-    width: 75%;
-    margin-bottom: -5%;
+    width: 70%;
+    
+    
   }
 }
 
@@ -1004,6 +1006,8 @@ input[type="submit"]:hover {
   .contact-info {
     width: 90%;
     margin-bottom: -10%;
+    border: none;
+    padding: 0.5%;
   }
 }
 
@@ -1144,7 +1148,7 @@ input[type="submit"]:hover {
   position: absolute;
   z-index: 50;
   top: 21%;
-  left: 2%;
+  left: 8%;
   visibility: hidden;
 }
 
@@ -1152,7 +1156,7 @@ input[type="submit"]:hover {
   position: absolute;
   z-index: 50;
   bottom: 1%;
-  right: 2%;
+  right: 8%;
   transform: rotate(180deg);
   visibility: hidden;
 }
@@ -1173,7 +1177,7 @@ input[type="submit"]:hover {
 @media (max-width: 1280px) {
   .border2 {
     bottom: 1%;
-    right: 0;
+    right: 1%;
   }
 }
 
