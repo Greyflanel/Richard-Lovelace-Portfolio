@@ -287,18 +287,16 @@ a:active {
 
 .moon {
   position: absolute;
-  width: 80%;
+  width: 79%;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 20%;
+  border-radius: 50%;
   left: 0;
   right: 0;
-  filter: drop-shadow(2px 0px 10px #9b87ac) contrast(1.2) ;
+  filter: drop-shadow(0 0 8px #d0c7d8) contrast(1.1);
   z-index: 0;
-  mix-blend-mode: color;
+  mix-blend-mode: color-dodge;
 }
-
-
 
 .content {
   position: absolute;
@@ -352,33 +350,46 @@ a:active {
 .spotlight {
   z-index: 1;
   width: 80%;
-  height: 110%;
+  height: 100%;
   position: absolute;
-  filter: blur(2rem) brightness(110%);
-  top: -5%;
-  left: 10%;
+  filter: blur(18rem) brightness(255%);
+  top: -1%;
+  left: 11%;
   right: 0;
   bottom: 0;
   border-radius: 50%;
-  
-  background-color: #5f12996e;
-  mix-blend-mode: saturation;
+  background-color: transparent;
+  mix-blend-mode: soft-light;
+}
+
+@media (max-width: 1600px) {
+  .spotlight {
+    height: 100%;
+    top: 0;
+  }
 }
 
 .spotlight2 {
-  z-index: 0;
+  z-index: 10000;
   margin: 0 auto;
-  width: 80%;
-  height: 110%;
-  filter: blur(3rem) brightness(130%);
-  border-radius: 50%;
+  width: 90%;
+  height: 100%;
+  filter: blur(1rem) brightness(185%);
+  border-radius: 80%;
   position: absolute;
-  top: -5%;
+  top: 1%;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: transparent;
-  mix-blend-mode: saturation;
+  background-color: #0e0414;
+  mix-blend-mode: color-dodge;
+}
+
+@media (max-width: 1600px) {
+  .spotlight2 {
+    height: 100%;
+    top: 0;
+  }
 }
 
 .spotlight3 {
@@ -386,16 +397,23 @@ a:active {
   margin: 0 auto;
   width: 80%;
   height: 110%;
-  filter:  brightness(105%);
-  border-radius: 95%;
+  filter: blur(0.4rem) brightness(120%);
+  border-radius: 50%;
   position: absolute;
   top: -5%;
   left: 0;
   right: 0;
   bottom: 0;
-  background: #25043f;
+  background: #210138;
   
   mix-blend-mode: color;
+}
+
+@media (max-width: 1600px) {
+  .spotlight3 {
+    height: 100%;
+    top: 0;
+  }
 }
 
 .second-section-title {

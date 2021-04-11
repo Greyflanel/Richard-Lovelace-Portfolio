@@ -62,26 +62,26 @@ window.onload = function () {
         
         x: "+=45%",
         y: "-=30%",
-        duration: 30,
+        duration: 45,
         ease: "linear",
       })
         .to(".container", {
           x: "+=45%",
           y: "+=30%",
-          duration: 30,
+          duration: 45,
           ease: "linear",
-          delay: 99999999999999999999999999999999999999999,
+          
         })
         .to(".container", {
           x: "-=45%",
           y: "+=20%",
-          duration: 30,
+          duration: 45,
           ease: "linear",
         })
         .to(".container", {
           x: "-=45%",
           y: "-=20%",
-          duration: 30,
+          duration: 45,
           ease: "linear",
         });
     } else if (mqls[1].matches) {
