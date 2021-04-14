@@ -17,7 +17,7 @@ window.onload = function () {
   function mediaqueryresponse(mql) {
     let tl = gsap.timeline({ repeat: -1 });
     let tl2 = gsap.timeline({ repeat: -1, repeatDelay: 5 });
-    let tl3 = gsap.timeline({ repeat: -1, repeatDelay: 1});
+    let tl3 = gsap.timeline({ repeat: 0, repeatDelay: 1});
     let tl4 = gsap.timeline({ repeat: 0 });
     let tl5 = gsap.timeline({ repeat: 5 });
 
@@ -45,7 +45,10 @@ window.onload = function () {
     //   delay: 1,
     // });
     
-    
+    tl3.to(".spotlight3", {
+      filter: "brightness(200%)",
+      duration: 20
+    })
     tl.set(".container", {
       visibility: "visible",
       autoAlpha: 1,
@@ -59,9 +62,9 @@ window.onload = function () {
     if (mqls[0].matches) {
       
       tl.to(".container", {
-        delay: 9999999999999999999999999999,
-        x: "+=45%",
-        y: "-=30%",
+        
+        x: "+=85%",
+        y: "-=20%",
         duration: 45,
         ease: "linear",
       })
@@ -70,7 +73,7 @@ window.onload = function () {
           y: "+=30%",
           duration: 45,
           ease: "linear",
-          
+          delay: 9999999999999999999999999999,
         })
         .to(".container", {
           x: "-=45%",

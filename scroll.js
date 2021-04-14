@@ -31,7 +31,7 @@ function scrollAnimation() {
     .call(playVideo, ["smokey"])
     .to(".smoke-vid", {
       duration: 3,
-      autoAlpha: 1,
+      autoAlpha: 0.9,
     })
     .to(
       ".smoke-text",
