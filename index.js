@@ -46,8 +46,9 @@ window.onload = function () {
     // });
     
     tl3.to(".spotlight3", {
-      filter: "brightness(200%)",
-      duration: 20
+      filter: "brightness(120%)",
+      duration: 20,
+      
     })
     tl.set(".container", {
       visibility: "visible",
