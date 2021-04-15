@@ -45,8 +45,10 @@ window.onload = function () {
     //   delay: 1,
     // });
     
-    tl3.to(".spotlight3", {
-      filter: "brightness(120%)",
+    tl3.set(".spotlight3", {
+      filter: "brightness(100%)"
+    }).to(".spotlight3", {
+      
       duration: 20,
       
     })
@@ -64,7 +66,7 @@ window.onload = function () {
       
       tl.to(".container", {
         
-        x: "+=85%",
+        x: "+=45%",
         y: "-=20%",
         duration: 45,
         ease: "linear",
