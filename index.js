@@ -109,10 +109,9 @@ window.onload = function () {
       duration: 3,
       opacity: 0,
       
-      ease: "power4.in",
+     
     }).to(".content", {
-      x: "60%",
-      y: "120%",
+      
     });
     
     // tl3.set(".spotlight3", {
