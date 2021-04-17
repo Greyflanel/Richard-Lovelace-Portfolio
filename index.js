@@ -21,99 +21,99 @@ window.onload = function () {
     let tl4 = gsap.timeline({ repeat: 0 });
     let tl5 = gsap.timeline({ repeat: 5 });
 
-    tl2
-      .set(".content", {
-        y: "60%",
-        x: "10%",
-        visibility: "visible",
-        opacity: 0.5,
-        filter: "brightness(100%)",
-      })
-      .to(".content", {
-        duration: 7,
-        filter: "brightness(120%)",
-        opacity: 1,
-        x: "60%",
-        ease: "bounce.out"
-      })
-      .to(
-        ".one, .fifteen",
-        {
-          filter: "blur(10rem)",
-          duration: 1,
-        },
-        "-=3"
-      )
-      .to(
-        ".two, .fourteen",
-        {
-          filter: "blur(10rem)",
-          duration: 1,
-        },
-        "-=2.9"
-      )
-      .to(
-        ".three, .thirteen",
-        {
-          filter: "blur(10rem)",
-          duration: 1,
-        },
-        "-=2.8"
-      )
-      .to(
-        ".four, .twelve",
-        {
-          filter: "blur(10rem)",
-          duration: 1,
-        },
-        "-=2.7"
-      )
-      .to(
-        ".five, .eleven",
-        {
-          filter: "blur(10rem)",
-          duration: 1,
-        },
-        "-=2.6"
-      )
-      .to(
-        ".six, .ten",
-        {
-          filter: "blur(10rem)",
-          duration: 1,
-        },
-        "-=2.5"
-      )
-      .to(
-        ".seven, .nine",
-        {
-          filter: "blur(10rem)",
-          duration: 1,
-        },
-        "-=2.4"
-      )
-      .to(
-        ".eight",
-        {
-          filter: "blur(10rem)",
-          duration: 1,
-        },
-        "-=2.3"
-      ).to(".one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen", {
-        filter: "blur(0)",
-        duration: 3
-      }, "-=4");
+    // tl2
+    //   .set(".content", {
+    //     y: "60%",
+    //     x: "10%",
+    //     visibility: "visible",
+    //     opacity: 0.5,
+    //     filter: "brightness(100%)",
+    //   })
+    //   .to(".content", {
+    //     duration: 7,
+    //     filter: "brightness(120%)",
+    //     opacity: 1,
+    //     x: "60%",
+        
+    //   })
+    //   .to(
+    //     ".one, .fifteen",
+    //     {
+    //       filter: "blur(10rem)",
+    //       duration: 1,
+    //     },
+    //     "-=3"
+    //   )
+    //   .to(
+    //     ".two, .fourteen",
+    //     {
+    //       filter: "blur(10rem)",
+    //       duration: 1,
+    //     },
+    //     "-=2.9"
+    //   )
+    //   .to(
+    //     ".three, .thirteen",
+    //     {
+    //       filter: "blur(10rem)",
+    //       duration: 1,
+    //     },
+    //     "-=2.8"
+    //   )
+    //   .to(
+    //     ".four, .twelve",
+    //     {
+    //       filter: "blur(10rem)",
+    //       duration: 1,
+    //     },
+    //     "-=2.7"
+    //   )
+    //   .to(
+    //     ".five, .eleven",
+    //     {
+    //       filter: "blur(10rem)",
+    //       duration: 1,
+    //     },
+    //     "-=2.6"
+    //   )
+    //   .to(
+    //     ".six, .ten",
+    //     {
+    //       filter: "blur(10rem)",
+    //       duration: 1,
+    //     },
+    //     "-=2.5"
+    //   )
+    //   .to(
+    //     ".seven, .nine",
+    //     {
+    //       filter: "blur(10rem)",
+    //       duration: 1,
+    //     },
+    //     "-=2.4"
+    //   )
+    //   .to(
+    //     ".eight",
+    //     {
+    //       filter: "blur(10rem)",
+    //       duration: 1,
+    //     },
+    //     "-=2.3"
+    //   ).to(".one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen", {
+    //     filter: "blur(0)",
+    //     duration: 10
+    //   }, "-=5");
 
-    tl2.to(".content", {
-      
-      ease: "power4.in",
-      duration: 3,
-      opacity: 0,
+    // tl2.to(".content", {
+    //   delay: 4,
+    //   ease: "power4.in",
+    //   duration: 3,
+    //   opacity: 0,
       
      
-    }).to(".content", {
+    // }).to(".content", {
       
-    });
+    // });
     
     // tl3.set(".spotlight3", {
     //   filter: "brightness(100%)"
@@ -125,17 +125,17 @@ window.onload = function () {
     tl.set(".container", {
       visibility: "visible",
       autoAlpha: 1,
-      width: "35%",
+      
       xPercent: -50,
       yPercent: -50,
-      x: "-35%",
+      x: "35%",
       y: "0%",
       
     });
     if (mqls[0].matches) {
       
       tl.to(".container", {
-        
+        delay: 9999999999999999999999999999,
         x: "+=85%",
         y: "-=15%",
         duration: 45,
@@ -146,7 +146,7 @@ window.onload = function () {
           y: "+=30%",
           duration: 45,
           ease: "linear",
-          delay: 9999999999999999999999999999,
+          
         })
         .to(".container", {
           x: "-=45%",
@@ -192,7 +192,7 @@ window.onload = function () {
 
     } else if (mqls[2].matches) {
       tl.set(".container", {
-        width: "55%",
+        
         x: "+=10%",
       });
       tl.to(".container", {
@@ -250,7 +250,7 @@ window.onload = function () {
     } else if (mqls[4].matches) {
       tl.set(".container", {
         x: "+=10%",
-        width: "65%"
+        
       });
       tl.to(".container", {
         x: "+=34%",
@@ -279,7 +279,7 @@ window.onload = function () {
     } else if (mqls[5].matches) {
       tl.set(".container", {
         x: "+=15%",
-        width: "70%"
+        
       });
       tl.to(".container", {
         
@@ -308,7 +308,7 @@ window.onload = function () {
         });
     } else if (mqls[6].matches) {
       tl.set(".container", {
-        width: "75%",
+        
         x: "+=13%",
       });
       tl.to(".container", {
