@@ -24,16 +24,17 @@ window.onload = function () {
     tl2
       .set(".content", {
         y: "60%",
-        x: "-20%",
+        x: "10%",
         visibility: "visible",
         opacity: 0.5,
         filter: "brightness(100%)",
       })
       .to(".content", {
-        duration: 10,
+        duration: 7,
         filter: "brightness(120%)",
         opacity: 1,
-        x: "30%"
+        x: "60%",
+        ease: "bounce.out"
       })
       .to(
         ".one, .fifteen",
@@ -101,11 +102,11 @@ window.onload = function () {
       ).to(".one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen", {
         filter: "blur(0)",
         duration: 3
-      }, "-=10");
+      }, "-=4");
 
     tl2.to(".content", {
       
-      ease: "bounce.in",
+      ease: "power4.in",
       duration: 3,
       opacity: 0,
       
