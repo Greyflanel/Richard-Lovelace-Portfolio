@@ -16,7 +16,7 @@ window.addEventListener('resize', () => {
 window.onload = function () {
   function mediaqueryresponse(mql) {
     let tl = gsap.timeline({ repeat: -1 });
-    let tl2 = gsap.timeline({ repeat: -1, repeatDelay: 5 });
+    let tl2 = gsap.timeline({ repeat: -1, repeatDelay: 15 });
     let tl3 = gsap.timeline({ repeat: 0, repeatDelay: 1});
     let tl4 = gsap.timeline({ repeat: 0 });
     let tl5 = gsap.timeline({ repeat: 5 });
@@ -25,16 +25,14 @@ window.onload = function () {
     tl2
       .set(".content", {
         y: "60%",
-        x: "10%",
+        x: "20%",
         visibility: "visible",
-        opacity: 0.5,
-        filter: "brightness(100%)",
+        
       })
       .to(".content", {
         duration: 10,
-        filter: "brightness(120%)",
-        opacity: 1,
-        x: "+=50%",
+        
+        x: "+=70%",
         
       })
       
@@ -42,23 +40,26 @@ window.onload = function () {
       console.clear();
       let letters = document.querySelectorAll(".letter");
       console.log(letters)
-      // let tl = new TimelineMax({ paused: true });
+      
 
       
     tl2.set(".letter", {
       filter: "brightness(0%)",
+      opacity: 0,
+     
     }).to(".letter", {
-        filter: "brightness(180%)",
-        opacity: "0.4",
+        
+        opacity: 1,
+        filter: "brightness(110%)",
         stagger: {
-          from: "random",
-          amount: 3,
-          repeat: 2
+          from: "edges",
+          amount: 5,
+          repeat: 1
         }
-      }).to(".letter", {
-        filter: "blur(0) brightness(200%)",
+      }).add("test").to(".letter", {
+        filter: "blur(0) brightness(150%)",
         stagger: {
-          from: "random",
+          from: "end",
           amount: 2,
           
         }
@@ -68,8 +69,7 @@ window.onload = function () {
         ease: "power4.in",
         duration: 3,
         opacity: 0,
-      })
-      ;
+      });
     
     tl3.set(".spotlight3", {
       filter: "brightness(100%)"
@@ -88,6 +88,7 @@ window.onload = function () {
       y: "0%",
       
     });
+    tl2.play("test");
     if (mqls[0].matches) {
       
       tl.to(".container", {
@@ -299,3 +300,4 @@ window.onload = function () {
     mqls[i].addEventListener(mediaqueryresponse, {});
   }
 };
+
