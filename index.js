@@ -20,108 +20,64 @@ window.onload = function () {
     let tl3 = gsap.timeline({ repeat: 0, repeatDelay: 1});
     let tl4 = gsap.timeline({ repeat: 0 });
     let tl5 = gsap.timeline({ repeat: 5 });
-
-    // tl2
-    //   .set(".content", {
-    //     y: "60%",
-    //     x: "10%",
-    //     visibility: "visible",
-    //     opacity: 0.5,
-    //     filter: "brightness(100%)",
-    //   })
-    //   .to(".content", {
-    //     duration: 7,
-    //     filter: "brightness(120%)",
-    //     opacity: 1,
-    //     x: "60%",
-        
-    //   })
-    //   .to(
-    //     ".one, .fifteen",
-    //     {
-    //       filter: "blur(10rem)",
-    //       duration: 1,
-    //     },
-    //     "-=3"
-    //   )
-    //   .to(
-    //     ".two, .fourteen",
-    //     {
-    //       filter: "blur(10rem)",
-    //       duration: 1,
-    //     },
-    //     "-=2.9"
-    //   )
-    //   .to(
-    //     ".three, .thirteen",
-    //     {
-    //       filter: "blur(10rem)",
-    //       duration: 1,
-    //     },
-    //     "-=2.8"
-    //   )
-    //   .to(
-    //     ".four, .twelve",
-    //     {
-    //       filter: "blur(10rem)",
-    //       duration: 1,
-    //     },
-    //     "-=2.7"
-    //   )
-    //   .to(
-    //     ".five, .eleven",
-    //     {
-    //       filter: "blur(10rem)",
-    //       duration: 1,
-    //     },
-    //     "-=2.6"
-    //   )
-    //   .to(
-    //     ".six, .ten",
-    //     {
-    //       filter: "blur(10rem)",
-    //       duration: 1,
-    //     },
-    //     "-=2.5"
-    //   )
-    //   .to(
-    //     ".seven, .nine",
-    //     {
-    //       filter: "blur(10rem)",
-    //       duration: 1,
-    //     },
-    //     "-=2.4"
-    //   )
-    //   .to(
-    //     ".eight",
-    //     {
-    //       filter: "blur(10rem)",
-    //       duration: 1,
-    //     },
-    //     "-=2.3"
-    //   ).to(".one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen", {
-    //     filter: "blur(0)",
-    //     duration: 10
-    //   }, "-=5");
-
-    // tl2.to(".content", {
-    //   delay: 4,
-    //   ease: "power4.in",
-    //   duration: 3,
-    //   opacity: 0,
-      
-     
-    // }).to(".content", {
-      
-    // });
     
-    // tl3.set(".spotlight3", {
-    //   filter: "brightness(100%)"
-    // }).to(".spotlight3", {
+
+    tl2
+      .set(".content", {
+        y: "60%",
+        x: "10%",
+        visibility: "visible",
+        opacity: 0.5,
+        filter: "brightness(100%)",
+      })
+      .to(".content", {
+        duration: 10,
+        filter: "brightness(120%)",
+        opacity: 1,
+        x: "+=50%",
+        
+      })
       
-    //   duration: 20,
+
+      console.clear();
+      let letters = document.querySelectorAll(".letter");
+      console.log(letters)
+      // let tl = new TimelineMax({ paused: true });
+
       
-    // })
+    tl2.set(".letter", {
+      filter: "brightness(0%)",
+    }).to(".letter", {
+        filter: "brightness(180%)",
+        opacity: "0.4",
+        stagger: {
+          from: "random",
+          amount: 3,
+          repeat: 2
+        }
+      }).to(".letter", {
+        filter: "blur(0) brightness(200%)",
+        stagger: {
+          from: "random",
+          amount: 2,
+          
+        }
+      })
+      .to(".content", {
+        delay: 4,
+        ease: "power4.in",
+        duration: 3,
+        opacity: 0,
+      })
+      ;
+    
+    tl3.set(".spotlight3", {
+      filter: "brightness(100%)"
+    }).to(".spotlight3", {
+      
+      duration: 20,
+      
+    })
     tl.set(".container", {
       visibility: "visible",
       autoAlpha: 1,
@@ -135,10 +91,10 @@ window.onload = function () {
     if (mqls[0].matches) {
       
       tl.to(".container", {
-        delay: 9999999999999999999999999999,
-        x: "+=85%",
-        y: "-=15%",
-        duration: 45,
+        
+        x: "+=5%",
+        y: "-=20%",
+        duration: 25,
         ease: "linear",
       })
         .to(".container", {
@@ -146,7 +102,7 @@ window.onload = function () {
           y: "+=30%",
           duration: 45,
           ease: "linear",
-          
+          delay: 9999999999999999999999999999,
         })
         .to(".container", {
           x: "-=45%",

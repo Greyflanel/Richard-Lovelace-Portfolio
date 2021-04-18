@@ -271,9 +271,9 @@ a:active {
 .moon {
   position: relative;
   border-radius: 50%;
-  filter: drop-shadow(0 0 25px rgba(21, 4, 22, 0.99)) contrast(1.26);
+  filter: drop-shadow(0 0 35px rgba(21, 4, 22, 1)) contrast(1.26);
   z-index: 0;
-  mix-blend-mode: color-dodge;
+  mix-blend-mode: color;
   width: 50%;
 }
 
@@ -339,7 +339,7 @@ a:active {
   width: 50%;
   height: 100%;
   top: -0.5%;
-  filter: contrast(1.28) brightness(150%) blur(0.5rem);
+  filter: contrast(1.28) brightness(250%) blur(0.5rem);
   border-radius: 50%;
   background-color: #3200428c;
   mix-blend-mode: multiply;
