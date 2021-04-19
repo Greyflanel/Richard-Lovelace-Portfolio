@@ -16,7 +16,7 @@ window.addEventListener('resize', () => {
 window.onload = function () {
   function mediaqueryresponse(mql) {
     let tl = gsap.timeline({ repeat: -1 });
-    let tl2 = gsap.timeline({ repeat: 2, repeatDelay: 3});
+    let tl2 = gsap.timeline({ repeat: 0, repeatDelay: 3});
     let tl3 = gsap.timeline({ repeat: -1, });
     let tl4 = gsap.timeline({ repeat: 0 });
     let tl5 = gsap.timeline({ repeat: 5 });
@@ -51,7 +51,7 @@ window.onload = function () {
         },
       })
       .to(letters, {
-        delay: 10,
+        delay: 2,
         filter: "brightness(0%)",
         stagger: {
           from: "center",
@@ -83,8 +83,8 @@ window.onload = function () {
       tl.to(".container", {
         
         x: "+=5%",
-        y: "-=20%",
-        duration: 25,
+        y: "-=25%",
+        duration: 20,
         ease: "linear",
       })
         .to(".container", {
