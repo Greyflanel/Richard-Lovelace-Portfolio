@@ -277,7 +277,13 @@ a:active {
   width: 50%;
 }
 
+#one {
+  font-size: 7rem;
+}
 
+#two {
+  font-size: 5rem;
+}
 
 .content {
   position: absolute;
@@ -288,12 +294,9 @@ a:active {
   color: #0a0111;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-shadow: 0 0 0.5px white, 0 0 1px white, 0 0 3px white, 0 0 7px #2c032c,
-    0 0 9px #3a043a;
+    0 0 9px #360336;
 }
 
-.content span {
-  filter: blur(0);
-}
 
 .content-name {
   margin: 0;
