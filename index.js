@@ -43,7 +43,7 @@ window.onload = function () {
         
         duration: 4,
         opacity: 1,
-        filter: "brightness(180%)",
+        filter: "brightness(160%)",
         stagger: {
           from: "center",
           each: 0.03,
