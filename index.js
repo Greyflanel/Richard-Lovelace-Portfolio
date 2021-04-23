@@ -47,15 +47,15 @@ window.onload = function () {
         stagger: {
           from: "center",
           each: 0.03,
-          repeat: 2,
+          repeat: 1,
         },
       })
       .to(letters, {
-        delay: 2,
+        
         filter: "brightness(0%)",
         stagger: {
           from: "center",
-          each: 0.04,
+          each: 0.03,
           repeat: 10,
           yoyo: true,
           
