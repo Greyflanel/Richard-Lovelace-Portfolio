@@ -31,7 +31,7 @@ window.onload = function () {
     tl3.set(".content", {
       x: "105%",
       y: "20%",
-      filter: "brightness(120%)",
+      filter: "brightness(110%)",
       opacity: 1,
     });
     tl2
